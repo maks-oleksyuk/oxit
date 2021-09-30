@@ -123,7 +123,6 @@ a[href^="tel:"]{
 
 .style-square{
     list-style-type: square;
-    /* font-weight: bold; */
 }
 
 .multi-column {
