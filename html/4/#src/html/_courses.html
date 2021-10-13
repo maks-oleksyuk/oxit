@@ -1,0 +1,75 @@
+<section class="container-fluid d-flex justify-content-center courses">
+    <div class="container row">
+        <div class="col-sm-6 text-center d-flex flex-column justify-content-end">
+            <h2>Курси програмування у Луцьку</h2>
+            <p>Сфера IT розвивається максимально швидко. Зараз дуже
+                популярно здобувати освіту, що повязана з IT. Існує лише
+                одна проблема - брак дійсно кваліфікованих спеціалістів в
+                Україні. Під час навчання в університеті ми отримуємо
+                мало практики і "живих", реальних кейсів. IT школа OxIT
+                створила таку методику навчання, при якій за короткий
+                час ви отримаєте необхідні знання, щоб стати IT
+                спеціалістом. Чекаємо вас на нших курсах з
+                програмування в Луцьку. Старт наступного курсу 3 серпня.
+            </p>
+        </div>
+        <div class="col-sm-6 mt-5 pe-0 ps-4">
+            <form class="needs-validation reg-form" id="form-reg" novalidate>
+                <fieldset>
+                    <legend class="reg-form__title">Зареєструватися на курси</legend>
+                    
+                    <div class="form-group required">
+                        <label for="firstName">Ім'я</label>
+                        <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Ім'я" required>
+                        <div class="invalid-feedback">
+                            Будь ласка, введіть своє ім'я
+                        </div>
+                    </div>
+                    
+                    <div class="form-group required">
+                        <label for="lastName">Прізвище</label>
+                        <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Прізвище"
+                            required>
+                        <div class="invalid-feedback">
+                            Будь ласка, введіть своє прізвище
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label for="profession">Мене більше
+                            цікавить</label>
+                        <input class="form-control" type="text" name="profession" id="profession"
+                            placeholder="developer or QA" required>
+                        <div class="invalid-feedback">
+                            Будь ласка, заповніть поле
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label for="phoneNumber">Номер телефону</label>
+                        <input class="form-control" type="text" name="phoneNumber" id="phoneNumber"
+                            placeholder="Номер телефону: +380 ХХ ХХX ХХ ХХ" pattern="\+380(\s*\d){9}\s*" required>
+                        <div class="invalid-feedback">
+                            Будь ласка, введіть номер телефону у форматі: +380&nbsp;ХХ&nbsp;ХХX&nbsp;ХХ&nbsp;ХХ
+                        </div>
+                    </div>
+                    <div class="form-group required">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email"
+                            required spellcheck="false">
+                        <div class="invalid-feedback">
+                            Будь ласка, введіть коректну електронну пошту
+                        </div>
+                    </div>
+                    <div class="form-check required">
+                        <input class="form-check-input" type="checkbox" name="privacyPolicy" id="privacyPolicy"
+                            required>
+                        <label for="privacyPolicy">Я погоджуюся із <a href="#">Політикою
+                                Конфіденційності</a></label>
+                        <div class="invalid-feedback">
+                            Будь ласка, відмітьте цей прапорець, якщо хочете продовжити
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

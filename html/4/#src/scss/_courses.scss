@@ -1,0 +1,12 @@
+.courses {
+  //   height: 650px;
+  background-color: #f7f7f7;
+}
+
+.reg-form .form-group.required label:after,
+.reg-form .form-check.required label:after {
+  text-shadow: none;
+  content: " *";
+  color: #ee0000;
+  font-weight: bold;
+}

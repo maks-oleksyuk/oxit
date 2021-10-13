@@ -1,0 +1,49 @@
+.header-fix {
+  background-color: white;
+  box-shadow: 0 1px 12px 0 rgb(51 51 51 / 23%);
+  width: 100%;
+  height: 100px;
+  max-width: 100%;
+  // z-index: 100;
+}
+.container {
+  width: 1250px;
+  padding: 0 15px;
+}
+.navbar {
+  padding-block: 0;
+  text-align: center;
+}
+
+.nav-link {
+  margin-right: -1.1vh;
+  padding: 10px 1.2vw 10px 1.2vw !important;
+  line-height: 20px;
+  color: #666;
+  &:hover {
+    color: #337ab7;
+    background-color: #eee;
+  }
+}
+.header-fix .navbar-collapse ul li:last-child a {
+  padding: 10px 1vw 10px 1vw !important;
+  margin-left: 5px;
+  color: white;
+  background-color: #337ab7;
+  border-radius: 25px;
+  &:hover {
+    background-color: #286090;
+  }
+}
+.nav-item .nav-link .navbar-brand {
+  img {
+    padding: 4px 4px 8px 6px;
+  }
+}
+.navbar-toggler {
+  border-color: white;
+  background-color: #337ab7;
+}
+.navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios-filled/150/ffffff/menu-rounded.png");
+}
