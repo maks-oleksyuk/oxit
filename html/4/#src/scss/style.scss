@@ -3,6 +3,10 @@
   font-size: 16px;
   color: #666;
 }
+.container {
+  width: 1250px;
+  padding: 0 15px;
+}
 
 @import "_header.scss";
 @import "_courses.scss";
