@@ -1,10 +1,10 @@
 header {
   width: 100%;
+  max-width: 100%;
   background-color: white;
   box-shadow: 0 1px 12px 0 rgb(51 51 51 / 23%);
-  // height: 100px;
-  max-width: 100%;
-  // z-index: 100;
+  position: relative;
+  z-index: 100;
 }
 .navbar {
   padding: 0;
@@ -29,7 +29,7 @@ header {
   }
 
   &-nav {
-    margin-top: -1px;
+    // margin-top: -1px;
 
     > li:last-child a {
       color: white;
@@ -55,12 +55,7 @@ header {
   }
 }
 
-.navbar-toggler {
-}
-.navbar-toggler-icon {
-}
-
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .navbar {
     &-brand {
       > img {

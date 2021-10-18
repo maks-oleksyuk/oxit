@@ -1,0 +1,110 @@
+.color-gray {
+  background-color: #f7f7f7;
+}
+
+.content-text {
+  padding-top: 80px;
+  > h1 {
+    font-size: 38px;
+    color: #333;
+    margin-top: 18px;
+  }
+  > p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 21px;
+    padding: 3px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+}
+
+.reg-form-title {
+  margin-bottom: 5px;
+}
+
+fieldset {
+  padding-left: 20px;
+}
+
+.reg-form .form-group.required label:after,
+.reg-form .form-check.required label:after {
+  text-shadow: none;
+  content: " *";
+  color: #ee0000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-group {
+  > label {
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+}
+
+.form-control {
+  height: 52px;
+  margin-bottom: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.form-check {
+  margin-top: 18px;
+  font-size: 0.87rem;
+  > label {
+    font-size: 14px;
+    color: #666;
+    a {
+      font-size: 14px;
+      color: #708ab0;
+      text-decoration: none;
+    }
+  }
+}
+
+.reg-now {
+  .btn-primary {
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 350px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-text {
+    padding-top: 14px;
+    > h1 {
+      font-size: 26px;
+    }
+    > p {
+      font-size: 14px;
+      padding: 0 0px;
+      margin-top: 16px;
+    }
+  }
+  .reg-form-title {
+    padding-top: 2px;
+    font-size: calc(1.424rem + 0.3vw);
+  }
+  fieldset {
+    padding: 0;
+  }
+  .form-control {
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .reg-now {
+    .btn-primary {
+      width: 275px;
+    }
+  }
+}
