@@ -9,14 +9,20 @@
   padding: 0 15px;
 }
 
+.color-gray {
+  background-color: #f7f7f7;
+}
+
+.color-blue {
+  background-color: #3498db;
+}
+
 header {
   width: 100%;
   max-width: 100%;
   background-color: white;
   -webkit-box-shadow: 0 1px 12px 0 rgba(51, 51, 51, 0.23);
   box-shadow: 0 1px 12px 0 rgba(51, 51, 51, 0.23);
-  position: relative;
-  z-index: 100;
 }
 
 .navbar {
@@ -63,10 +69,6 @@ header {
 .nav-link:hover {
   color: #337ab7;
   background-color: #eee;
-}
-
-.color-gray {
-  background-color: #f7f7f7;
 }
 
 .content-text {
@@ -144,6 +146,92 @@ fieldset {
   border-color: #2e6da4;
 }
 
+.courses {
+  height: 563px;
+}
+
+.courses-item {
+  text-align: center;
+  gap: 10px;
+}
+
+.courses-item-img {
+  margin-top: 25px;
+}
+
+.courses-item-title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-top: 21px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3498db;
+  letter-spacing: 0.5px;
+}
+
+.courses-item-about {
+  padding-top: 15px;
+  padding-inline: 30px;
+  line-height: 1.6;
+}
+
+.courses-title {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.courses-title > h2 {
+  font-size: 34px;
+  color: #333;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 7px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #999 !important;
+}
+
+.stats-item {
+  text-align: center;
+  padding: 80px 0 64px 0;
+}
+
+.stats-item-count {
+  color: white;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.stats-item-title {
+  color: white;
+  line-height: 1.5;
+}
+
+.reviews {
+  margin-top: 70px;
+}
+
+.reviews-title {
+  text-align: center;
+}
+
+.reviews-title > h2 {
+  line-height: 1.1;
+  font-size: 36px;
+}
+
+.reviews-text {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .navbar-brand > img {
     margin-top: -3px;
@@ -185,5 +273,45 @@ fieldset {
 
   .reg-now .btn-primary {
     width: 275px;
+  }
+
+  .courses {
+    width: 100%;
+    height: 584px;
+  }
+
+  .courses-item-title {
+    font-size: 21px;
+    padding-bottom: 4px;
+  }
+
+  .courses-item-about {
+    font-size: 14px;
+    padding: 0 4px;
+    padding-bottom: 60px;
+  }
+
+  .courses-title > h2 {
+    font-size: 23px;
+  }
+
+  .stats {
+    padding-top: 40px;
+    padding-bottom: 14px;
+  }
+
+  .stats-item {
+    padding: 0;
+  }
+
+  .stats-item-count {
+    font-size: 16px;
+    padding-top: 7px;
+    margin-bottom: 6px;
+  }
+
+  .stats-item-title {
+    font-size: 12px;
+    margin-bottom: 24px;
   }
 }

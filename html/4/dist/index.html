@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>4 Level html/css</title>
-</head>
+  </head>
 
-<body>
-    <header class="header fixet-top">
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo_Oxit.png" alt="Logo" width="25px" height="90px" class="d-inline-block align-text-top">
-            </a>
+  <body>
+    <header class="header sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="img/logo_Oxit.png"
+          alt="Logo"
+          width="25px"
+          height="90px"
+          class="d-inline-block align-text-top"
+        />
+      </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Програма курсу</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Відгуки про курс</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Відео</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ментори</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#register">Подати заявку</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Програма курсу</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Відгуки про курс</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Відео</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ментори</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register">Подати заявку</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
-    <section class="container-fluid d-flex justify-content-center color-gray">
+ <section class="container-fluid d-flex justify-content-center color-gray">
   <div class="container row registration">
     <div
       class="
@@ -177,10 +197,161 @@
   </div>
 </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
+    <section class="container-fluid d-flex justify-content-center">
+  <div class="container courses">
+    <div class="courses-title">
+      <h2>Курс «Розробка сайтів»</h2>
+    </div>
+    <div class="courses-items d-flex swiper">
+      <div class="swiper-wrapper">
+        <div class="courses-item swiper-slide">
+          <img
+            src="/img/course-icon-1.png"
+            alt="Logo courses"
+            title="Розробка сайтів на WordPress"
+            class="courses-item-img"
+          />
+          <p class="courses-item-title">Розробка сайтів на WordPress</p>
+          <p class="courses-item-about">
+            Курс складається з коротких навчальних відео, на яких ти пізнаєш
+            основи WordPress, навчишся створювати сайти різної складності: від
+            блогів до інтернет магазинів. Всі знання закріпиш за допомогою
+            тестових завдань.
+          </p>
+        </div>
+        <div class="courses-item swiper-slide">
+          <img
+            src="/img/course-icon-2.png"
+            alt="Logo courses"
+            title="Розробка сайтів на Drupal 8"
+            class="courses-item-img"
+          />
+          <p class="courses-item-title">Розробка сайтів на Drupal 8</p>
+          <p class="courses-item-about">
+            Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти
+            пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules,
+            Panels, Devel, Paragraph та багатьох інших).
+          </p>
+        </div>
+        <div class="courses-item swiper-slide">
+          <img
+            src="/img/course-icon-3.png"
+            alt="Logo courses"
+            title="Ознайомлення з тестуванням"
+            class="courses-item-img"
+          />
+          <p class="courses-item-title">Ознайомлення з тестуванням</p>
+          <p class="courses-item-about">
+            Ти дізнаєшся про забезпечення якості в контексті різних моделей
+            розробки ПЗ. Також QA-спеціаліст розкаже про види тестування
+            (функціональне, регресивне, системне, тестування швидкодії тощо).
+          </p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+ <section class="container-fluid d-flex justify-content-center color-blue">
+  <div class="container row stats">
+    <div class="col-6 col-md-3 stats-item">
+      <img
+        class="stats-item-icon"
+        src="img/statistic-icon-1.png"
+        alt="statistic-icon-1"
+        title="курсів організовано"
+        width="85"
+        height="60"
+      />
+      <p class="stats-item-count">25</p>
+      <p class="stats-item-title">курсів організовано</p>
+    </div>
+    <div class="col-6 col-md-3 stats-item">
+      <img
+        class="stats-item-icon"
+        src="img/statistic-icon-2.png"
+        alt="statistic-icon-1"
+        title="годин занять проведено"
+        width="85"
+        height="60"
+      />
+      <p class="stats-item-count">836</p>
+      <p class="stats-item-title">годин занять проведено</p>
+    </div>
+    <div class="col-6 col-md-3 stats-item">
+      <img
+        class="stats-item-icon"
+        src="img/statistic-icon-3.png"
+        alt="statistic-icon-1"
+        title="курсів організовано"
+        width="85"
+        height="60"
+      />
+      <p class="stats-item-count">500</p>
+      <p class="stats-item-title">студентів навчено</p>
+    </div>
+    <div class="col-6 col-md-3 stats-item">
+      <img
+        class="stats-item-icon"
+        src="img/statistic-icon-4.png"
+        alt="statistic-icon-1"
+        title="курсів організовано"
+        width="85"
+        height="60"
+      />
+      <p class="stats-item-count">120</p>
+      <p class="stats-item-title">випускників курсів працевлаштовано</p>
+    </div>
+  </div>
+</section>
 
+    <section class="container-fluid d-flex justify-content-center">
+  <div class="container reviews">
+    <div class="reviews-title">
+      <h2>Що кажуть студенти наших курсів:</h2>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="reviews-text">
+            Під час проходження курсів Drupal у школі OxIT я навчився створювати
+            не досить складні сайти та знайшов справу, якою хочу займатись.
+            Після успішного завершення курсів мені надали можливість продовжити
+            навчання вже в якості Intern Site Builder. Зараз я можу сказати, що
+            Drupal та OxIT повністю змінили моє життя.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <p class="reviews-text">
+            Під час проходження курсів Drupal у школі OxIT я навчився створювати
+            не досить складні сайти та знайшов справу, якою хочу займатись.
+            Після успішного завершення курсів мені надали можливість продовжити
+            навчання вже в якості Intern Site Builder. Зараз я можу сказати, що
+            Drupal та OxIT повністю змінили моє життя.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <p class="reviews-text">
+            Під час проходження курсів Drupal у школі OxIT я навчився створювати
+            не досить складні сайти та знайшов справу, якою хочу займатись.
+            Після успішного завершення курсів мені надали можливість продовжити
+            навчання вже в якості Intern Site Builder. Зараз я можу сказати, що
+            Drupal та OxIT повністю змінили моє життя.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-<!-- 8+ -->
+<!-- 8+10 -->

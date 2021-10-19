@@ -7,6 +7,17 @@
   width: 1250px;
   padding: 0 15px;
 }
+.color {
+  &-gray {
+    background-color: #f7f7f7;
+  }
+  &-blue {
+    background-color: #3498db;
+  }
+}
 
 @import "_header.scss";
 @import "_registration.scss";
+@import "_courses.scss";
+@import "_stats.scss";
+@import "_reviews.scss";
