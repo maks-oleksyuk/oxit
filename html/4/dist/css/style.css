@@ -1,20 +1,7 @@
-* {
-  font-family: "OpenSans-Regular", OpenSans, sans-serif;
-  font-size: 16px;
-  color: #666;
-}
-
-.container {
-  width: 1250px;
-  padding: 0 15px;
-}
-
-.color-gray {
-  background-color: #f7f7f7;
-}
-
-.color-blue {
-  background-color: #3498db;
+@font-face {
+  font-family: "Open Sans Light";
+  font-style: normal;
+  src: local(""), url("../fonts/OpenSans/OpenSans-Light.ttf") format("ttf");
 }
 
 header {
@@ -170,8 +157,7 @@ fieldset {
 }
 
 .courses-item-about {
-  padding-top: 15px;
-  padding-inline: 30px;
+  padding: 15px 30px 0;
   line-height: 1.6;
 }
 
@@ -217,6 +203,7 @@ fieldset {
 
 .reviews {
   margin-top: 70px;
+  margin-bottom: 23px;
 }
 
 .reviews-title {
@@ -226,10 +213,114 @@ fieldset {
 .reviews-title > h2 {
   line-height: 1.1;
   font-size: 36px;
+  margin-bottom: 0px;
 }
 
-.reviews-text {
+.reviews-item {
+  width: 100% !important;
+  padding: 0 123px;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.reviews-text > p {
+  font-family: "Open Sans Light", OpenSans, sans-serif;
+  font-size: 22px;
+  line-height: 1.7;
+  padding: 28px 40px 0;
+}
+
+.reviews-author {
+  font-size: 20px;
+  color: #333;
+  padding-top: 12px;
+  margin: 0;
+}
+
+.reviews-position {
+  color: #888;
+  margin-top: -3px;
+}
+
+.reviews-position > span {
+  color: #888;
+  font-style: italic;
+}
+
+.fa {
+  color: #888;
+  font-size: 1.8rem;
+}
+
+.fa-quote-left {
+  float: left;
+  padding-top: 14px;
+}
+
+.fa-quote-right {
+  float: right;
+  margin-top: -46px;
+}
+
+.video {
+  text-align: center;
+  margin-top: 68px;
+  margin-bottom: 65px;
+}
+
+.video-title {
+  font-size: 2.2rem;
+  padding-bottom: 13px;
+}
+
+.video-text {
+  font-family: "Open Sans Light", OpenSans, sans-serif;
+  padding: 0 3px 14px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.video-player {
+  position: relative;
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+  padding-bottom: 56.25%;
+}
+
+.video-player > iframe {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 1020px;
+}
+
+* {
+  font-family: "Open Sans-Regular", OpenSans, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  width: 1250px;
+  padding: 0 15px;
+}
+
+.color-gray {
+  background-color: #f7f7f7;
+}
+
+.color-blue {
+  background-color: #3498db;
 }
 
 @media (max-width: 768px) {
@@ -313,5 +404,78 @@ fieldset {
   .stats-item-title {
     font-size: 12px;
     margin-bottom: 24px;
+  }
+
+  .reviews {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .reviews-title > h2 {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .reviews-item {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .reviews-text > p {
+    padding: 6px 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .reviews-author {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .reviews-position {
+    font-size: 14px;
+  }
+
+  .fa {
+    font-size: 1rem;
+  }
+
+  .fa-quote-left {
+    margin-left: 3px;
+    margin-top: -10px;
+  }
+
+  .fa-quote-right {
+    padding-top: 15px;
+    margin-right: 3px;
+  }
+
+  .video {
+    margin-top: 70px;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .video-title {
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+  }
+
+  .video-text {
+    padding: 0 1px 14px;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+  }
+
+  .video-player {
+    min-height: 190px;
+    padding: 2px;
+  }
+
+  .video-player > iframe {
+    max-width: 1020px;
   }
 }

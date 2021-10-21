@@ -16,20 +16,23 @@ new Swiper(".swiper", {
   },
 });
 
-new Swiper(".swiper .reviews-swiper", {
+new Swiper(".reviews-swiper", {
+  loop: true,
   slidesPerView: 1,
-  //   spaceBetween: 40,
+  spaceBetween: 30,
+  centeredSlides: true,
+  speed: 1000,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 10000,
+    waitForTransition: false,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
-  //   breakpoints: {
-  //     600: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 30,
-  //     },
-  //     850: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 5,
-  //     },
-  //   },
 });
