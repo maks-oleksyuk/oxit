@@ -36,3 +36,23 @@ new Swiper(".reviews-swiper", {
     clickable: true,
   },
 });
+
+new Swiper(".mentors-swiper", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    850: {
+      spaceBetween: 50,
+    },
+    1: {
+      spaceBetween: 30,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

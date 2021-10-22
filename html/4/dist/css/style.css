@@ -265,7 +265,7 @@ fieldset {
 .video {
   text-align: center;
   margin-top: 68px;
-  margin-bottom: 65px;
+  margin-bottom: -37px;
 }
 
 .video-title {
@@ -281,22 +281,77 @@ fieldset {
   letter-spacing: 0.2px;
 }
 
-.video-player {
+.embed-responsive {
   position: relative;
-  -ms-flex-preferred-size: 100px;
-  flex-basis: 100px;
-  padding-bottom: 56.25%;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }
 
-.video-player > iframe {
+.embed-responsive::before {
   display: block;
-  margin: 0 auto;
+  content: "";
+  padding-top: 51.07843%;
+}
+
+.embed-responsive .embed-responsive-item {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  bottom: 0;
   width: 100%;
   height: 100%;
+  border: 0;
   max-width: 1020px;
+  max-height: 521px;
+}
+
+.mentors {
+  margin-top: 70px;
+}
+
+.mentors-title {
+  text-align: center;
+}
+
+.mentors-title > h2 {
+  line-height: 1.1;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+.mentors-item {
+  width: 100% !important;
+}
+
+.mentors-item-avatar {
+  display: block;
+  margin: 0 auto;
+  width: 337px;
+  height: 356px;
+  max-width: 337px;
+}
+
+.mentors-item-name {
+  padding-left: 11px;
+  padding-top: 33px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.mentors-item-text {
+  padding: 40px 0 35px 11px;
+  line-height: 1.56;
+}
+
+.mentors-item-text > p {
+  margin-bottom: 13px;
 }
 
 * {
@@ -321,6 +376,13 @@ html {
 
 .color-blue {
   background-color: #3498db;
+}
+
+@media (max-width: 992px) {
+  .mentors-item-avatar {
+    height: 210px;
+    width: 210px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -477,5 +539,45 @@ html {
 
   .video-player > iframe {
     max-width: 1020px;
+  }
+
+  .mentors {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .mentors-title > h2 {
+    font-size: 26px;
+  }
+
+  .mentors-item-avatar {
+    padding: 2px 60px 0;
+    margin: 0 auto;
+    width: 380px;
+    height: 210px;
+  }
+
+  .mentors-item-name {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .mentors-item-text {
+    text-align: center;
+    line-height: 1.56;
+  }
+
+  .mentors-item-text > p {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mentors-item-avatar {
+    height: 155px;
+    width: 260px;
   }
 }
