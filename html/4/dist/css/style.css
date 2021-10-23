@@ -58,6 +58,10 @@ header {
   background-color: #eee;
 }
 
+.registration {
+  padding-top: 100px !important;
+}
+
 .content-text {
   padding-top: 80px;
 }
@@ -313,6 +317,7 @@ fieldset {
 
 .mentors {
   margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .mentors-title {
@@ -352,6 +357,60 @@ fieldset {
 
 .mentors-item-text > p {
   margin-bottom: 13px;
+}
+
+.map iframe {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+
+.contacts {
+  padding: 40px 0 30px !important;
+  text-align: center;
+}
+
+.contacts-item-icon {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.contacts-item-link {
+  text-decoration: none;
+}
+
+.contacts-item-title {
+  color: white;
+  font-size: 16px;
+}
+
+.contacts-item-value {
+  color: white;
+}
+
+.footer {
+  padding: 30px 0 20px !important;
+  text-align: center;
+  color: #6a99c7;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer ul > li {
+  color: #6a99c7;
+  margin-bottom: 10px;
+}
+
+.footer ul > li > a {
+  color: #8e8e8e;
+  text-decoration: none;
 }
 
 * {

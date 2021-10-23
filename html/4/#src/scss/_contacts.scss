@@ -1,0 +1,29 @@
+.contacts{
+    padding: 40px 0 30px!important;
+    // padding: 30px 0 25px 0;
+    text-align: center;
+    &-item{
+        
+        &-icon{
+            color: white;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        &-link{
+            text-decoration: none;
+
+        }
+
+        &-title{
+            color: white;
+            font-size: 16px;
+        }
+        
+        &-value{
+            color: white;
+
+        }
+    }
+    
+}
