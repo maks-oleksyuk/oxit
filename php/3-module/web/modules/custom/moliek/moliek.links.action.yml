@@ -1,0 +1,5 @@
+response.add_form:
+  route_name: entity.response.add_form
+  title: 'Add response'
+  appears_on:
+    - entity.response.collection

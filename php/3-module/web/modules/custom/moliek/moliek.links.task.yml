@@ -1,0 +1,22 @@
+entity.response.settings:
+  title: Settings
+  route_name: entity.response.settings
+  base_route: entity.response.settings
+entity.response.view:
+  title: View
+  route_name: entity.response.canonical
+  base_route: entity.response.canonical
+entity.response.edit_form:
+  title: Edit
+  route_name: entity.response.edit_form
+  base_route: entity.response.canonical
+entity.response.delete_form:
+  title: Delete
+  route_name: entity.response.delete_form
+  base_route: entity.response.canonical
+  weight: 10
+entity.response.collection:
+  title: Response
+  route_name: entity.response.collection
+  base_route: system.admin_content
+  weight: 10

@@ -1,0 +1,29 @@
+<article{{ attributes }}>
+  {{ title_suffix }}
+  <div class="feedback-group-info">
+    {% if content.ava[0] %}
+      {{ content.ava[0] }}
+    {% else %}
+      <img
+        class="img-fluid image-style-thumbnail"
+        src="/modules/custom/moliek/img/default-user-ava.jpg"
+        alt="default user avatar"
+        title={{ content.name[0]['#context']['value'] }}
+      />
+    {% endif %}
+    <div class="feedback__info">
+      {{ content.name }}
+      {{ content.created }}
+    </div>
+  </div>
+  <div class="feedback-group-response">
+    {{ content.text }}
+    {% if content.attachment[0] %}
+      {{ content.attachment[0] }}
+    {% endif %}
+  </div>
+  <div class="feedback-group-user-contacts">
+    {{ content.phone }}
+    {{ content.email }}
+  </div>
+</article>

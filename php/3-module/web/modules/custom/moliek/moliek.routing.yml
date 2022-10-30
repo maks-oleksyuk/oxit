@@ -1,0 +1,15 @@
+entity.response.settings:
+  path: 'admin/structure/response'
+  defaults:
+    _title: 'Response'
+    _form: '\Drupal\moliek\Form\ResponseSettingsForm'
+  requirements:
+    _permission: 'administer response'
+
+moliek.content:
+  path: '/guestbook'
+  defaults:
+    _title: 'Guestbook'
+    _controller: '\Drupal\moliek\Controller\PageController::build'
+  requirements:
+    _permission: 'access content'

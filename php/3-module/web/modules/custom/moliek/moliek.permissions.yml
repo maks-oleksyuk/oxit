@@ -1,0 +1,3 @@
+administer response:
+  title: 'Administer response settings'
+  restrict access: true

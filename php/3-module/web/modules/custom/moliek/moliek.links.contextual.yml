@@ -1,0 +1,9 @@
+response_edit:
+  title: 'Edit'
+  route_name: 'entity.response.edit_form'
+  group: 'response'
+
+response_delete:
+  title: 'Delete'
+  route_name: 'entity.response.delete_form'
+  group: 'response'

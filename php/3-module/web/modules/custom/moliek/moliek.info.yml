@@ -1,0 +1,9 @@
+name: Guest book
+description: This module creates a page where people can visit and leave feedback, comments, impressions and wishes.
+
+core: 8.x
+type: module
+package: Custom
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:telephone

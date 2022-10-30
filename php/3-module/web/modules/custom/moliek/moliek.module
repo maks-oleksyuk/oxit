@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Provides a response entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function moliek_theme(): array {
+  return [
+    'response' => [
+      'render element' => 'elements',
+    ],
+    'guestbook' => [
+      'variables' => [
+        'form' => NULL,
+        'response_list' => NULL,
+      ],
+    ],
+    'response_list' => [
+      'template' => 'response-list',
+      'variables' => [
+        'responses' => NULL,
+        'pager' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for response templates.
+ *
+ * Default template: response.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the response information and
+ *     any fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_response(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+  $variables['#attached']['library'][] = 'moliek/guestbook-css';
+}

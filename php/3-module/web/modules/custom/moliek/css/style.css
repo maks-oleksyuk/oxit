@@ -1,0 +1,45 @@
+.path-response .feedback-group-info, .path-guestbook .feedback-group-info {
+  display: flex;
+}
+.path-response .feedback-group-info img, .path-guestbook .feedback-group-info img {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.path-response .feedback-group-info .field--name-created, .path-guestbook .feedback-group-info .field--name-created {
+  gap: 5px;
+  display: flex;
+  font-size: 12px;
+}
+.path-response .feedback-group-info .field--name-created > div:first-child:after, .path-guestbook .feedback-group-info .field--name-created > div:first-child:after {
+  content: ":";
+}
+.path-response .feedback-group-response, .path-guestbook .feedback-group-response {
+  padding: 10px 20px;
+}
+.path-response .feedback-group-user-contacts, .path-guestbook .feedback-group-user-contacts {
+  margin: 0 10px 30px;
+  font-size: 14px;
+}
+.path-response .feedback-group-user-contacts > div, .path-guestbook .feedback-group-user-contacts > div {
+  display: flex;
+  gap: 10px;
+}
+.path-response .feedback-group-user-contacts > div > div:first-child:after, .path-guestbook .feedback-group-user-contacts > div > div:first-child:after {
+  content: ":";
+}
+.path-response .feedback-group-user-contacts > div a, .path-guestbook .feedback-group-user-contacts > div a {
+  color: #666666;
+  text-decoration: none;
+}
+.path-response .feedback-group-user-contacts > div a:hover, .path-guestbook .feedback-group-user-contacts > div a:hover {
+  color: #000000;
+}
+.path-response .feedback__info, .path-guestbook .feedback__info {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
+}

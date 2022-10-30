@@ -1,0 +1,40 @@
+entity.response.collection:
+  title: Response
+  description: List of responses
+  route_name: entity.response.collection
+  parent: system.admin_content
+
+entity_response_collection.add:
+  title: Add response
+  url: internal:/admin/content/response/add
+  parent: entity.response.collection
+
+entity.response.settings:
+  title: Response
+  description: Configure an Response entity type
+  route_name: entity.response.settings
+  parent: system.admin_structure
+  weight: 100
+
+entity_response_settings.fields:
+  title: Manage fields
+  url: internal:/admin/structure/response/fields
+  parent: entity.response.settings
+  weight: 1
+
+entity_response_settings.form_display:
+  title: Manage form display
+  url: internal:/admin/structure/response/form-display
+  parent: entity.response.settings
+  weight: 2
+
+entity_response_settings.manage_display:
+  title: Manage display
+  url: internal:/admin/structure/response/display
+  parent: entity.response.settings
+  weight: 3
+
+moliek.guesbook:
+  title: Guestbook
+  route_name: moliek.content
+  menu_name: "footer"
