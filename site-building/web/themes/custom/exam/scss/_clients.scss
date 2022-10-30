@@ -1,0 +1,18 @@
+.clients {
+  margin: 27px auto 157px;
+
+  .swiper {
+    &-container {
+      margin-top: 77px;
+    }
+
+    &-wrapper {
+      gap: 10px;
+      justify-content: space-between;
+
+      .swiper-slide {
+        max-width: 150px;
+      }
+    }
+  }
+}

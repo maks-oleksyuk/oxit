@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Creates a page to add feedback, complaints and suggestions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function guestbook_theme($existing, $type, $theme, $path): array {
+  return [
+    'guestbook_theme' => [
+      'variables' => [
+        'text' => NULL,
+        'form' => NULL,
+        'review' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,64 @@
+<h4 class="text-align-center">{{ text }}</h4>
+{{ form }}
+{% if review %}
+  <div class="block-feedback container">
+    {% for r in review %}
+      <div class="feedback-item">
+        <div class="feedback-group-info">
+          {% if r['ava'] %}
+            <img
+              class="user__ava"
+              src="{{ r['ava'] }}"
+              alt="user avatar"
+              title="{{ r['name'] }}"/>
+          {% else %}
+            <img
+              class="user__ava"
+              src="/modules/custom/guestbook/img/default-user-ava.jpg"
+              alt="default user avatar"
+              title="{{ r['name'] }}"/>
+          {% endif %}
+          <div class="feedback__info">
+            <span class="user__name">{{ r['name'] }}</span>
+            <span class="feedback__created"> Posted on: {{ r['created']|date("d/m/y H:i:s") }}</span>
+          </div>
+        </div>
+        <div class="feedback-group-response">
+          <p class="feedback__text">{{ r['text'] }}</p>
+          {% if r['img'] %}
+            <a href="{{ r['img'] }}" target="_blank">
+              <img
+                class="feedback__img"
+                src="{{ r['img'] }}"
+                alt="feedback image"/>
+            </a>
+          {% endif %}
+        </div>
+        <div class="feedback-group-user-contacts">
+          <p class="user__email">Email: <a href="mailto: {{ r['email'] }}">{{ r['email'] }}</a></p>
+          <p class="user__phone">Phone: <a href="tel:{{ r['phone'] }}">{{ r['phone'] }}</a></p>
+        </div>
+        {% if 'administrator' in user.getroles %}
+          <div class="option-links">
+            <button
+              type="button"
+              class="btn btn-info use-ajax edit"
+              href="{{ path('guestbook.EditReview', {'id': r['id']}) }}"
+              data-dialog-options="{&quot;width&quot;:700, &quot;title&quot;:&quot;Edit review&quot;}"
+              data-dialog-type="modal">
+              Edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger use-ajax delete"
+              href="{{ path('guestbook.DeleteReview', {'id': r['id']}) }}"
+              data-dialog-options="{&quot;width&quot;:500}"
+              data-dialog-type="modal">
+              Delete
+            </button>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,17 @@
+uuid: 4543f728-6911-43fc-b56c-70ab977a54eb
+langcode: uk
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Service
+type: service
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,22 @@
+uuid: c92beb08-d328-4aa5-87fd-aceee93e82d0
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: zRav2CiYgh6kGQ-ix8kxDVpRMgggUmfqc3TfNOUeIDQ
+id: exam_content
+theme: exam
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

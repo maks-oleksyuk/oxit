@@ -1,0 +1,23 @@
+uuid: 1e5013a4-9ff5-449b-a61d-94ca22e0abf5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - exam
+id: block_exposed_form_search_api_page_1
+theme: exam
+region: nav_additional
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: 735edea4-9f37-4728-9ca8-4461fe400093
+langcode: uk
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: DoVt_VGgVLcDD4XmVbSFzr0K17SJy9imFiYusKkJBgY
+id: taxonomy_term_publish_action
+label: 'Опублікувати термін таксономії'
+type: taxonomy_term
+plugin: 'entity:publish_action:taxonomy_term'
+configuration: {  }

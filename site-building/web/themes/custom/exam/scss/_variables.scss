@@ -1,0 +1,67 @@
+$brand-primary: #6e9bca;
+$base-dark-color: #333333;
+$base-gray-color: #DADADA;
+$base-cyan-color: #6E9BCA;
+$base-light-gray-color: #cccccc;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1274px
+);
+$terms-color: (
+  web: #1BBC9B,
+  php: #9B58B5,
+  app: #E84C3D,
+  drupal: #32ADE1
+);
+%social_link {
+  .block-social-media-links-block {
+    display: flex;
+    align-items: center;
+
+    .social-media-links--platforms {
+      margin: 0;
+      gap: 11px;
+      display: flex;
+      font-size: 9px;
+
+      > li {
+        width: 25px;
+        height: 25px;
+        padding-top: 4px;
+        background-color: $base-cyan-color;
+
+        > a {
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: $base-dark-color;
+          box-shadow: 0px 0px 5px 1px $base-cyan-color;
+        }
+      }
+    }
+  }
+}
+
+%site_branding {
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+
+    a.site-title {
+      font-size: 28px;
+      font-family: "Nexa Slab";
+      text-transform: capitalize;
+      color: #6e9bca;
+    }
+
+    .site-slogan {
+      margin-top: -11px;
+      font-size: 15px;
+      color: #cac9cd;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+uuid: dadad770-cee4-489c-824a-503648345250
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: favorites
+label: Favorites
+bundles:
+  - employee
+entity_type: node
+global: false
+flag_short: ' 0'
+flag_long: ''
+flag_message: ''
+unflag_short: '1 '
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    search_result: search_result
+    teaser: teaser
+    token: token
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

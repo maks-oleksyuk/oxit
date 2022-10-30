@@ -1,0 +1,152 @@
+header {
+  z-index: 7;
+  transition: background-color 0.3s;
+}
+
+.home {
+  padding-top: 19px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg_home.png");
+
+  .navbar {
+    &-brand {
+      margin: 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: Quicksand;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+
+      &:hover,
+      &:active {
+        color: #fff;
+      }
+    }
+
+    &-text {
+      color: #fff;
+      opacity: 0.3;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 10px;
+      padding: 15px 0 0 3px;
+    }
+
+    &-toggler {
+      color: rgba(254, 254, 254, 0.5);
+      border-color: rgba(255, 254, 254, 0.3);
+
+      &:focus {
+        box-shadow: 0 0 0 2px;
+      }
+    }
+
+    &-nav {
+      gap: 25px;
+    }
+
+    &-fix {
+      top: 0;
+      left: 0;
+      right: 0;
+      position: fixed;
+      background-color: #15141a;
+      // box-shadow: 0 5px 12px 2px #008ed6;
+    }
+  }
+  .nav {
+    &-link {
+      color: #fffefe;
+      text-align: center;
+      padding: 0 !important;
+      &::after {
+        content: "";
+        display: block;
+        position: relative;
+        background-image: url("../img/double_line.png");
+        height: 2px;
+        max-width: 42px;
+        top: 6px;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%);
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      &.active::after {
+        opacity: 1;
+      }
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 40px;
+
+    .subtitle {
+      margin: 39px 0 21px;
+    }
+
+    .caption {
+      line-height: 1;
+      font-size: 48px;
+      max-width: 485px;
+    }
+
+    .description-text {
+      max-width: 485px;
+      margin: 23px auto 60px 0;
+    }
+
+    .device {
+      padding: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .home {
+    .content {
+      .subtitle,
+      .caption,
+      .description-text {
+        margin: 20px auto;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      .subtitle {
+        margin-top: 0;
+      }
+
+      .caption {
+        font-size: 36px;
+      }
+
+      .device {
+        padding: 20px 15px 0;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.ghost {
+  height: 62px;
+  display: none;
+}

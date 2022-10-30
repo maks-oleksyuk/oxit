@@ -1,0 +1,33 @@
+uuid: ae22605e-3879-486a-84b8-66a919a41b32
+langcode: uk
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - empty_page
+    - filter
+    - flag
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'flag favorites'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'unflag favorites'
+  - 'use text format basic_html'
+  - 'view empty pages'
+  - 'view media'

@@ -1,0 +1,72 @@
+uuid: 8f01bc1b-ec75-4207-84eb-3f665153d94e
+langcode: uk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_position
+    - field.field.user.user.field_social
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - social_media_links_field
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_position:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_social:
+    type: social_media_links_field_default
+    label: hidden
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_bio: true
+  member_for: true
+  search_api_excerpt: true

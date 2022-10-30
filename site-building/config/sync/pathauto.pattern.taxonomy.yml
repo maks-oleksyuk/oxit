@@ -1,0 +1,25 @@
+uuid: 56d41ca2-754a-4557-8077-013a956f3d49
+langcode: uk
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy
+label: Taxonomy
+type: 'canonical_entities:taxonomy_term'
+pattern: 'taxonomy/[term:vocabulary:name]/[term:name]'
+selection_criteria:
+  a249646b-5b14-4a15-a42b-fc4e63d5c09d:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: a249646b-5b14-4a15-a42b-fc4e63d5c09d
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      position: position
+      services_tx: services_tx
+      tags: tags
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: 39a36757-ae0c-413f-85c9-46239e26df99
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_bio
+field_name: field_bio
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

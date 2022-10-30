@@ -1,0 +1,20 @@
+<div class="block-news__wrapper">
+  {{ fields.created_1.content }}
+  <div class="block-news__author d-flex justify-content-between">
+    <div>
+      {{ fields.user_picture_1.content }}
+      <span class="align-top px-1">
+<span class="text-gray">WRITER</span>
+<span
+  class="block-news__name">{{ fields.field_first_name.content }} {{ fields.field_last_name.content }} / </span>
+<span class="text-blue">{{ fields.field_position.content }}</span>
+</span>
+    </div>
+    <div class="block-news__ago">{{ fields.created.content }}</div>
+  </div>
+  <div class="block-news__content">
+    <h2>{{ fields.title_1.content }}</h2>
+    {{ fields.body.content }}
+    <div class="block-news__link"><span>{{ fields.view_node.content }}</span></div>
+  </div>
+</div>

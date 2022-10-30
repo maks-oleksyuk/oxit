@@ -1,0 +1,101 @@
+.team {
+  margin-top: 90px;
+
+  .swiper {
+    &-wrapper {
+      gap: 30px;
+      padding-top: 25px;
+      justify-content: space-between;
+    }
+
+    &-slide {
+      height: auto;
+      display: flex;
+      max-width: 290px;
+      align-items: center;
+      flex-direction: column;
+      text-transform: uppercase;
+
+      .views-field {
+        &-field-media-image {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &-title {
+          font-size: 25px;
+          padding-top: 30px;
+          text-transform: uppercase;
+          color: $base-dark-color;
+        }
+
+        &-field-position-term {
+          margin-top: -5px;
+          font-size: 12px;
+          color: #D3D3D3;
+        }
+
+        &-view-node {
+          padding: 18px 0 23px;
+
+          > span {
+            padding: 3px 10px 5px;
+            background-color: $base-dark-color;
+
+            &:hover {
+              background-color: $base-cyan-color;
+              box-shadow: 0px 0px 5px 1px $base-dark-color;
+            }
+
+            > a {
+              color: white;
+              font-size: 14px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .social {
+        width: 100%;
+        display: flex;
+        padding-inline: 45px;
+        justify-content: space-between;
+        @extend %social_link;
+
+        .flag {
+          display: flex;
+          justify-content: end;
+
+          .js-flag-message, .ajax-progress-throbber {
+            display: none;
+          }
+
+          a {
+            width: 20px;
+            color: transparent;
+            text-decoration: none;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+          &.action {
+            &-flag {
+              > a {
+                background-image: url("https://img.icons8.com/material-outlined/20/D3D3D3/filled-like.png");
+              }
+            }
+
+            &-unflag {
+              > a {
+                background-image: url("https://img.icons8.com/fluency-systems-filled/20/6e9bca/filled-like.png");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

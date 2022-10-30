@@ -1,0 +1,40 @@
+uuid: 29e29c50-b297-46fc-b64d-4b7fd358869f
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.node.service.body
+    - field.field.node.service.field_media_image
+    - node.type.service
+  module:
+    - media
+    - text
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

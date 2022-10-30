@@ -1,0 +1,10 @@
+uuid: dbe925ee-44af-4dc5-bb65-fc8fa195392a
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AlzeyytA8InBgxIG9H2UDJYs3CG98Zj6yRsDKmlbZwA
+id: short
+label: 'Базова коротка дата'
+locked: false
+pattern: 'm/d/Y - H:i'

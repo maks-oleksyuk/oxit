@@ -1,0 +1,29 @@
+uuid: 9878c11b-dfbb-4043-9708-a60c93b57fda
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad27c4d5-d84e-4517-8110-f24b7c0a473e'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: container
+id: progressbarline
+theme: exam
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:ad27c4d5-d84e-4517-8110-f24b7c0a473e'
+settings:
+  id: 'block_content:ad27c4d5-d84e-4517-8110-f24b7c0a473e'
+  label: 'Progress bar line'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

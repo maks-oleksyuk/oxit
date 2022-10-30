@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function moliek_theme($existing, $type, $theme, $path): array {
+  return [
+    'moliek_theme' => [
+      'variables' => [
+        'text' => NULL,
+        'form' => NULL,
+        'cats' => NULL,
+      ],
+    ],
+  ];
+}

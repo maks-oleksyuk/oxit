@@ -1,0 +1,29 @@
+uuid: 4f7cfa6a-9398-4ee2-ba59-d276cd5fd520
+langcode: uk
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - empty_page
+    - filter
+    - flag
+    - media
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'flag favorites'
+  - 'unflag favorites'
+  - 'use text format restricted_html'
+  - 'view empty pages'
+  - 'view media'

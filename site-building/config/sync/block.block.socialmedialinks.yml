@@ -1,0 +1,129 @@
+uuid: 173ab61a-66b5-42a7-b6a5-cf5f0f05e7df
+langcode: uk
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - exam
+id: socialmedialinks
+theme: exam
+region: footer
+weight: 0
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    facebook:
+      value: '#'
+      description: ''
+      weight: '-10'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-9'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-8'
+    twitter:
+      value: '#'
+      description: ''
+      weight: '-7'
+    rss:
+      value: ''
+      description: ''
+      weight: '-6'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-5'
+    linkedin:
+      value: '#'
+      description: ''
+      weight: '-4'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-3'
+    email:
+      value: ''
+      description: ''
+      weight: '-2'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-1'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '0'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '1'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '2'
+    xing:
+      value: ''
+      description: ''
+      weight: '3'
+    drupal:
+      value: ''
+      description: ''
+      weight: '4'
+    website:
+      value: ''
+      description: ''
+      weight: '5'
+    flickr:
+      value: ''
+      description: ''
+      weight: '6'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '7'
+    behance:
+      value: ''
+      description: ''
+      weight: '8'
+    contact:
+      value: ''
+      description: ''
+      weight: '9'
+    github:
+      value: ''
+      description: ''
+      weight: '10'
+    youtube:
+      value: ''
+      description: ''
+      weight: '11'
+    instagram:
+      value: ''
+      description: ''
+      weight: '12'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '13'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

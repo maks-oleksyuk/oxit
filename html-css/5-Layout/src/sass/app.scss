@@ -1,0 +1,77 @@
+$primary: #008ed6;
+$fa-font-path: "../fonts/font-awesome";
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/modules/pagination/pagination.scss";
+@import "node_modules/swiper/modules/navigation/navigation.scss";
+@import "node_modules/swiper/modules/autoplay/autoplay.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+* {
+  font-family: Source Sans Pro;
+}
+
+html {
+  scroll-padding-top: 61px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1194px;
+}
+
+.subtitle {
+  color: $primary;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.caption {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.description-text {
+  color: #999;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.btn {
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &-primary {
+    box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1);
+  }
+}
+
+hr {
+  background-color: #e0e0e0;
+  opacity: 1;
+}
+
+@import "_fonts.scss";
+@import "_home.scss";
+@import "_features.scss";
+@import "_about-long.scss";
+@import "_about-short.scss";
+@import "_testimonials.scss";
+@import "_eye-cather.scss";
+@import "_price.scss";
+@import "_contact.scss";
+@import "_footer.scss";

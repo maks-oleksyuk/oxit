@@ -1,0 +1,17 @@
+name: exam
+type: theme
+description: 'exam subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^8.9 || ^9'
+'base theme': bootstrap5
+libraries:
+  - exam/global-styling
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+regions:
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  header: Header
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  footer: Footer

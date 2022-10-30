@@ -1,0 +1,14 @@
+ajax-patch:
+  version: 1.x
+  js:
+    js/ajax-prototype-beforeSend-patch.js: { }
+
+guestbook-css:
+  css:
+    theme:
+      css/guestbook.css: { }
+
+inputmask:
+  js:
+    js/inputmask.js: { }
+    js/inputmask.binding.js: { }

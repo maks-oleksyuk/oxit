@@ -1,0 +1,22 @@
+{% extends "page.html.twig" %}
+
+{% block content %}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <div>
+      {% if page.breadcrumb %}
+        {{ page.breadcrumb }}
+      {% endif %}
+      <div>
+        {% if page.breadcrumb %}
+          {{ page.breadcrumb }}
+        {% endif %}
+
+        <div>
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+
+  </main>
+{% endblock %}

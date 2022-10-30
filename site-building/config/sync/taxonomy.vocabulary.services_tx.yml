@@ -1,0 +1,8 @@
+uuid: eaaacc53-f33f-4b44-9be4-1ef0056d01b8
+langcode: uk
+status: true
+dependencies: {  }
+name: Services
+vid: services_tx
+description: ''
+weight: 0

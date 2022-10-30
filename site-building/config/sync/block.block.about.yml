@@ -1,0 +1,34 @@
+uuid: 1b7b8f6e-7d13-44be-82d0-2254ba9f38d2
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fb7649c6-5b3f-4ec9-808e-083bd1b3dbdd'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: container
+id: about
+theme: exam
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:fb7649c6-5b3f-4ec9-808e-083bd1b3dbdd'
+settings:
+  id: 'block_content:fb7649c6-5b3f-4ec9-808e-083bd1b3dbdd'
+  label: About
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

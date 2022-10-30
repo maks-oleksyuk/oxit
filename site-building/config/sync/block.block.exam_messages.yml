@@ -1,0 +1,22 @@
+uuid: 73e99222-62a1-4347-a501-ae3642ac29da
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: gIn5D2pLGyTsVAap7g9AJtxs-2swpZiiCBzE06fRS9o
+id: exam_messages
+theme: exam
+region: content
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

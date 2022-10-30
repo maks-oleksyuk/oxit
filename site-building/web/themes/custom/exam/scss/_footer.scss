@@ -1,0 +1,19 @@
+footer {
+  padding: 85px 0 60px;
+
+  .region-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    @extend %social_link;
+    @extend %site_branding;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  footer {
+    .region-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

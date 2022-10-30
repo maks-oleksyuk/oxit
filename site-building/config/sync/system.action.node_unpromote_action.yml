@@ -1,0 +1,13 @@
+uuid: 29bfa5ee-1f58-43cc-8167-e6f86f8420a9
+langcode: uk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Вилучити матеріал з головної сторінки'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

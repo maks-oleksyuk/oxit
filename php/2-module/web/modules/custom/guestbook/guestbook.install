@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * Install, create tables to store reviews.
+ */
+
+use Drupal\file\Entity\File;
+
+
+/**
+ * Implements hook_schema().
+ */
+function guestbook_schema(): array {
+  $schema['guestbook'] = [
+    'description' => 'Table for saving user response',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+        'description' => 'Primary key',
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'description' => 'User name',
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Email',
+      ],
+      'phone' => [
+        'type' => 'varchar',
+        'length' => 18,
+        'not null' => TRUE,
+        'description' => 'User phone',
+      ],
+      'text' => [
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => 'User message',
+      ],
+      'ava' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => 'User photo ID',
+      ],
+      'img' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'description' => 'User img ID',
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'Timestamp when the response was created.',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function guestbook_uninstall($is_syncing) {
+  $database = Drupal::database();
+  $result = $database->select('guestbook', 'g')
+    ->fields('g', ['ava', 'img'])
+    ->execute();
+  foreach ($result as $row) {
+    if ($row->ava) {
+      File::load($row->ava)->delete();
+    }
+    if ($row->img) {
+      File::load($row->img)->delete();
+    }
+  }
+}

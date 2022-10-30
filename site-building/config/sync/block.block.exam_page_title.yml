@@ -1,0 +1,26 @@
+uuid: b80e4176-06e1-419c-8cee-6814340cf93d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: LXJmVcbnbS1wvEZBlnzs3ckqkSUthznrGDUGbvf69PI
+id: exam_page_title
+theme: exam
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

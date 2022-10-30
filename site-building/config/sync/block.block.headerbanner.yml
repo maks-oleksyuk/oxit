@@ -1,0 +1,25 @@
+uuid: a51e9ed2-3d64-4007-8e7a-8ead0011f061
+langcode: uk
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:681df7a0-2679-46d8-81cd-3fa46965268e'
+  module:
+    - block_content
+  theme:
+    - exam
+id: headerbanner
+theme: exam
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:681df7a0-2679-46d8-81cd-3fa46965268e'
+settings:
+  id: 'block_content:681df7a0-2679-46d8-81cd-3fa46965268e'
+  label: 'Header banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

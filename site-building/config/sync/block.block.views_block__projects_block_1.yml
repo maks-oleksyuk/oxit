@@ -1,0 +1,33 @@
+uuid: cffdaf38-3d2a-4a9c-945c-e2e28e4e7361
+langcode: uk
+status: true
+dependencies:
+  config:
+    - views.view.projects
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - exam
+third_party_settings:
+  block_class:
+    classes: projects
+id: views_block__projects_block_1
+theme: exam
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:projects-block_1'
+settings:
+  id: 'views_block:projects-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

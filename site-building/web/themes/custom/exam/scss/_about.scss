@@ -1,0 +1,50 @@
+.block-about {
+  display: flex;
+  padding: 14px 0;
+  margin-top: 100px;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+  border-top: 5px solid $base-dark-color;
+  border-bottom: 5px solid $base-cyan-color;
+
+  p {
+    margin: 0;
+  }
+
+  &__title {
+    padding: 0 3px;
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: $base-dark-color;
+  }
+
+  &__text {
+    font-size: 22px;
+    overflow: hidden;
+    word-spacing: 3px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    color: $base-gray-color;
+    text-overflow: ellipsis;
+  }
+
+  &__link {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $base-cyan-color;
+
+    &:hover {
+      color: white;
+      background-color: $base-dark-color;
+      box-shadow: 0px 0px 5px 1px $base-cyan-color;
+    }
+  }
+}

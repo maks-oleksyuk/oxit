@@ -1,0 +1,27 @@
+uuid: 0de3c85e-25c5-4cff-95cf-8f81e1151df5
+langcode: uk
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: ie2KX3ekPTUCfEfHn8PFmbmIjOz7W4J_RgPv_WTJ04Y
+id: exam_main_navigation
+theme: exam
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

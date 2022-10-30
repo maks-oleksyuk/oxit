@@ -1,0 +1,22 @@
+uuid: 53dfdfb0-fd7b-461f-b628-e0d5d582318f
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - exam
+_core:
+  default_config_hash: EYRxhsADFEcYqYFihTnSAZS8EX8Sc14oIfKjeZS7zvk
+id: exam_local_tasks
+theme: exam
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

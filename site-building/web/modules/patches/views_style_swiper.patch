@@ -1,0 +1,13 @@
+diff --git a/js/views_style_swiper.js b/js/views_style_swiper.js
+index 8d94a6a..5d10eb5 100644
+--- a/js/views_style_swiper.js
++++ b/js/views_style_swiper.js
+@@ -5,7 +5,7 @@
+       if(!('viewsStyleSwiper' in drupalSettings)) return;
+ 
+       for(var dom_id in drupalSettings.viewsStyleSwiper) {
+-        var elements = context.getElementsByClassName(dom_id);
++        var elements = context.querySelectorAll(`.${dom_id} .view-content`);
+ 
+         // Do nohing if we cant find any interesting elements in the context
+         if(!elements.length) continue;

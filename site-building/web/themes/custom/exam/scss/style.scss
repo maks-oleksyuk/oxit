@@ -1,0 +1,55 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+@import "variables";
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+@import "fonts";
+@import "header";
+@import "about";
+@import "services";
+@import "projects";
+@import "team";
+@import "news";
+@import "clients";
+@import "footer";
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.views-element-container {
+  > h2 {
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    > span {
+      display: inline-block;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid $base-light-gray-color;
+        margin-top: .6em;
+      }
+
+      &:before {
+        margin-left: -101.5%;
+      }
+
+      &:after {
+        margin-left: 1.5%;
+      }
+    }
+  }
+}
