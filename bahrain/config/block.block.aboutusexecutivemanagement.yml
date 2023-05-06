@@ -1,0 +1,36 @@
+uuid: 816f5ea7-9dba-4911-b216-3c1193e0f857
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b2110740-f95f-4f4d-babf-441acfc53482'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '283'
+id: aboutusexecutivemanagement
+theme: bahrain
+region: banner
+weight: -40
+provider: null
+plugin: 'block_content:b2110740-f95f-4f4d-babf-441acfc53482'
+settings:
+  id: 'block_content:b2110740-f95f-4f4d-babf-441acfc53482'
+  label: 'About Us (Executive Management)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /corporate/executive-management

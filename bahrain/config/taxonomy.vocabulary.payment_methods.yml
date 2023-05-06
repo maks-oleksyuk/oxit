@@ -1,0 +1,8 @@
+uuid: fcd4e0ba-0398-4d44-a36f-7fd2b245a404
+langcode: en
+status: true
+dependencies: {  }
+name: 'Payment methods'
+vid: payment_methods
+description: 'Special vocabulary for choose payment methods.'
+weight: 0

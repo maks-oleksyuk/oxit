@@ -1,0 +1,19 @@
+uuid: 5bf377d2-573f-46ce-b4aa-c76b7f840622
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - telephone
+id: block_content.field_local_call_center
+field_name: field_local_call_center
+entity_type: block_content
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

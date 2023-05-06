@@ -1,0 +1,127 @@
+uuid: a8b724e1-2043-4053-9958-d143c28af511
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.where_to_park
+    - field.field.block_content.where_to_park.body
+    - field.field.block_content.where_to_park.field_faq_park
+    - field.field.block_content.where_to_park.field_park_image
+  module:
+    - faqfield
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          b4ffd832-dabf-4643-ba45-4c9d6b860371:
+            uuid: b4ffd832-dabf-4643-ba45-4c9d6b860371
+            region: first
+            configuration:
+              id: 'field_block:block_content:where_to_park:field_park_image'
+              label: 'Park Image'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: where_to_park
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a126e337-ac6e-4df0-ac7b-d9fdc3b7571f:
+            uuid: a126e337-ac6e-4df0-ac7b-d9fdc3b7571f
+            region: second
+            configuration:
+              id: 'field_block:block_content:where_to_park:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a8171ddf-af15-4174-814a-2ae109c61da9:
+            uuid: a8171ddf-af15-4174-814a-2ae109c61da9
+            region: second
+            configuration:
+              id: 'field_block:block_content:where_to_park:field_faq_park'
+              label: 'Faq Park'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: faqfield_accordion
+                label: hidden
+                settings:
+                  active: 0
+                  heightStyle: content
+                  collapsible: true
+                  event: click
+                  animate:
+                    easing: swing
+                    duration: 250
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.where_to_park.default
+targetEntityType: block_content
+bundle: where_to_park
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_faq_park:
+    type: faqfield_accordion
+    label: above
+    settings:
+      active: 0
+      heightStyle: auto
+      collapsible: false
+      event: click
+      animate:
+        easing: linear
+        duration: 200
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_park_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

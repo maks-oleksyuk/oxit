@@ -1,0 +1,50 @@
+uuid: c1010147-0df6-444f-9683-0c1432b24e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photo_on_the_left_side.field_body
+    - field.field.paragraph.photo_on_the_left_side.field_image
+    - field.field.paragraph.photo_on_the_left_side.field_table
+    - paragraphs.paragraphs_type.photo_on_the_left_side
+  module:
+    - tablefield
+    - text
+id: paragraph.photo_on_the_left_side.default
+targetEntityType: paragraph
+bundle: photo_on_the_left_side
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_table:
+    type: tablefield
+    weight: 1
+    region: content
+    settings:
+      input_type: textfield
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

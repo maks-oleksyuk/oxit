@@ -1,0 +1,29 @@
+uuid: bad5ba52-d3d8-4156-ab8b-320221cce554
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:325d1de8-3925-412f-89c7-728c5fd799da'
+  module:
+    - block_background_style
+    - block_content
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: copyright_2
+theme: bahrain
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:325d1de8-3925-412f-89c7-728c5fd799da'
+settings:
+  id: 'block_content:325d1de8-3925-412f-89c7-728c5fd799da'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

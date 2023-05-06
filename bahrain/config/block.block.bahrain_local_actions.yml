@@ -1,0 +1,20 @@
+uuid: 63ec2b81-8a03-443c-8666-b5605465594d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bahrain
+_core:
+  default_config_hash: ZWkINX5kdfZUHps25HluR_ufb2vkfDSQWs8n46CPuso
+id: bahrain_local_actions
+theme: bahrain
+region: content
+weight: -39
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

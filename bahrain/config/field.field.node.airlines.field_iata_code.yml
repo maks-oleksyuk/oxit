@@ -1,0 +1,21 @@
+uuid: 5e0a4fa7-7735-4af2-9d2f-35cc34afdfb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iata_code
+    - node.type.airlines
+  module:
+    - text
+id: node.airlines.field_iata_code
+field_name: field_iata_code
+entity_type: node
+bundle: airlines
+label: 'IATA Code'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,18 @@
+uuid: 1b1b8ede-61aa-41e0-ac76-3d4279540f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.photo_on_the_right_side
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.photo_on_the_right_side
+target_entity_type_id: paragraph
+target_bundle: photo_on_the_right_side
+default_langcode: authors_default
+language_alterable: true

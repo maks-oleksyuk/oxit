@@ -1,0 +1,38 @@
+uuid: 9e982ceb-b715-42c1-84cc-117a2da1b42a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.field_date
+    - field.field.node.publications.field_file
+    - node.type.publications
+  module:
+    - datetime
+    - file
+    - user
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

@@ -1,0 +1,18 @@
+uuid: b68582dc-4588-4beb-8e45-460e99df25cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.history
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.history
+target_entity_type_id: node
+target_bundle: history
+default_langcode: authors_default
+language_alterable: false

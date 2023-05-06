@@ -1,0 +1,18 @@
+uuid: e81464cc-7a59-4e2a-adbe-33b16a134c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.place
+id: taxonomy_term.place.name
+field_name: name
+entity_type: taxonomy_term
+bundle: place
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

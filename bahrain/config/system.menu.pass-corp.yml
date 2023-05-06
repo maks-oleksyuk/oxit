@@ -1,0 +1,8 @@
+uuid: 4fe587ed-cb1f-4e1e-a9db-453999900000
+langcode: en
+status: true
+dependencies: {  }
+id: pass-corp
+label: Passengers/Corporate
+description: 'Menu for Corporate/Passengers pages'
+locked: false

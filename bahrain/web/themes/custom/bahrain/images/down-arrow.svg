@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile---TopNav" transform="translate(-337.000000, -137.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(20.000000, 132.000000)">
+                <path d="M321.292893,2.29289322 C321.653377,1.93240926 322.220608,1.90467972 322.612899,2.20970461 L322.707107,2.29289322 L330.507108,10.092894 C330.867591,10.4533779 330.895321,11.020609 330.590296,11.4129002 L330.507108,11.5071075 L322.707107,19.3071083 C322.316582,19.6976326 321.683418,19.6976326 321.292893,19.3071083 C320.932409,18.9466243 320.90468,18.3793932 321.209705,17.987102 L321.292893,17.8928947 L328.385,10.8 L321.292893,3.70710678 C320.932409,3.34662282 320.90468,2.77939176 321.209705,2.38710056 L321.292893,2.29289322 Z" id="Path" transform="translate(325.900000, 10.800001) scale(-1, 1) rotate(-270.000000) translate(-325.900000, -10.800001) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

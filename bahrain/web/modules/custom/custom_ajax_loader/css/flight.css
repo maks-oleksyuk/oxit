@@ -1,0 +1,18 @@
+.ajax-throbber.sk-flight {
+  z-index: 11000;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent url("../img/loader.svg") no-repeat center;
+}
+.ajax-throbber {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}

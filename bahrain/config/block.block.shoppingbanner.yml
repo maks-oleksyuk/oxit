@@ -1,0 +1,36 @@
+uuid: 965460cd-fef0-4b4a-bd36-f837a348ba7b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:f37173dc-121a-423a-ac19-345bb16a2a75'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '257'
+id: shoppingbanner
+theme: bahrain
+region: banner
+weight: -12
+provider: null
+plugin: 'block_content:f37173dc-121a-423a-ac19-345bb16a2a75'
+settings:
+  id: 'block_content:f37173dc-121a-423a-ac19-345bb16a2a75'
+  label: 'Shopping Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/at-the-airport/shopping\r\n/ar/at-the-airport/shopping"

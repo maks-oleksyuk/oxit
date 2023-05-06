@@ -1,0 +1,74 @@
+.sylbia {
+  .region-content {
+    padding-right: 100px;
+
+    @include media-breakpoint-down(lg) {
+      padding-right: unset;
+    }
+
+    .field--name-body {
+      a {
+        color: $light-red;
+        text-decoration: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+[class *= '/taxi'] .node__content a{
+  color: $light-red;
+  text-decoration: none;
+  &:hover{
+    color: $light-black;
+  }
+}
+#block-dropdownlanguagecontent{
+  user-select: none;
+  transition: all 0.5s;
+  .dropbutton-multiple.open .dropbutton-arrow {
+    top: 6px;
+  }
+  .dropbutton-widget{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    .dropdown-language-item{
+      border: none;
+    }
+    .language-link{
+      transition: all 0.5s;
+      &:hover{
+        color: $light-red;
+      }
+    }
+    .secondary-action{
+      position: absolute;
+      top: 30px;
+      left: 8px;
+      .language-link{
+        padding: 5px 21px;
+        background-color: white;
+        margin: 0;
+        border-radius: 5px;
+        border: 1px solid #D8D8D8;
+        color: #000000;
+        text-decoration: none;
+        &:hover{
+          background-color: #DA291C;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+.dialog-off-canvas-main-canvas .upperheader .pass-corp-menu .pass-corp-link.is-active {
+  opacity: unset;
+  background-color: unset;
+}
+.dialog-off-canvas-main-canvas .upperheader .pass-corp-menu .pass-corp-link.active {
+  opacity: 1!important;
+  background-color: #da291c!important;
+}

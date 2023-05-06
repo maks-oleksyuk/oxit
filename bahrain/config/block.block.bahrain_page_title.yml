@@ -1,0 +1,44 @@
+uuid: 63d92cf0-f613-4b7c-9524-ee6a15006a98
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - node
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+_core:
+  default_config_hash: Fwohsttzhb3CzeiE1pLp5FnA_p6qEycVBOalQTktXFo
+id: bahrain_page_title
+theme: bahrain
+region: content
+weight: -42
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      airlines: airlines
+      article: article
+      history: history
+      news: news
+      page: page
+      places: places
+      publications: publications
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/corporate\r\n/ar/corporate\r\n/faq\r\n/ar/faq"

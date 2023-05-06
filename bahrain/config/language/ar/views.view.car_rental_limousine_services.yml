@@ -1,0 +1,20 @@
+label: 'استئجار السيّارات'
+display:
+  default:
+    display_title: تقصير
+    display_options:
+      title: 'استئجار السيّارات'
+      exposed_form:
+        options:
+          submit_button: يتقدم
+          reset_button_label: 'إعادة ضبط'
+          exposed_sorts_label: 'ترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      header:
+        area:
+          content:
+            value: "<p>يمكن للمسافرين القادمين إلى المملكة الحصول على أفضل عروض تأجير السيارات الفخمة والاقتصادية والعائلية من 11 شركة رائدة في مطار البحرين الدولي. إذ تقع مكاتب استئجار السيّارات في منطقة الوصول العامّة في الطابق الأرضيّ من مبنى المسافرين.</p>\r\n"
+            format: basic_html
+  page_1:
+    display_title: صفحة

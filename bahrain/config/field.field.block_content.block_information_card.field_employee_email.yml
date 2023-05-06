@@ -1,0 +1,19 @@
+uuid: 3343a914-e1df-40f9-b083-bf3718a1ace5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_information_card
+    - field.storage.block_content.field_employee_email
+id: block_content.block_information_card.field_employee_email
+field_name: field_employee_email
+entity_type: block_content
+bundle: block_information_card
+label: 'Employee Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

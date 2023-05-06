@@ -1,0 +1,10 @@
+uuid: 47cb6f98-87a4-446d-9e0a-ce90834fa89c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.contact_us_horizontal
+label: 'Contact Us | Horizontal'
+targetEntityType: block_content
+cache: true

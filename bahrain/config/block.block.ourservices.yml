@@ -1,0 +1,36 @@
+uuid: 220e0877-0b7c-43e6-9b07-175d8aa0230c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:0a0e0c91-18d6-4abc-9a54-44f5a9e81a22'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '259'
+id: ourservices
+theme: bahrain
+region: banner
+weight: -20
+provider: null
+plugin: 'block_content:0a0e0c91-18d6-4abc-9a54-44f5a9e81a22'
+settings:
+  id: 'block_content:0a0e0c91-18d6-4abc-9a54-44f5a9e81a22'
+  label: 'Our Services'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /at-the-airport/services

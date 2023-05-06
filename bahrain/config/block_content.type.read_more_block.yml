@@ -1,0 +1,8 @@
+uuid: 5c0b84f8-73e5-41f9-aa82-e31d6845c09e
+langcode: en
+status: true
+dependencies: {  }
+id: read_more_block
+label: 'Read More Block'
+revision: 0
+description: 'Read More Block, used on Corporate and whenever you want'

@@ -1,0 +1,10 @@
+uuid: a0a85ae7-97df-4b8f-b7ed-a2f9b37f7c38
+langcode: en
+status: true
+dependencies: {  }
+id: photo_on_the_left_side
+label: 'Photo on the left side'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

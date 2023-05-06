@@ -1,0 +1,52 @@
+//For Default Pages - 'Din 2014'.
+@font-face {
+  font-family: 'din';
+  src: url('../fonts/din-bold.woff2');
+  src: url('../fonts/din-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'din';
+  src: url('../fonts/din-light.woff2');
+  src: url('../fonts/din-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'din';
+  src: url('../fonts/din-medium.woff2');
+  src: url('../fonts/din-medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'din';
+  src: url('../fonts/din-regular.woff2');
+  src: url('../fonts/din-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//For Arabic Pages - 'Tajawal'.
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Bold.woff2');
+  src: url('../fonts/Tajawal-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Light.woff2');
+  src: url('../fonts/Tajawal-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal-Regular.woff2');
+  src: url('../fonts/Tajawal-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

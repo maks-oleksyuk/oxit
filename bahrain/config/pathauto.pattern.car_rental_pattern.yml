@@ -1,0 +1,22 @@
+uuid: b06f021f-2655-4e8e-9bc5-b92e9ec02d99
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: car_rental_pattern
+label: 'Car Rentals Pattern'
+type: 'canonical_entities:node'
+pattern: '/car-rental-limousine-services/[node:title]'
+selection_criteria:
+  c95591d5-0020-4ff1-ba54-4f0870a10d19:
+    id: node_type
+    negate: false
+    uuid: c95591d5-0020-4ff1-ba54-4f0870a10d19
+    context_mapping:
+      node: node
+    bundles:
+      car_rentals: car_rentals
+selection_logic: and
+weight: -5
+relationships: {  }

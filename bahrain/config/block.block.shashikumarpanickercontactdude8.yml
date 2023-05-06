@@ -1,0 +1,37 @@
+uuid: cbbacbb5-f273-42e0-a5e5-805c9adb8a3b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:b4d84a1e-a296-4130-913d-7c6873dce32c'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: shashikumarpanickercontactdude8
+theme: bahrain
+region: content
+weight: -30
+provider: null
+plugin: 'block_content:b4d84a1e-a296-4130-913d-7c6873dce32c'
+settings:
+  id: 'block_content:b4d84a1e-a296-4130-913d-7c6873dce32c'
+  label: 'Shashi Kumar Panicker - Contact Dude 8'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /corporate/contacts-cargo-and-logistics

@@ -1,0 +1,39 @@
+uuid: d47acf85-e118-4717-832c-c821a5fdfeea
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - empty_page
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - search
+    - shortcut
+    - sitemap
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view empty pages'
+  - 'view media'
+  - 'view paragraph content corporate_links'
+  - 'view paragraph content faq'
+  - 'view paragraph content photo_on_the_left_side'
+  - 'view paragraph content photo_on_the_right_side'

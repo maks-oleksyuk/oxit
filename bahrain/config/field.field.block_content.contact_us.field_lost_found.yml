@@ -1,0 +1,25 @@
+uuid: 9d4d0764-ec91-426d-84b7-4af95208d56d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_lost_found
+  module:
+    - telephone
+    - telephone_advanced
+third_party_settings:
+  telephone_advanced:
+    enabled: false
+id: block_content.contact_us.field_lost_found
+field_name: field_lost_found
+entity_type: block_content
+bundle: contact_us
+label: 'Lost & Found'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

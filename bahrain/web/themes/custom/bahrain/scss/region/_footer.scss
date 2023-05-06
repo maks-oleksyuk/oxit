@@ -1,0 +1,118 @@
+footer {
+  padding: 36px 0;
+  background: url(../images/ftr-bg.svg) no-repeat center center #1d252d;
+
+  .region {
+    &-footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav.navbar-nav {
+        gap: 66px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+
+        .nav-item {
+          color: #ffffff;
+          padding: 3px 0;
+          line-height: 25px;
+          text-align: center;
+          transition: all 0.3s;
+          display: inline-block;
+          letter-spacing: 1.14px;
+          text-transform: capitalize;
+
+          a {
+            &:hover{
+              color: $light-red;
+            }
+            &:focus{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+
+        .nav.navbar-nav {
+          gap: normal;
+          justify-content: space-between;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        justify-content: center;
+
+        .nav.navbar-nav {
+          flex-direction: column;
+        }
+      }
+
+      .block-social-media-links {
+        ul {
+          margin: 0;
+          gap: 25px;
+          display: flex;
+        }
+
+        a > span {
+          width: 20px;
+          height: 20px;
+          font-size: 30px;
+
+          &:hover:before {
+            color: $light-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.region-copyright {
+  .copyright {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    &-txt {
+      color: #3b3b3b;
+      font-size: 13px;
+
+      span {
+        font-size: 12px;
+        color: rgba(59, 59, 59, .80);
+      }
+
+      p {
+        margin: 0;
+
+        a {
+          color: #2E1A47;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .copy-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+}

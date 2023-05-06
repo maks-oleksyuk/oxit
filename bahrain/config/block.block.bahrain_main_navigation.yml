@@ -1,0 +1,27 @@
+uuid: 0ed0f4cd-cbc4-4ff1-841a-57034235312c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bahrain
+_core:
+  default_config_hash: jmtPIJcH4pg9h151FpmaYN_KpAaryCFnq9wbZMs10AE
+id: bahrain_main_navigation
+theme: bahrain
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

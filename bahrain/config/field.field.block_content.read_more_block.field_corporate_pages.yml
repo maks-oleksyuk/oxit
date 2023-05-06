@@ -1,0 +1,40 @@
+uuid: 55d8871a-a9c5-4c25-8fa3-7927dfc18bf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.read_more_block
+    - field.storage.block_content.field_corporate_pages
+    - paragraphs.paragraphs_type.corporate_links
+  module:
+    - entity_reference_revisions
+id: block_content.read_more_block.field_corporate_pages
+field_name: field_corporate_pages
+entity_type: block_content
+bundle: read_more_block
+label: 'Corporate Pages'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      corporate_links: corporate_links
+    negate: 0
+    target_bundles_drag_drop:
+      corporate_links:
+        weight: 5
+        enabled: true
+      faq:
+        weight: 6
+        enabled: false
+      photo_on_the_left_side:
+        weight: 7
+        enabled: false
+      photo_on_the_right_side:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

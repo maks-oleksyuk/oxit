@@ -1,0 +1,37 @@
+uuid: 5450223e-8e3d-4093-8169-55e9453b0a15
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - empty_page
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - search
+    - sitemap
+    - sitewide_alert
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access sitemap'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view empty pages'
+  - 'view media'
+  - 'view paragraph content corporate_links'
+  - 'view paragraph content faq'
+  - 'view paragraph content photo_on_the_left_side'
+  - 'view paragraph content photo_on_the_right_side'
+  - 'view published sitewide alert entities'

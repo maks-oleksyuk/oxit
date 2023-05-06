@@ -1,0 +1,52 @@
+title: 'اتصل بنا'
+description: '<a href="https://www.bahrainairport.bh/ar/contact-us" title="اتصل بنا">اتصل بنااتصل بنا</a>'
+elements: |
+  name:
+    '#title': الأول
+    '#first__placeholder': 'الاسم الأول'
+    '#last__placeholder': 'اسم العائلة'
+    '#title__title': يمكنك
+    '#first__title': يمكنك
+    '#middle__title': 'أيضًا ا'
+    '#last__title': 'ل إلينا'
+    '#suffix__title': 'أيضًا ا'
+    '#degree__title': 'أيضًا ا'
+  email:
+    '#title': 'البريد الإلكتروني'
+    '#placeholder': 'البريد الإلكتروني'
+    '#required_error': 'الرجاء إدخال عنوان البريد الإلكتروني.'
+  country:
+    '#title': دولة
+    '#address__title': عنوان
+    '#address_2__title': عنوان
+    '#city__title': 'المدينة / البلدة'
+    '#state_province__title': 'المدينة / البلدة'
+    '#postal_code__title': 'الرمز البريدي / الرمز البريدي'
+    '#country__title': دولة
+  phone:
+    '#title': هاتف
+    '#required_error': 'الرجاء إدخال رقم الاتصال الخاص بالسكن'
+  nationality:
+    '#title': جنسية
+    '#placeholder': جنسية
+    '#required_error': 'الرجاء تحديد الجنسية'
+  destination_origin:
+    '#title': 'الوجهة / الأصل'
+    '#placeholder': 'الوجهة / الأصل'
+    '#required_error': 'الرجاء إدخال الوجهة / الأصل'
+  message:
+    '#title': رسالة
+    '#placeholder': رسالة
+    '#required_error': 'لرجاء إدخال الرسالة'
+  upload:
+    '#title': تحميل
+    '#file_placeholder': 'تحميل الوثيقة / الصورة'
+  upload1:
+    '#title': تحميل
+    '#file_placeholder': 'تحميل الوثيقة / الصورة'
+  upload2:
+    '#title': تحميل
+    '#file_placeholder': 'تحميل الوثيقة / الصورة'
+  upload3:
+    '#title': تحميل
+    '#file_placeholder': 'تحميل الوثيقة / الصورة'

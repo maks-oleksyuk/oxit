@@ -1,0 +1,17 @@
+uuid: ad95e8b3-e205-4800-a960-5431d3f47451
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Airlines
+type: airlines
+description: 'Use for content of type Airlines'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

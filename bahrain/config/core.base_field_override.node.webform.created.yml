@@ -1,0 +1,18 @@
+uuid: 58f229de-15c9-43e2-805f-da856bdb3ed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.webform
+id: node.webform.created
+field_name: created
+entity_type: node
+bundle: webform
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

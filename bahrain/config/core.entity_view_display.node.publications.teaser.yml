@@ -1,0 +1,26 @@
+uuid: 3740643a-e775-422e-91bd-229f90f1c4c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publications.field_date
+    - field.field.node.publications.field_file
+    - node.type.publications
+  module:
+    - user
+id: node.publications.teaser
+targetEntityType: node
+bundle: publications
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_date: true
+  field_file: true
+  langcode: true

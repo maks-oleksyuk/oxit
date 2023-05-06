@@ -1,0 +1,7 @@
+flight_library:
+  js:
+    js/script.js: {}
+
+  css:
+    base:
+     css/style.css: {}

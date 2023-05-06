@@ -1,0 +1,19 @@
+uuid: 14df25c0-28db-4f03-93aa-c905d9156d80
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_phone
+field_name: field_phone
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

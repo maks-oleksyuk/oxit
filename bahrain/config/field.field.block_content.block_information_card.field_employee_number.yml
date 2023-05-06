@@ -1,0 +1,25 @@
+uuid: 37c81584-3d60-4c65-ac30-0ec3aa7b1568
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_information_card
+    - field.storage.block_content.field_employee_number
+  module:
+    - telephone
+    - telephone_advanced
+third_party_settings:
+  telephone_advanced:
+    enabled: false
+id: block_content.block_information_card.field_employee_number
+field_name: field_employee_number
+entity_type: block_content
+bundle: block_information_card
+label: 'Employee Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,33 @@
+uuid: 2fc3dd6b-2b7f-4916-9d19-6bc49a128e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.at-the-airport
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: attheairport
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:at-the-airport'
+settings:
+  id: 'system_menu_block:at-the-airport'
+  label: 'At the Airport'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/at-the-airport/dining-and-restaurants\r\n/ar/at-the-airport/dining-and-restaurants\r\n\r\n/at-the-airport/shopping\r\n/ar/at-the-airport/shopping\r\n\r\n/at-the-airport/art-galleries\r\n/ar/at-the-airport/art-galleries\r\n\r\n/at-the-airport/lounges-and-hotel\r\n/ar/at-the-airport/lounges-and-hotel\r\n\r\n/at-the-airport/services\r\n/ar/at-the-airport/services"

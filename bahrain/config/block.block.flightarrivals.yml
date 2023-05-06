@@ -1,0 +1,36 @@
+uuid: a1046595-7193-4319-bd1f-7bce3ce3a86d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:43c0f10a-fab0-40b4-b827-89d44e42c902'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '297'
+id: flightarrivals
+theme: bahrain
+region: banner
+weight: -27
+provider: null
+plugin: 'block_content:43c0f10a-fab0-40b4-b827-89d44e42c902'
+settings:
+  id: 'block_content:43c0f10a-fab0-40b4-b827-89d44e42c902'
+  label: 'Flight Arrivals'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/flight-arrivals\r\n/ar/flight-arrivals"

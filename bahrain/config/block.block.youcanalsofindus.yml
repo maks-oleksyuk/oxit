@@ -1,0 +1,37 @@
+uuid: 91f5b523-4534-45e9-98c8-da8d10b16960
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us:67f4abe2-fdae-4bec-b9c1-0562f29599f4'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: find-us
+id: youcanalsofindus
+theme: bahrain
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:67f4abe2-fdae-4bec-b9c1-0562f29599f4'
+settings:
+  id: 'block_content:67f4abe2-fdae-4bec-b9c1-0562f29599f4'
+  label: 'You can also find us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: contact_us_vertical
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /show-your-love-bahrain-international-airport

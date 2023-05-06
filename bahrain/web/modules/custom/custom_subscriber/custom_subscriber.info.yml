@@ -1,0 +1,6 @@
+name: Custom Subscriber
+description: Creates a custom subscriber for changing controller.
+type: module
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,21 @@
+uuid: 44c4f995-32f7-438d-b6ed-025f5059cb9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.airlines
+  module:
+    - telephone
+id: node.airlines.field_phone
+field_name: field_phone
+entity_type: node
+bundle: airlines
+label: phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

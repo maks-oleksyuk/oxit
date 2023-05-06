@@ -1,0 +1,36 @@
+uuid: 3cd59be4-305a-4357-ae88-2971a0faf686
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b18d7ef3-90bc-46c8-aaee-85ae3aa644da'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '294'
+id: procedures_3
+theme: bahrain
+region: banner
+weight: -17
+provider: null
+plugin: 'block_content:b18d7ef3-90bc-46c8-aaee-85ae3aa644da'
+settings:
+  id: 'block_content:b18d7ef3-90bc-46c8-aaee-85ae3aa644da'
+  label: 'Procedures (Flight Connections)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/flight-connections\r\n/ar/flight-connections"

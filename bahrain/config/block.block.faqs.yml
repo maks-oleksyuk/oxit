@@ -1,0 +1,36 @@
+uuid: 2f2f26ba-a157-45fd-9265-a9d6fcb94868
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:30c11b04-a77b-4012-9a87-495007e48646'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '299'
+id: faqs
+theme: bahrain
+region: banner
+weight: -25
+provider: null
+plugin: 'block_content:30c11b04-a77b-4012-9a87-495007e48646'
+settings:
+  id: 'block_content:30c11b04-a77b-4012-9a87-495007e48646'
+  label: Info
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/faq\r\n/ar/faq\r\n\r\n/sitemap\r\n/ar/sitemap\r\n\r\n/privacy-policy\r\n/ar/privacy-policy"

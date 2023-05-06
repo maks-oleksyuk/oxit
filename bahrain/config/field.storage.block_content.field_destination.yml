@@ -1,0 +1,20 @@
+uuid: c863caf3-7d66-4129-a923-4b0feb8cd30c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_destination
+field_name: field_destination
+entity_type: block_content
+type: text
+settings:
+  max_length: 5
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

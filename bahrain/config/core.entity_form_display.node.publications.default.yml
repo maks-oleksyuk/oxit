@@ -1,0 +1,56 @@
+uuid: 7744ef45-0f2b-435f-ac26-19efe0b080a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.field_date
+    - field.field.node.publications.field_file
+    - node.type.publications
+  module:
+    - datetime
+    - file
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file:
+    type: file_generic
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

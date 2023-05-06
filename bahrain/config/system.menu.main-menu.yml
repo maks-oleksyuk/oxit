@@ -1,0 +1,8 @@
+uuid: 73462c74-081e-4be3-a57e-357e53cd36da
+langcode: en
+status: true
+dependencies: {  }
+id: main-menu
+label: 'Main Menu'
+description: 'A main menu for passanger part'
+locked: false

@@ -1,0 +1,106 @@
+.video-gallery {
+  .region {
+    &-content {
+      .block {
+        &-page-title-block {
+          & > h1 {
+            padding: 0;
+            margin: 40px 0 25px;
+            font-size: 35px;
+            line-height: 1.2;
+            justify-content: center;
+          }
+        }
+
+        &-system {
+          &-main-block {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .view {
+        &-video-gallery {
+          .pager {
+            padding: 0;
+            text-align: center;
+
+            a {
+              color: #1d242b;
+              font-size: 13px;
+              min-width: 152px;
+              font-weight: 500;
+              line-height: 20px;
+              padding: 9px 20px;
+              text-align: center;
+              letter-spacing: 1px;
+              border-radius: 20px;
+              border: 1px solid #1d242b;
+              text-transform: uppercase;
+              background-color: transparent;
+
+              &:hover {
+                color: #ffffff;
+                background-color: #1d242b;
+              }
+            }
+          }
+        }
+
+        &-header {
+          color: #000000;
+          font-size: 18px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        &-content {
+          margin-top: 70px;
+
+          .views {
+            &-row {
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+            }
+
+            &-col {
+              padding: 0 15px;
+              margin-bottom: 63px;
+              @include media-breakpoint-down(md) {
+                padding: 0;
+              }
+            }
+
+            &-field {
+              &-field-media-oembed-video {
+                .field-content {
+                  height: 320px;
+                  margin: 0 auto;
+                  max-width: 100%;
+
+                  @include media-breakpoint-down(sm) {
+                    height: 250px;
+                  }
+
+                  iframe {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              &-name {
+                color: #000000;
+                font-size: 22px;
+                line-height: 1.2;
+                font-weight: bold;
+                margin: 20px 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

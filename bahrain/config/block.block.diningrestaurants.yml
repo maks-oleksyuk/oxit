@@ -1,0 +1,36 @@
+uuid: 057f5dc9-6192-46a8-9630-e6d6e939c214
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:6c03c5b3-c5d3-4502-be52-9a4095484e0f'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '273'
+id: diningrestaurants
+theme: bahrain
+region: banner
+weight: -28
+provider: null
+plugin: 'block_content:6c03c5b3-c5d3-4502-be52-9a4095484e0f'
+settings:
+  id: 'block_content:6c03c5b3-c5d3-4502-be52-9a4095484e0f'
+  label: 'Dining & Restaurants'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/at-the-airport/dining-and-restaurants\r\n/ar/at-the-airport/dining-and-restaurants"

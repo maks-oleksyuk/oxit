@@ -1,0 +1,36 @@
+uuid: 431cffac-557a-4390-b256-bb126b32e024
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:f9c748c8-6125-4af6-bd0f-94bb6dbc0c8d'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '276'
+id: businessopportunities
+theme: bahrain
+region: banner
+weight: -33
+provider: null
+plugin: 'block_content:f9c748c8-6125-4af6-bd0f-94bb6dbc0c8d'
+settings:
+  id: 'block_content:f9c748c8-6125-4af6-bd0f-94bb6dbc0c8d'
+  label: 'Business Opportunities'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/property-and-real-estate\r\n/ar/corporate/property-and-real-estate\r\n\r\n/corporate/concessions\r\n/ar/corporate/concessions\r\n\r\n/corporate/advertising\r\n/ar/corporate/advertising\r\n\r\n/corporate/suppliers\r\n/ar/corporate/suppliers"

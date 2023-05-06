@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Provides a block open weather module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function openweather_theme() {
+  return [
+    'open_weather_block' => [
+      'variables' => [
+        'temp' => NULL,
+        'name' => NULL,
+        'city_id' => NULL,
+        'icon_id' => NULL,
+        'description' => NULL,
+      ],
+      'template' => 'open-weather',
+    ],
+  ];
+}

@@ -1,0 +1,22 @@
+uuid: bf84fb1a-5437-4a71-ac94-5463156a8bb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bahrain
+_core:
+  default_config_hash: 8Lni74fuAufKsdXRktZDu5iJIP4-RjV3kjDQLi7izMc
+id: bahrain_content
+theme: bahrain
+region: content
+weight: -38
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

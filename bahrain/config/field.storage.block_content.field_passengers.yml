@@ -1,0 +1,20 @@
+uuid: 6de8c542-6c23-4ce2-894e-061a78a08138
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_passengers
+field_name: field_passengers
+entity_type: block_content
+type: text
+settings:
+  max_length: 20
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

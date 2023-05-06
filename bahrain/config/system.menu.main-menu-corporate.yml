@@ -1,0 +1,8 @@
+uuid: 8adc38ef-0838-491c-8c4f-28f6941d7eaa
+langcode: en
+status: true
+dependencies: {  }
+id: main-menu-corporate
+label: 'Main Menu Corporate'
+description: 'A main menu for corporate part'
+locked: false

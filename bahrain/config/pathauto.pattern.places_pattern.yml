@@ -1,0 +1,24 @@
+uuid: 8da556ff-660d-4d0b-9f0d-06e669eda126
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: places_pattern
+label: 'Places Pattern'
+type: 'canonical_entities:node'
+pattern: 'at-the-airport/[node:field_place:entity]/[node:title]'
+selection_criteria:
+  70a3af08-d93e-43fc-a811-b58165d54ace:
+    id: node_type
+    negate: false
+    uuid: 70a3af08-d93e-43fc-a811-b58165d54ace
+    context_mapping:
+      node: node
+    bundles:
+      places: places
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language

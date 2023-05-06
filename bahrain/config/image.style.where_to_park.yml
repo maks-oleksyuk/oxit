@@ -1,0 +1,14 @@
+uuid: 03869c83-7a7c-4223-801d-64c87cabd32f
+langcode: en
+status: true
+dependencies: {  }
+name: where_to_park
+label: 'Where To Park'
+effects:
+  a6c3f04f-d778-4fa4-aaab-56f578fbe51e:
+    uuid: a6c3f04f-d778-4fa4-aaab-56f578fbe51e
+    id: image_resize
+    weight: 1
+    data:
+      width: 470
+      height: 580

@@ -1,0 +1,8 @@
+uuid: e33f443b-6a3c-44b2-89a2-a62f6f0627d9
+langcode: en
+status: true
+dependencies: {  }
+id: block_information_card
+label: 'Block Information Card'
+revision: 0
+description: ''

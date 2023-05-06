@@ -1,0 +1,15 @@
+uuid: ef4ccc68-d79e-4b1e-8fb9-1d5fa0bc8465
+langcode: en
+status: true
+dependencies: {  }
+name: shopping_logo_node
+label: 'Shopping Logo Node'
+effects:
+  85273775-8b24-45d5-93cd-b86b6c59935f:
+    uuid: 85273775-8b24-45d5-93cd-b86b6c59935f
+    id: image_scale
+    weight: 2
+    data:
+      width: 200
+      height: 200
+      upscale: false

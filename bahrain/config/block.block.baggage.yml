@@ -1,0 +1,36 @@
+uuid: 11bf0896-d4ad-436e-9929-6c0fa18cd689
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:937a0b1f-20ee-4192-9f43-3d3143359a33'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '267'
+id: baggage
+theme: bahrain
+region: banner
+weight: -35
+provider: null
+plugin: 'block_content:937a0b1f-20ee-4192-9f43-3d3143359a33'
+settings:
+  id: 'block_content:937a0b1f-20ee-4192-9f43-3d3143359a33'
+  label: 'Baggage Claim'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /reclaim

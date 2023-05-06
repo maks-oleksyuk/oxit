@@ -1,0 +1,8 @@
+uuid: 19e0fbf2-7072-4141-ac83-1130ff62fc5e
+langcode: en
+status: true
+dependencies: {  }
+id: stats
+label: Stats
+revision: 0
+description: 'Create Block with Stats on Corporate'

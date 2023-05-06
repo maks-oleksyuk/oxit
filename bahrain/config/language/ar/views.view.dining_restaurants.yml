@@ -1,0 +1,36 @@
+label: 'مطاعم ومطاعم'
+description: 'مطاعم ومطاعم'
+display:
+  default:
+    display_options:
+      title: 'مطاعم ومطاعم'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'تحميل المزيد'
+            items_per_page_options_all_label: '- الجميع -'
+            offset_label: عوض
+          views_infinite_scroll:
+            button_text: 'تحميل المزيد'
+      exposed_form:
+        options:
+          submit_button: يتقدم
+          reset_button_label: 'إعادة ضبط'
+          exposed_sorts_label: 'ترتيب حسب'
+          sort_desc_label: تنازلي
+      header:
+        area:
+          content:
+            value: "<h2>مطاعم ومطاعم</h2>\r\n\r\n<p>سواء كنت في حالة مزاجية لتناول وجبة سريعة ، أو جائعًا لتناول وجبة شهية ، أو ترغب في تذوق النكهات البحرينية المحلية ، فإن مطار البحرين الدولي لديه ما يناسب الجميع. توجد مجموعة واسعة من منافذ المأكولات والمشروبات في أماكن مناسبة في منطقتي الوصول والمغادرة.</p>\r\n"
+            format: basic_html
+      empty:
+        area:
+          content:
+            value: "<p>Sorry, there is no result here(...</p>\r\n"
+            format: basic_html
+      filters:
+        title:
+          expose:
+            placeholder: 'ابحث عن مطاعم ومقاهي'
+  page_1:
+    display_title: صفحة

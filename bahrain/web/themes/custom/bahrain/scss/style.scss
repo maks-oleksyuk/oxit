@@ -1,0 +1,111 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+//Include fonts.
+@import 'fonts';
+
+//Include mixins.
+@import 'mixins';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Include blocks styles.
+@import 'block/alerts';
+@import 'block/banners';
+@import 'block/contact';
+@import 'block/contact_us';
+@import 'block/corporate-logo';
+@import 'block/facts';
+@import 'block/our_story';
+@import 'block/paragraph';
+@import 'block/quick_tabs';
+@import 'block/search';
+
+// Include views styles.
+@import 'views/airlines';
+@import 'views/arrivals';
+@import 'views/art';
+@import 'views/car-rentals';
+@import 'views/departures';
+@import 'views/dining';
+@import 'views/lounge';
+@import 'views/new';
+@import 'views/photo_galerry';
+@import 'views/publication';
+@import 'views/services';
+@import 'views/shopping';
+@import 'views/video_gallery';
+
+// Include regions
+@import 'region/upperheader';
+@import 'region/header';
+@import 'region/short-menu';
+@import 'region/footer';
+
+// Include animations styles.
+@import 'animations';
+
+// Include webform styles.
+@import 'webform/webform';
+@import 'webform/notify';
+
+// Include pages styles.
+@import 'pages/corporate';
+@import 'pages/baggage';
+@import 'pages/carpark';
+@import 'pages/faq';
+@import 'pages/corp_about_us';
+@import 'pages/sitemap';
+@import "pages/others";
+@import 'pages/front-page';
+@import "pages/errors";
+@import 'pages/interactive-map';
+@import "pages/immigration";
+@import "pages/tracker";
+
+html {
+  overflow-x: hidden;
+}
+
+.title-center {
+  h1 {
+    justify-content: center;
+  }
+}
+
+body {
+  font-family: 'din', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+[lang="ar"] body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.dialog-off-canvas-main-canvas {
+  flex-grow: 1;
+
+  & > .waymaker-feature {
+    display: contents;
+  }
+}
+
+.main-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-off-canvas-main-canvas {
+  min-height: 100%;
+}

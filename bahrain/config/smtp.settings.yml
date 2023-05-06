@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: 2v5R3I9tNatGzKQjuZWh1y_955xK09313Vn-IIuedyI
+smtp_on: true
+smtp_host: smtp.office365.com
+smtp_hostbackup: smtp-mail.outlook.com
+smtp_port: '587'
+smtp_protocol: tls
+smtp_autotls: true
+smtp_timeout: 30
+smtp_username: bahrainair.dev@outlook.com
+smtp_password: qwertyuiop23
+smtp_from: bahrainair.dev@outlook.com
+smtp_fromname: 'Bahrain Airport Taxi Service'
+smtp_client_hostname: smtp.gmail.com
+smtp_client_helo: ''
+smtp_allowhtml: '0'
+smtp_test_address: ''
+smtp_debugging: true
+prev_mail_system: php_mail
+smtp_keepalive: true

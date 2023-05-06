@@ -1,0 +1,36 @@
+uuid: ed9a0a1e-70f5-4d4d-b3dc-f475240f8adb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:bc5005ed-1a8c-49aa-aaf4-98ec968e7459'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '271'
+id: newsbanner
+theme: bahrain
+region: banner
+weight: -21
+provider: null
+plugin: 'block_content:bc5005ed-1a8c-49aa-aaf4-98ec968e7459'
+settings:
+  id: 'block_content:bc5005ed-1a8c-49aa-aaf4-98ec968e7459'
+  label: 'News Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/news\r\n/ar/corporate/news"

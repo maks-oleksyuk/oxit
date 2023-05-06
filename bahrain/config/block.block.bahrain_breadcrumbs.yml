@@ -1,0 +1,30 @@
+uuid: fc6c7964-d9ac-4ea4-bc93-2a09bb4f8b9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+_core:
+  default_config_hash: mtQk9F6Mg4ddwpmDKPpFNl5nYnuT50KBpoO6gQoQg1Q
+id: bahrain_breadcrumbs
+theme: bahrain
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /sitemap

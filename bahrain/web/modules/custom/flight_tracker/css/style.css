@@ -1,0 +1,19 @@
+.leaflet-popup-content-wrapper{
+  width: 170px;
+}
+.popupBlock{
+  display: flex;
+  margin-top: 20px;
+}
+.popupBlock h3{
+  margin: auto;
+  font-family: 'din', sans-serif;
+  font-size: 15px;
+}
+.popupBlock img{
+  margin: auto 5px;
+}
+.time{
+  font-size: 15px;
+  margin: 20px 0;
+}

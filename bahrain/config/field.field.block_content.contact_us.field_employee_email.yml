@@ -1,0 +1,19 @@
+uuid: 9f9c2a52-bbfe-4473-9428-001c53dc0b7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_employee_email
+id: block_content.contact_us.field_employee_email
+field_name: field_employee_email
+entity_type: block_content
+bundle: contact_us
+label: 'Feedback Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

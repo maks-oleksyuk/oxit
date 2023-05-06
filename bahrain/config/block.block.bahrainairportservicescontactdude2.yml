@@ -1,0 +1,37 @@
+uuid: d12029c8-6ef6-4e4f-acd0-2d343c4c4254
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:7dc7f6f8-559f-4528-9496-3f9a6d767836'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: bahrainairportservicescontactdude2
+theme: bahrain
+region: content
+weight: -36
+provider: null
+plugin: 'block_content:7dc7f6f8-559f-4528-9496-3f9a6d767836'
+settings:
+  id: 'block_content:7dc7f6f8-559f-4528-9496-3f9a6d767836'
+  label: 'Bahrain Airport Services - Contact Dude 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/ground-handling\r\n/ar/corporate/ground-handling"

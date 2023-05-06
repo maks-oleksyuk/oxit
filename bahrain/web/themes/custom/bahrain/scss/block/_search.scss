@@ -1,0 +1,201 @@
+.search-content{
+  transition: visibility 0s ease 300ms,opacity 300ms ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(218, 41, 28, 0.9);
+  z-index: 99989;
+  position: fixed;
+  overflow-y: auto;
+  opacity: 0;
+  top: -100%;
+  visibility: hidden;
+  backdrop-filter: blur(10px);
+  @media (min-width: 1400px) {
+    .container{
+      max-width: 1200px;
+    }
+  }
+  .form-control{
+    &:focus {
+      border: unset;
+      outline: 0;
+      box-shadow: unset;
+    }
+  }
+  #edit-keys,#edit-submit{
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1;
+    @media (max-width: 400px) {
+      line-height: unset;
+      font-size: 34px;
+    }
+  }
+  #edit-submit[type="submit"]{
+    font-size: 0;
+    padding: 0;
+    width: 57px;
+    height: 57px;
+    outline: 0;
+    border: 0;
+    border-radius: 100%;
+    background: url(../images/search-white.svg) no-repeat center transparent;
+    transition: background-color 300ms ease;
+  }
+  form{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    align-items: end;
+    .form-item-keys{
+      width: 100%;
+    }
+  }
+}
+.region-search{
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.block-search,.search-button-close{
+  z-index: 9999;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 7px;
+  position: relative;
+}
+.block-search{
+  width: 100%;
+  h2{
+    margin-right: 35px;
+  }
+}
+.search-active{
+  visibility: visible;
+  transition-delay: 0s;
+  display: block;
+  top: 0;
+  opacity: 0.97;
+}
+[lang = "ar"] .search-button{
+  padding-left: unset;
+  padding-right: 46px;
+    &:before{
+      left: unset;
+      right: 0;
+    }
+  @media (max-width: 991px) {
+    padding-right: unset;
+    &:before{
+      display: none;
+    }
+  }
+}
+.search-button{
+  transition-duration: 0.4s;
+  position: relative;
+  padding-left: 46px;
+  @media (max-width: 1100px) {
+    padding-left: 25px;
+  }
+  .field__item{
+    &:hover{
+      svg{
+        fill: #da291c;
+      }
+      svg path, svg circle{
+        fill: none !important;
+        stroke: #ce132d!important;
+      }
+    }
+  }
+  &:before{
+    content: '';
+    width: 1px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(59, 59, 59, 0.5);
+  }
+  @media (max-width: 991px) {
+    padding-left: unset;
+    padding-right: 25px;
+    &:before{
+      display: none;
+    }
+  }
+}
+.search-button-close,.search-button{
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+[lang = "ar"] .search-button-close{
+  margin-left: unset;
+  margin-right: -30px;
+}
+.search-button-close{
+  max-height: 35px;
+  font-size: 70px;
+  font-weight: 100;
+  margin-left: -30px;
+  transition: 0.4s all;
+  p{
+    &:hover{
+      color: #a19191;
+    }
+  }
+}
+
+.block-system{
+  #edit-keys{
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    padding: 12px 26px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.63;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d8d8d8;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  }
+  .search-help-link,.search-result__title a{
+    color: #da291c;
+    transition: color 300ms ease;
+    text-decoration: none;
+    &:hover{
+      color: $light-black;
+    }
+  }
+  #edit-submit{
+    margin-bottom: 15px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: $light-red;
+    border: 1px solid transparent;
+    padding: 9px 15px;
+    font-size: 0.875rem;
+    border-radius: 360px;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  }
+}

@@ -1,0 +1,32 @@
+uuid: 8bdd56bb-bb07-4b4d-91c5-f918422412d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.pass-corp
+  module:
+    - block_background_style
+    - block_class
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: pass-corp-menu
+id: passengerscorporate
+theme: bahrain
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:pass-corp'
+settings:
+  id: 'system_menu_block:pass-corp'
+  label: Passengers/Corporate
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,37 @@
+uuid: 9e31387a-57f1-45e8-aed4-6bde7f7df17c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_us:013e84ad-5d05-40d8-ba38-7d62b2094bb9'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: contactus-block
+id: contactusblock
+theme: bahrain
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:013e84ad-5d05-40d8-ba38-7d62b2094bb9'
+settings:
+  id: 'block_content:013e84ad-5d05-40d8-ba38-7d62b2094bb9'
+  label: 'Contact Us Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: contact_us_horizontal
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate\r\n/ar/corporate"

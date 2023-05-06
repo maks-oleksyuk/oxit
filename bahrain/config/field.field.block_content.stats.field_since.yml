@@ -1,0 +1,24 @@
+uuid: 52ac921e-1eec-43fb-9c36-390102c3e5c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats
+    - field.storage.block_content.field_since
+  module:
+    - datetime
+id: block_content.stats.field_since
+field_name: field_since
+entity_type: block_content
+bundle: stats
+label: Since
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

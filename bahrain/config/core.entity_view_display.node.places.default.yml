@@ -1,0 +1,413 @@
+uuid: cb786cdd-ba51-43c6-98be-99f93e68c077
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.places.body
+    - field.field.node.places.field_email
+    - field.field.node.places.field_image
+    - field.field.node.places.field_image_logo
+    - field.field.node.places.field_payment_methods
+    - field.field.node.places.field_phone
+    - field.field.node.places.field_place
+    - field.field.node.places.field_taxonomy
+    - field.field.node.places.field_website
+    - node.type.places
+  module:
+    - image
+    - layout_builder
+    - link
+    - system
+    - telephone
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          ab910b9c-022a-4571-9262-a75a078811b2:
+            uuid: ab910b9c-022a-4571-9262-a75a078811b2
+            region: first
+            configuration:
+              id: 'field_block:node:places:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3a4045f7-c390-4a54-91e6-f9bf1db79689:
+            uuid: 3a4045f7-c390-4a54-91e6-f9bf1db79689
+            region: first
+            configuration:
+              id: 'field_block:node:places:field_payment_methods'
+              label: 'Payment methods'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ff52012d-b84a-4074-a224-360794e030c1:
+            uuid: ff52012d-b84a-4074-a224-360794e030c1
+            region: first
+            configuration:
+              id: 'field_block:node:places:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: shopping_node_image
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          796d17a0-7cba-4dd0-a10b-456dfdd67453:
+            uuid: 796d17a0-7cba-4dd0-a10b-456dfdd67453
+            region: second
+            configuration:
+              id: 'field_block:node:places:field_image_logo'
+              label: image_logo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: shopping_logo_node
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          37f44731-78c8-4e86-9fe8-8e0bfe550b96:
+            uuid: 37f44731-78c8-4e86-9fe8-8e0bfe550b96
+            region: second
+            configuration:
+              id: 'field_block:node:places:field_taxonomy'
+              label: Location
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8583ab44-8867-4dfd-966f-7f5cbd223f36:
+            uuid: 8583ab44-8867-4dfd-966f-7f5cbd223f36
+            region: second
+            configuration:
+              id: 'field_block:node:places:field_phone'
+              label: phone
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0e8798ef-19ed-4e4a-a737-8b7dee110313:
+            uuid: 0e8798ef-19ed-4e4a-a737-8b7dee110313
+            region: second
+            configuration:
+              id: 'field_block:node:places:field_website'
+              label: website
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          5e3b542c-fb25-4d38-9c29-4d1e46b77fee:
+            uuid: 5e3b542c-fb25-4d38-9c29-4d1e46b77fee
+            region: second
+            configuration:
+              id: 'field_block:node:places:field_email'
+              label: email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          621ef76f-98b7-4ec0-b45f-dd0c475f9645:
+            uuid: 621ef76f-98b7-4ec0-b45f-dd0c475f9645
+            region: first
+            configuration:
+              id: system_breadcrumb_block
+              label: Breadcrumbs
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+          01b4a9f6-c290-4e54-828c-cd9dd0f2c323:
+            uuid: 01b4a9f6-c290-4e54-828c-cd9dd0f2c323
+            region: content
+            configuration:
+              id: 'field_block:node:places:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          418d1580-cf58-4334-b343-75752fe69a74:
+            uuid: 418d1580-cf58-4334-b343-75752fe69a74
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_payment_methods'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          26925e4a-51ad-49cf-9f14-a14d95053f56:
+            uuid: 26925e4a-51ad-49cf-9f14-a14d95053f56
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          8db5cd2e-b815-4005-ad5d-18546fbcea7a:
+            uuid: 8db5cd2e-b815-4005-ad5d-18546fbcea7a
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_image_logo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          e7855706-cdd6-42b8-b755-6b5409243864:
+            uuid: e7855706-cdd6-42b8-b755-6b5409243864
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_taxonomy'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          57ea62a8-3983-4055-976b-0036a0f6ac9b:
+            uuid: 57ea62a8-3983-4055-976b-0036a0f6ac9b
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_phone'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          7142f376-28cc-4769-8c76-392c47fdcfbb:
+            uuid: 7142f376-28cc-4769-8c76-392c47fdcfbb
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: email_mailto
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          ae7f4273-d393-4847-8e79-da0f5c25c4b8:
+            uuid: ae7f4273-d393-4847-8e79-da0f5c25c4b8
+            region: content
+            configuration:
+              id: 'field_block:node:places:field_website'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+id: node.places.default
+targetEntityType: node
+bundle: places
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: email_mailto
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_payment_methods:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_taxonomy:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  addtoany: true
+  field_place: true
+  langcode: true
+  links: true

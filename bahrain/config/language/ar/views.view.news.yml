@@ -1,0 +1,39 @@
+label: أخبار
+display:
+  default:
+    display_title: تقصير
+    display_options:
+      title: أخبار
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 'تحميل المزيد'
+      header:
+        area:
+          content:
+            value: "<h2>أخبار</h2>\r\n\r\n<p>يمكنك العثور على آخر التحديثات حول شركة مطار البحرين ومطار البحرين الدولي في هذا القسم.</p>\r\n"
+            format: basic_html
+      filters:
+        title:
+          expose:
+            placeholder: 'بحث في الأخبار'
+      empty:
+        area:
+          content:
+            value: "<p>Sorry, there is no result here(...</p>\r\n"
+            format: basic_html
+  page_1:
+    display_title: صفحة
+  block_1:
+    display_title: أخبار
+    display_options:
+      pager:
+        options:
+          views_infinite_scroll:
+            button_text: 'تحميل المزيد'
+      use_more_text: 'مشاهدة الكل'
+      header:
+        area:
+          content:
+            value: "<h2>أخبار</h2>\r\n\r\n<p>يمكنك العثور على آخر التحديثات حول شركة مطار البحرين ومطار البحرين الدولي في هذا القسم.</p>\r\n"
+            format: basic_html

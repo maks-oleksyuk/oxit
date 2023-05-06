@@ -1,0 +1,685 @@
+.flight-content {
+  .flights {
+    .region-flight {
+      .block-quicktabs-blockflights {
+        h2 {
+          text-align: center;
+          margin: 20px;
+          font-size: 35px;
+          line-height: 1.2;
+          color: #000;
+          font-weight: bold;
+        }
+
+        .quicktabs-wrapper {
+          //list
+          .item-list {
+            border-bottom: none;
+            text-align: center;
+
+            ul {
+              li {
+                margin: 0 0 0 72px;
+                @media (max-width: 913px) {
+                  margin: 0 61px 0 72px;
+                }
+
+                a {
+                  text-decoration: none;
+                  border-radius: 0;
+                  border: none;
+                  margin-right: 37px;
+                  margin-left: 37px;
+                  font-size: 16px;
+                  text-transform: uppercase;
+                  color: #3b3b3b;
+                  font-weight: bold;
+                  position: relative;
+                  @media (max-width: 520px) {
+                    font-size: 20px;
+                  }
+                  @media (max-width: 485px) {
+                    margin: auto;
+                  }
+                }
+
+                &.active {
+                  a:after {
+                    content: "";
+                    position: absolute;
+                    top: 163%;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 15px 15px 0 15px;
+                    border-color: #ffffff transparent transparent transparent;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    @media (max-width: 520px) {
+                      top: 140%
+                    }
+                  }
+                }
+              }
+
+              #quicktabs-tab-flights-0 {
+                a {
+                  position: relative;
+                }
+
+                a:before {
+                  background: url(../images/arrivals.svg) no-repeat center center;
+                  width: 21px;
+                  height: 20px;
+                  display: block;
+                  position: absolute;
+                  content: "";
+                  right: 85px;
+                  top: 0;
+                  @media (max-width: 520px) {
+                    right: 98px;
+                  }
+                }
+              }
+
+              #quicktabs-tab-flights-1 {
+                a {
+                  position: relative;
+                }
+
+                a:before {
+                  background: url(../images/departure.svg) no-repeat center center;
+                  width: 21px;
+                  height: 20px;
+                  display: block;
+                  position: absolute;
+                  content: "";
+                  right: 110px;
+                  top: 0;
+                  @media (max-width: 520px) {
+                    right: 125px;
+                  }
+                }
+              }
+
+              #quicktabs-tab-flights-2 {
+                a {
+                  position: relative;
+                }
+
+                a:before {
+                  background: url(../images/tracker.svg) no-repeat center center;
+                  width: 21px;
+                  height: 20px;
+                  display: block;
+                  position: absolute;
+                  content: "";
+                  right: 134px;
+                  top: 0;
+                  @media (max-width: 520px) {
+                    right: 155px;
+                  }
+                }
+              }
+            }
+          }
+
+          //main
+          .quicktabs-main {
+            background-image: url(https://www.bahrainairport.bh/images/world-dotted-map.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-color: #ece7e9;
+            height: 100%;
+            min-height: 610px;
+            display: flex;
+            padding-top: 25px;
+            @media (max-width: 520px) {
+              padding-bottom: 36px;
+            }
+            //arrivals
+            #quicktabs-tabpage-flights-0 {
+              width: 60%;
+              margin: 20px auto;
+              @media (max-width: 1194px) {
+                width: 70%;
+              }
+              @media (max-width: 744px) {
+                width: 90%;
+              }
+
+              .view-id-arrivalsflight {
+                display: flex;
+                flex-direction: column;
+
+                .view-content {
+                  .views-row {
+                    display: flex;
+                    color: #000000;
+                    background: #ffffff;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    padding: 5px 20px 5px 20px;
+                    font-weight: 600;
+                    align-items: center;
+                    min-height: 54px;
+                    @media (max-width: 520px) {
+                      flex-direction: column;
+                    }
+
+                    .views-field-scheduled-time {
+                      width: 80px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+
+                    .views-field-airline-logo {
+                      width: 100px;
+                      margin: auto;
+
+                      img {
+                        max-height: 50px;
+                      }
+
+                      @media (max-width: 520px) {
+                        display: flex;
+                      }
+                      @media (max-width: 520px) {
+                        .field-content {
+                          margin: 0 auto 10px;
+                        }
+                      }
+                    }
+
+                    .views-field-city {
+                      width: 150px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+
+                    .views-field-notify-flights {
+                      width: 30px;
+                      margin: auto;
+                      display: flex;
+
+                      .field-content {
+                        margin: auto;
+
+                        a {
+                          text-decoration: none;
+
+                          img:hover {
+                            filter: invert(0) sepia(0) saturate(0) hue-rotate(175deg);
+                          }
+                        }
+
+                        .ajax-progress {
+                          padding: 0;
+                          display: block;
+                        }
+                      }
+                    }
+
+                    .views-field-flight-number {
+                      width: 150px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+
+
+                    // status styles
+                    .views-field-state {
+                      .flight-state{
+                        width: 150px;
+                        margin: auto 10px;
+                        color: #f46b00;
+                        background-color: #fff8ee;
+                        border: 1px solid #f46b00;
+                        display: inline-block;
+                        padding: 7px 9px 4px 9px;
+                        font-size: 11px;
+                        font-weight: bold;
+                        line-height: 1;
+                        letter-spacing: 1.1px;
+                        text-align: center;
+                        border-radius: 3px;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        text-transform: uppercase;
+                        min-width: 88px;
+                        max-width: 88px;
+                        min-height: 23px;
+                        &.cancelled {
+                          color: #e6163b;
+                          background-color: #feeff2;
+                          border: 1px solid #e6163b;
+                        }
+                        &.early {
+                          color: #707283;
+                          background-color: #eff0fa;
+                          border: 1px solid #707283;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .view-footer {
+                  margin: 0 0 0 auto;
+
+                  a {
+                    display: inline-block;
+                    line-height: 1;
+                    font-size: 13px;
+                    padding: 5px 25px 5px 5px;
+                    position: relative;
+                    font-weight: bold;
+                    color: #da291c;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    transition: all .3s;
+                    text-decoration: none;
+
+                    &:after {
+                      background: url(../images/arrow-right-red.svg) no-repeat center center;
+                      width: 14px;
+                      height: 14px;
+                      display: block;
+                      position: absolute;
+                      content: "";
+                      right: 0;
+                      top: 5px;
+                    }
+
+                    &:hover:after {
+                      -webkit-animation: bounceRight 2s infinite;
+                      animation: bounceRight 2s infinite;
+                    }
+                  }
+                }
+              }
+            }
+
+            //departure
+            #quicktabs-tabpage-flights-1 {
+              width: 60%;
+              margin: 20px auto;
+              @media (max-width: 1194px) {
+                width: 70%;
+              }
+              @media (max-width: 744px) {
+                width: 90%;
+              }
+
+              .view-id-departuresflight {
+                display: flex;
+                flex-direction: column;
+
+                .view-content {
+                  .views-row {
+                    display: flex;
+                    color: #000000;
+                    background: #ffffff;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    padding: 5px 20px 5px 20px;
+                    font-weight: 600;
+                    align-items: center;
+                    min-height: 54px;
+                    @media (max-width: 520px) {
+                      flex-direction: column;
+                    }
+
+                    .views-field-scheduled-time {
+                      width: 80px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+
+                    .views-field-city {
+                      width: 150px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+
+                    .views-field-notify-flights {
+                      width: 30px;
+                      margin: auto;
+                      display: flex;
+
+                      .field-content {
+                        margin: auto;
+
+                        a {
+                          text-decoration: none;
+
+                          img:hover {
+                            filter: invert(0) sepia(0) saturate(0) hue-rotate(175deg);
+                          }
+                        }
+
+                        .ajax-progress {
+                          padding: 0;
+                          display: block;
+                        }
+                      }
+                    }
+
+                    .views-field-airline-logo {
+                      width: 100px;
+                      margin: auto;
+
+                      img {
+                        max-height: 50px;
+                      }
+
+                      @media (max-width: 520px) {
+                        display: flex;
+                      }
+                      @media (max-width: 520px) {
+                        .field-content {
+                          margin: 0 auto 10px;
+                        }
+                      }
+                    }
+
+                    .views-field-flight-number {
+                      width: 150px;
+                      margin: auto;
+                      @media (max-width: 520px) {
+                        width: auto;
+                        font-size: 20px;
+                      }
+                    }
+                  }
+
+                  // status styles
+                  .views-field-state {
+                    .flight-state{
+                      width: 150px;
+                      margin: auto 10px;
+                      color: #f46b00;
+                      background-color: #fff8ee;
+                      border: 1px solid #f46b00;
+                      display: inline-block;
+                      padding: 7px 9px 4px 9px;
+                      font-size: 11px;
+                      font-weight: bold;
+                      line-height: 1;
+                      letter-spacing: 1.1px;
+                      text-align: center;
+                      border-radius: 3px;
+                      white-space: nowrap;
+                      vertical-align: middle;
+                      text-transform: uppercase;
+                      min-width: 88px;
+                      max-width: 88px;
+                      min-height: 23px;
+                      &.cancelled {
+                        color: #e6163b;
+                        background-color: #feeff2;
+                        border: 1px solid #e6163b;
+                      }
+                      &.early {
+                        color: #707283;
+                        background-color: #eff0fa;
+                        border: 1px solid #707283;
+                      }
+                    }
+                  }
+                }
+
+
+                .view-footer {
+                  margin: 0 0 0 auto;
+
+                  a {
+                    display: inline-block;
+                    line-height: 1;
+                    font-size: 13px;
+                    padding: 5px 25px 5px 5px;
+                    position: relative;
+                    font-weight: bold;
+                    color: #da291c;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                    transition: all .3s;
+                    text-decoration: none;
+
+                    &:after {
+                      background: url(../images/arrow-right-red.svg) no-repeat center center;
+                      width: 14px;
+                      height: 14px;
+                      display: block;
+                      position: absolute;
+                      content: "";
+                      right: 0;
+                      top: 5px;
+                    }
+
+                    &:hover:after {
+                      -webkit-animation: bounceRight 2s infinite;
+                      animation: bounceRight 2s infinite;
+                    }
+                  }
+                }
+              }
+            }
+
+            //flight tracker
+            #quicktabs-tabpage-flights-2 {
+              margin: 0 auto;
+
+              p {
+                font-size: 18px;
+                line-height: 24px;
+                color: rgba(59, 59, 59, 0.8);
+                font-weight: normal;
+                padding: 30px 20px;
+                text-align: center;
+              }
+
+              .field--name-field-linktopage {
+                .field__label {
+                  display: none;
+                }
+
+                .field__item {
+                  @media (max-width: 720px) {
+                    display: flex;
+                  }
+
+                  a {
+                    color: #fff;
+                    background-color: #da291c;
+                    border: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    transition: all 0.3s;
+                    text-transform: uppercase;
+                    position: relative;
+                    padding: 22px 75px 22px 23px;
+                    border-radius: 30px;
+                    text-decoration: none;
+                    @media (max-width: 720px) {
+                      margin: auto;
+                    }
+
+                    &:after {
+                      background: url(../images/arrow-right-white.svg) no-repeat center center;
+                      width: 14px;
+                      height: 14px;
+                      display: block;
+                      position: absolute;
+                      content: "";
+                      right: 15px;
+                      top: -2px;
+                      bottom: 0;
+                      margin: auto 0;
+                    }
+
+                    &:hover:after {
+                      -webkit-animation: bounceRight 2s infinite;
+                      animation: bounceRight 2s infinite;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[lang="ar"] {
+  .flight-content {
+    .flights {
+      .region-flight {
+        .block-quicktabs-blockflights {
+          .quicktabs-wrapper {
+            //list
+            .item-list {
+              ul {
+                li {
+                  margin: 0 72px 0 33px;
+                  @media (max-width: 528px) {
+                    margin: 0 72px 0 72px;
+                  }
+
+                  a {
+                    text-decoration: none;
+                    border-radius: 0;
+                    border: none;
+                    margin-right: 37px;
+                    margin-left: 37px;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #3b3b3b;
+                    font-weight: bold;
+                    position: relative;
+                    @media (max-width: 520px) {
+                      font-size: 16px;
+                    }
+                    @media (max-width: 520px) {
+                      margin: auto;
+                    }
+                  }
+                }
+
+                #quicktabs-tab-flights-0 {
+                  a {
+                    position: relative;
+                  }
+
+                  a:before {
+                    background: url(../images/arrivals.svg) no-repeat center center;
+                    width: 21px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    right: 64px;
+                    top: 0;
+                  }
+                }
+
+                #quicktabs-tab-flights-1 {
+                  a {
+                    position: relative;
+                  }
+
+                  a:before {
+                    background: url(../images/departure.svg) no-repeat center center;
+                    width: 21px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    right: 51px;
+                    top: 0;
+                  }
+                }
+
+                #quicktabs-tab-flights-2 {
+                  a {
+                    position: relative;
+                  }
+
+                  a:before {
+                    background: url(../images/tracker.svg) no-repeat center center;
+                    width: 21px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    right: 102px;
+                    top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flight-content .flights .region-flight .block-quicktabs-blockflights .quicktabs-wrapper .quicktabs-main {
+    #quicktabs-tabpage-flights-0 .view-id-arrivalsflight .view-footer, #quicktabs-tabpage-flights-1 .view-id-departuresflight .view-footer {
+      margin: 0 auto 0 0;
+
+      a {
+        padding: 5px 5px 5px 25px;
+
+        &:after {
+          top: 3px;
+          right: unset;
+          left: 0;
+          transform: rotate(180deg);
+        }
+
+        &:hover:after {
+          -webkit-animation: bounceLeft 2s infinite;
+          animation: bounceLeft 2s infinite;
+        }
+      }
+    }
+
+    #quicktabs-tabpage-flights-2 .field--name-field-linktopage .field__item a {
+      padding: 22px 23px 22px 75px;
+
+      &:after {
+        right: unset;
+        left: 15px;
+        transform: rotate(180deg);
+      }
+
+      &:hover:after {
+        -webkit-animation: bounceLeft 2s infinite;
+        animation: bounceLeft 2s infinite;
+      }
+    }
+  }
+}

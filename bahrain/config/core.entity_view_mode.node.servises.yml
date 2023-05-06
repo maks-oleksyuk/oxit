@@ -1,0 +1,10 @@
+uuid: 1c282ae6-28ec-4f6a-a45d-6318de7e1143
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.servises
+label: Servises
+targetEntityType: node
+cache: true

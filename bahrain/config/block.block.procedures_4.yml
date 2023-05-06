@@ -1,0 +1,33 @@
+uuid: 025d99e2-db91-4893-8144-1bc7be205f37
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.procedures
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: procedures_4
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:procedures'
+settings:
+  id: 'system_menu_block:procedures'
+  label: 'Procedures Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/immigration-visas\r\n/ar/immigration-visas\r\n\r\n/security-customs\r\n/ar/security-customs\r\n\r\n/special-assistance\r\n/ar/special-assistance\r\n/flight-connections\r\n/ar/flight-connections"

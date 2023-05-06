@@ -1,0 +1,37 @@
+uuid: ed5f1b5b-aa2f-4c84-942f-d1c865746a5d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:e6f1efcb-0164-4fa8-97ac-5789bb1685c3'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: mohamedawadhicontactdude7
+theme: bahrain
+region: content
+weight: -31
+provider: null
+plugin: 'block_content:e6f1efcb-0164-4fa8-97ac-5789bb1685c3'
+settings:
+  id: 'block_content:e6f1efcb-0164-4fa8-97ac-5789bb1685c3'
+  label: 'Mohamed Awadhi - Contact Dude 7'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/contacts-media\r\n/ar/corporate/contacts-media"

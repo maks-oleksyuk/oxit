@@ -1,0 +1,10 @@
+uuid: e81eed7e-156f-4d32-9930-e55e36c917ff
+langcode: en
+status: true
+dependencies: {  }
+id: photo_on_the_right_side
+label: 'Photo on the right side'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

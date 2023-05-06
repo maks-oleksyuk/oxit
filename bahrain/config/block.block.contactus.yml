@@ -1,0 +1,36 @@
+uuid: 6b34a1f5-608d-475a-a188-0df37993afa2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b2739bb8-ab9e-4fe1-8676-0e4e1cd06679'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '298'
+id: contactus
+theme: bahrain
+region: banner
+weight: -29
+provider: null
+plugin: 'block_content:b2739bb8-ab9e-4fe1-8676-0e4e1cd06679'
+settings:
+  id: 'block_content:b2739bb8-ab9e-4fe1-8676-0e4e1cd06679'
+  label: 'Contact Us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/contact-us\r\n/ar/contact-us"

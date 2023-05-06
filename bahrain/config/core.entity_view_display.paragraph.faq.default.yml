@@ -1,0 +1,37 @@
+uuid: a07c543d-d835-47c8-9145-ad400a8cbc0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_field
+    - field.field.paragraph.faq.field_faq_title
+    - paragraphs.paragraphs_type.faq
+  module:
+    - faqfield
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_field:
+    type: faqfield_accordion
+    label: hidden
+    settings:
+      active: null
+      heightStyle: content
+      collapsible: true
+      event: click
+      animate:
+        easing: swing
+        duration: 250
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_faq_title:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

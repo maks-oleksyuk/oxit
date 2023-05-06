@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Provides a flights entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function flights_theme() {
+  return [
+    'flights' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for flights templates.
+ *
+ * Default template: flights.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the flights information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_flights(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function flights_cron() {
+  $data = file_get_contents('https://aster0123.github.io/flight.json');
+  $json = json_decode($data, TRUE);
+  $storage = Drupal::entityTypeManager()->getStorage('flights');
+  foreach ($json['planes'] as $flight) {
+    $items = $storage->loadByProperties(['flight_number' => $flight['flight_number']]);
+    if ($items) {
+      $status = '';
+      $number = '';
+      foreach ($items as $i) {
+        $status = $i->state->value;
+        $number = $i->flight_number->value;
+        $i->flight_type->value = $flight['flight-status'];
+        $i->scheduled_time->value = strtotime($flight['date']);
+        $i->city->value = $flight['origin'];
+        $i->airline->value = $flight['airline'];
+        $i->airline_logo->value = $flight['airline_logo'];
+        $i->state->value = $flight['status'];
+        $i->save();
+        if ($flight['status'] == 'cancelled' and $status != 'cancelled') {
+          $emails = Drupal::database()
+            ->select('flights_notify', 'f')
+            ->fields('f', ['email'])
+            ->condition('fly_number', $number)
+            ->execute()->fetchAll();
+          $set = Drupal::config('flights.settings')
+            ->get('notify_cansel_be_sent');
+          if ($emails and $set) {
+            $params['entity'] = $i;
+            $newMail = Drupal::service('plugin.manager.mail');
+            foreach ($emails as $e) {
+              $newMail->mail('flights', 'cancel', $e->email, 'en', $params);
+            }
+          }
+        }
+      }
+    }
+    else {
+      $values = [
+        'flight_type' => $flight['flight-status'],
+        'scheduled_time' => strtotime($flight['date']),
+        'citi' => $flight['origin'],
+        'flight_number' => $flight['flight_number'],
+        'airline' => $flight['airline'],
+        'airline_logo' => $flight['airline_logo'],
+        'status' => $flight['status'],
+      ];
+      $entity = $storage->create($values);
+      $entity->save();
+    }
+  }
+
+  // Deleting entity with old times and old notification.
+  $query = Drupal::entityQuery('flights')
+    ->condition('scheduled_time', time(), '<')->execute();
+  $itemsToDelete = $storage->loadMultiple($query);
+  foreach ($itemsToDelete as $i) {
+    $i->delete();
+  }
+  Drupal::database()
+    ->delete('flights_notify')
+    ->condition('time', time(), '<')
+    ->execute();
+
+  // Send email in 24 hours.
+  $set = Drupal::config('flights.settings')->get('notify_24_be_sent');
+  if ($set) {
+    $interval = Drupal::config('automated_cron.settings')->get('interval');
+    $result = Drupal::database()
+      ->select('flights_notify', 'f')
+      ->fields('f', ['email', 'fly_number'])
+      ->condition('time', [time() - $interval, time() + $interval], 'BETWEEN')
+      ->execute();
+    foreach ($result as $r) {
+      $item = $storage->loadByProperties(['flight_number' => $r->fly_number]);
+      $params['entity'] = $item[1];
+      $newMail = Drupal::service('plugin.manager.mail');
+      $newMail->mail('flights', 'notify24', $r->email, 'en', $params);
+    }
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function flights_mail($key, &$message, $params) {
+  $config = Drupal::config('flights.settings');
+  switch ($key) {
+    case 'submit':
+    {
+      $body = $config->get('submit_msg');
+      $message['subject'] = "Submit Registration";
+      $message['body'][] = Drupal::token()
+        ->replace($body, ['flights' => $params['entity']]);
+      $message['headers']['Content-Type'] = 'text/html';
+      break;
+    }
+    case 'cancel':
+    {
+      $body = $config->get('notify_cansel_text');
+      $message['subject'] = "Fly Notification";
+      $message['body'][] = Drupal::token()
+        ->replace($body, ['flights' => $params['entity']]);
+      $message['headers']['Content-Type'] = 'text/html';
+      break;
+    }
+    case 'notify24':
+    {
+      $body = $config->get('notify_24_text');
+      $message['subject'] = "Fly Notification";
+      $message['body'][] = Drupal::token()
+        ->replace($body, ['flights' => $params['entity']]);
+      $message['headers']['Content-Type'] = 'text/html';
+      break;
+    }
+  }
+}

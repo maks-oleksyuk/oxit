@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Bahrain theme file.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use \Symfony\Component\HttpFoundation\Request;
+
+/**
+ * Implements hook_preprocess_menu() for menu.html.twig.
+ *
+ * Attention! Hardcode...
+ */
+function bahrain_preprocess_menu(&$variables, $hook): void {
+  if ($hook == 'menu__pass_corp') {
+    $current_path = \Drupal::request()->getRequestUri();
+    $corporate = "/corporate";
+    $ar_corporate = "/ar/corporate";
+    $variables['#cache']['contexts'] = ['url.path'];
+    foreach ($variables['items'] as &$item) {
+      if (str_contains($current_path, $corporate) && ($item['title'] == "Corporate")) {
+        $item['in_active_trail'] = TRUE;
+        return;
+      }
+      elseif (!str_contains($current_path, $corporate) && ($item['title'] == "Passengers")) {
+        $item['in_active_trail'] = TRUE;
+        return;
+      }
+      if (str_contains($current_path, $ar_corporate) && ($item['title'] !== "Corporate") && ($item['title'] !== "Passengers")) {
+        $item['in_active_trail'] = TRUE;
+        return;
+      }
+      elseif (!str_contains($current_path, $ar_corporate) && ($item['title'] !== "Corporate") && ($item['title'] !== "Passengers")) {
+        $item['in_active_trail'] = TRUE;
+        return;
+      }
+    }
+  }
+}

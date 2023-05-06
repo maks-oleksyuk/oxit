@@ -1,0 +1,36 @@
+uuid: 51ec4e5b-9ed5-43ea-b79e-5dce623fa0a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:6d018bee-a764-439d-8725-812e940abc39'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '310'
+id: showyourloveforbahraininternationalairport
+theme: bahrain
+region: banner
+weight: -11
+provider: null
+plugin: 'block_content:6d018bee-a764-439d-8725-812e940abc39'
+settings:
+  id: 'block_content:6d018bee-a764-439d-8725-812e940abc39'
+  label: 'Show Your Love for Bahrain International Airport'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /show-your-love-bahrain-international-airport

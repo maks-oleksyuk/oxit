@@ -1,0 +1,69 @@
+uuid: 1ac75a08-12cc-4e37-b1a1-eb8e4e5ee4d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.where_to_park
+    - field.field.block_content.where_to_park.body
+    - field.field.block_content.where_to_park.field_faq_park
+    - field.field.block_content.where_to_park.field_park_image
+    - image.style.thumbnail
+  module:
+    - faqfield
+    - image
+    - text
+id: block_content.where_to_park.default
+targetEntityType: block_content
+bundle: where_to_park
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_faq_park:
+    type: faqfield_default
+    weight: 27
+    region: content
+    settings:
+      answer_widget: text_format
+      question_title: Question
+      answer_title: Answer
+      question_field_required: false
+      answer_field_required: false
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 3
+    third_party_settings: {  }
+  field_park_image:
+    type: image_image
+    weight: 28
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

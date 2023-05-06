@@ -1,0 +1,36 @@
+uuid: 079b5035-4672-4de1-bc99-864a23c82c72
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:7f72a538-9c2e-4d96-a465-0f02345b3f3c'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '268'
+id: servicesbaggage
+theme: bahrain
+region: banner
+weight: -13
+provider: null
+plugin: 'block_content:7f72a538-9c2e-4d96-a465-0f02345b3f3c'
+settings:
+  id: 'block_content:7f72a538-9c2e-4d96-a465-0f02345b3f3c'
+  label: 'Services Baggage'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /baggage-services

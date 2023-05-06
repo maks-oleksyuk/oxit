@@ -1,0 +1,20 @@
+uuid: f222b784-02a6-4293-b659-1da714422bfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payment_methods
+  module:
+    - text
+id: taxonomy_term.payment_methods.description
+field_name: description
+entity_type: taxonomy_term
+bundle: payment_methods
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

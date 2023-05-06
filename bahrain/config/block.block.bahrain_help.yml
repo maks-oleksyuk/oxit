@@ -1,0 +1,22 @@
+uuid: 82c544e0-c4dd-47e9-8fc2-4d865d78fb4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bahrain
+_core:
+  default_config_hash: a7dbvXghF2hKrzBb98Lu9v2ipzmUJ9CEyGxn5e88pq4
+id: bahrain_help
+theme: bahrain
+region: content
+weight: -40
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

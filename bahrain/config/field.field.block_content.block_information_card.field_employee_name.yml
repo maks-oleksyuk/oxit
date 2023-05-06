@@ -1,0 +1,19 @@
+uuid: 31ade009-f018-4fa4-837b-5ccc8357e56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_information_card
+    - field.storage.block_content.field_employee_name
+id: block_content.block_information_card.field_employee_name
+field_name: field_employee_name
+entity_type: block_content
+bundle: block_information_card
+label: 'Employee Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

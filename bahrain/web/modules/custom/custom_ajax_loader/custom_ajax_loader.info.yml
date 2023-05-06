@@ -1,0 +1,6 @@
+name: Custom Loader
+description: Creates a plugin for change Drupal default loader.
+type: module
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

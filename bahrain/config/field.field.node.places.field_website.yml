@@ -1,0 +1,23 @@
+uuid: e69f7b6f-237c-4c9f-aa2f-02e9c077b088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.places
+  module:
+    - link
+id: node.places.field_website
+field_name: field_website
+entity_type: node
+bundle: places
+label: website
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

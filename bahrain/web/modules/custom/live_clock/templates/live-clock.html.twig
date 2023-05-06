@@ -1,0 +1,6 @@
+<div class="live-clock-block">
+  {% if country %}
+    <span class="live-clock__country"> {{ country | t }} </span>
+  {% endif %}
+  <span class="live-clock__time" id="{{ id }}"></span>
+</div>

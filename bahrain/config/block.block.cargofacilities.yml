@@ -1,0 +1,33 @@
+uuid: 7927bb5f-00d6-4e84-9c50-f4056690b2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.cargo-facilities
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: cargofacilities
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:cargo-facilities'
+settings:
+  id: 'system_menu_block:cargo-facilities'
+  label: 'Cargo & Facilities'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/cargo-facilities\r\n/corporate/mros\r\n/corporate/contacts-cargo-and-logistics"

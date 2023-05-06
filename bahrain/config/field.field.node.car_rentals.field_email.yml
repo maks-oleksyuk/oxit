@@ -1,0 +1,19 @@
+uuid: de7e50d5-20c1-4157-a589-30baff88d028
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.car_rentals
+id: node.car_rentals.field_email
+field_name: field_email
+entity_type: node
+bundle: car_rentals
+label: E-mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

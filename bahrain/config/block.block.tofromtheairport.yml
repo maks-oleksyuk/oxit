@@ -1,0 +1,36 @@
+uuid: 35414b7b-d32f-43a9-8f99-9771200994e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b6630851-be65-4c34-a615-e358435abb60'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '287'
+id: tofromtheairport
+theme: bahrain
+region: banner
+weight: -9
+provider: null
+plugin: 'block_content:b6630851-be65-4c34-a615-e358435abb60'
+settings:
+  id: 'block_content:b6630851-be65-4c34-a615-e358435abb60'
+  label: 'To / From The Airport (Car Park)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/car-park\r\n/ar/car-park"

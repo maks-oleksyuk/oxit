@@ -1,0 +1,26 @@
+uuid: 2c32ce9c-092b-4557-8641-ecd25ae275d3
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_background_style
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: copyright
+theme: bahrain
+region: header
+weight: -12
+provider: null
+plugin: 'block_content:ff2ef69f-acea-48d0-b4b9-ad4d4e9e7aa4'
+settings:
+  id: 'block_content:ff2ef69f-acea-48d0-b4b9-ad4d4e9e7aa4'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

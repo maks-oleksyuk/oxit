@@ -1,0 +1,18 @@
+uuid: 306e29da-585d-400a-a805-2569ab56f0ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Car Rentals'
+type: car_rentals
+description: 'Use Car Rentals for the company and its description'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,27 @@
+uuid: 1789d81d-3245-4af9-882a-ab144f2fcced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.publications
+  module:
+    - file
+id: node.publications.field_file
+field_name: field_file
+entity_type: node
+bundle: publications
+label: file
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

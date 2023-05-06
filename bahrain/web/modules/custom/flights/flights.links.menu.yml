@@ -1,0 +1,34 @@
+entity.flights.settings:
+  title: Flights
+  description: Configure an Flights entity type
+  route_name: entity.flights.settings
+  parent: system.admin_structure
+
+entity.flights.collection:
+  title: Flights
+  description: List of flights
+  route_name: entity.flights.collection
+  parent: system.admin_content
+
+entity_flights_collection.add:
+  title: Add flights
+  url: internal:/admin/content/flights/add
+  parent: entity.flights.collection
+
+entity_flights_settings.fields:
+  title: Manage fields
+  url: internal:/admin/structure/flights/fields
+  parent: entity.flights.settings
+  weight: 1
+
+entity_flights_settings.form_display:
+  title: Manage form display
+  url: internal:/admin/structure/flights/form-display
+  parent: entity.flights.settings
+  weight: 2
+
+entity_flights_settings.manage_display:
+  title: Manage display
+  url: internal:/admin/structure/flights/display
+  parent: entity.flights.settings
+  weight: 3

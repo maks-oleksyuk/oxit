@@ -1,0 +1,8 @@
+submit_msg_be_sent: TRUE
+submit_msg: "We successfully register for the flight exchange"
+
+notify_24_be_sent: FALSE
+notify_24_text: "Your flight will arrive in 24 hours"
+
+notify_cansel_be_sent: FALSE
+notify_cansel_text: "Your flight is cancelled"

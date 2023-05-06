@@ -1,0 +1,64 @@
+uuid: 96d41596-ebca-4df9-bb2f-9665bcb445bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_information_card
+    - field.field.block_content.block_information_card.field_employee_email
+    - field.field.block_content.block_information_card.field_employee_name
+    - field.field.block_content.block_information_card.field_employee_number
+    - field.field.block_content.block_information_card.field_employee_position
+  module:
+    - telephone
+id: block_content.block_information_card.default
+targetEntityType: block_content
+bundle: block_information_card
+mode: default
+content:
+  field_employee_email:
+    type: email_default
+    weight: 30
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_employee_name:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee_number:
+    type: telephone_default
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee_position:
+    type: string_textarea
+    weight: 31
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

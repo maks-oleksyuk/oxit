@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Tooltips_update module file.
+ */
+
+
+/**
+ * Implements hook_preprocess_node().
+ *
+ * @param $variables
+ *
+ */
+function tooltips_update_preprocess_node(&$variables) {
+  $common_tooltips = [];
+  // check we have a node object.
+  $node_id = $variables['elements']['#node']->id();
+    if ($node_id == 185  || $node_id == 186 || $node_id == 187) {
+      //attach the library.
+      $variables['#attached']['library'][] = 'tooltips_update/tooltips-filters';
+
+      // Get special node by id.
+      try {
+        $node = \Drupal::entityTypeManager()
+          ->getStorage('node')
+          ->load($node_id);
+      } catch (\Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException|\Drupal\Component\Plugin\Exception\PluginNotFoundException $e) {
+      }
+      // Get field references object.
+      $field_tooltip_page = $node->get('field_tooltip_page')->referencedEntities();
+      // Get array with tooltips objects.
+      $field_tooltip_page_tooltips = $field_tooltip_page[0]->get('field_tooltips_content')->referencedEntities();
+
+      // Enumeration all objects from array.
+      foreach ($field_tooltip_page_tooltips as $tooltip){
+      // Choose special field value from node object.
+        $tooltip_taxonomy_field_place_value = $tooltip->get('field_place')->getValue()[0]['target_id'];
+        // Check match the meaning of the taxonomy.
+        switch ($tooltip_taxonomy_field_place_value) {
+          case 14:
+            $common_tooltips['shopping_tooltips_array'][] = $tooltip->id();
+            break;
+          case 17:
+            $common_tooltips['services_tooltips_array'][] = $tooltip->id();
+            break;
+          case 13:
+            $common_tooltips['dinning_tooltips_array'][] = $tooltip->id();
+            break;
+          case 15:
+            $common_tooltips['galleries_tooltips_array'][] = $tooltip->id();
+            break;
+          case 16:
+            $common_tooltips['lounges_tooltips_array'][] = $tooltip->id();
+        }
+      }
+    //DrupalSettings attaching.
+      $variables['#attached']['drupalSettings']['tooltips_update'] = $common_tooltips;
+  }
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function tooltips_update_library_info_alter(&$libraries, $module) {
+  if ($module == 'field_tooltips_data' && isset($libraries['tooltips-data-view'])){
+    $new_path = '/' . \Drupal::service('extension.list.module')->getPath('tooltips_update') . '/js' . '/updated-templates.js';
+    $libraries['tooltips-data-view']['js'][$new_path] = [];
+  }
+}

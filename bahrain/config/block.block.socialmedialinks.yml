@@ -1,0 +1,138 @@
+uuid: eebcf9bf-06c7-4111-9c1d-60a05e4f5761
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - social_media_links
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: socialmedialinks
+theme: bahrain
+region: footer
+weight: -12
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links | Passengers'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    instagram:
+      value: bahrainairport/
+      description: ''
+      weight: '-34'
+    facebook:
+      value: BahrainAirport/
+      description: ''
+      weight: '-33'
+    twitter:
+      value: bahrainairport
+      description: ''
+      weight: '-32'
+    linkedin:
+      value: company/bahrain-airport-company
+      description: ''
+      weight: '-31'
+    behance:
+      value: ''
+      description: ''
+      weight: '-30'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-29'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-28'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-27'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-26'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-25'
+    website:
+      value: ''
+      description: ''
+      weight: '-24'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-23'
+    contact:
+      value: ''
+      description: ''
+      weight: '-22'
+    rss:
+      value: ''
+      description: ''
+      weight: '-21'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-20'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-19'
+    email:
+      value: ''
+      description: ''
+      weight: '-18'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-17'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-16'
+    xing:
+      value: ''
+      description: ''
+      weight: '-15'
+    github:
+      value: ''
+      description: ''
+      weight: '-14'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-13'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-12'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/corporate*'

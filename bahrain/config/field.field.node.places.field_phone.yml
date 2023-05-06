@@ -1,0 +1,25 @@
+uuid: 11d96656-358d-4057-a121-f0afbdb972e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.places
+  module:
+    - telephone
+    - telephone_advanced
+third_party_settings:
+  telephone_advanced:
+    enabled: false
+id: node.places.field_phone
+field_name: field_phone
+entity_type: node
+bundle: places
+label: phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

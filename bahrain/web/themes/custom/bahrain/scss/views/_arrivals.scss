@@ -1,0 +1,250 @@
+.arrivalsPage {
+  .mainDeparture {
+    padding: 0;
+  }
+
+  .region-content {
+    padding: 0;
+
+    .block-system-main-block {
+      .view-id-arrivalsflight {
+        background: url(https://www.bahrainairport.bh/images/world-dotted-map.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #ece7e9;
+        padding-bottom: 60px;
+
+        .view-filters {
+          background-color: #f5a81c;
+          padding: 20px;
+          margin-top: -45px;
+
+          .views-exposed-form {
+            width: 100%;
+            display: flex;
+
+            .form--inline {
+              display: flex;
+              margin: auto;
+              @media (max-width: 520px) {
+                flex-direction: column;
+              }
+
+              .js-form-item {
+                input {
+                  width: 100% !important;
+                  height: 50px;
+                  color: #3b3b3b;
+                  font-size: 16px;
+                  line-height: 1.63;
+                  border: 1px solid #d8d8d8;
+                  padding: 12px 40px 12px 26px;
+                  border-radius: 25px;
+                  -moz-border-radius: 25px;
+                  -ms-border-radius: 25px;
+                  -o-border-radius: 25px;
+                  -webkit-border-radius: 25px;
+                  background: #ffffff;
+                }
+
+                label {
+                  display: none;
+                }
+              }
+
+              .js-form-wrapper {
+                input {
+                  padding: 12px 20px 12px 20px;
+                  line-height: 16px;
+                  border-radius: 20px;
+                  letter-spacing: 1px;
+                  color: #fff;
+                  background-color: #da291c;
+                  border: 0;
+                  font-size: 14px;
+                  font-weight: 600;
+                  text-align: center;
+                  -webkit-transition: all 0.3s;
+                  -o-transition: all 0.3s;
+                  transition: all 0.3s;
+                  text-transform: uppercase;
+                  margin-top: 5px;
+                }
+
+                @media (max-width: 520px) {
+                  margin: auto;
+                }
+              }
+            }
+          }
+        }
+
+        .view-content {
+          width: 60%;
+          margin: 50px auto 0;
+          @media (max-width: 780px) {
+            width: 80%;
+          }
+          @media (max-width: 520px) {
+            width: 90%;
+          }
+          .views-row {
+            display: flex;
+            color: #000000;
+            background: #ffffff;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 5px 20px 5px 20px;
+            font-weight: 600;
+            align-items: center;
+            min-height: 54px;
+            @media (max-width: 520px) {
+              flex-direction: column;
+            }
+
+            .views-field-scheduled-time {
+              width: 110px;
+              margin: auto 10px;
+              @media (max-width: 520px) {
+                width: auto;
+                font-size: 18px;
+                margin: auto;
+              }
+            }
+
+            .views-field-city {
+              width: 228px;
+              margin: auto;
+              @media (max-width: 520px) {
+                width: auto;
+                font-size: 18px;
+              }
+            }
+
+            .views-field-flight-number {
+              width: 258px;
+              margin: auto;
+              @media (max-width: 520px) {
+                width: auto;
+                font-size: 18px;
+              }
+            }
+
+            .views-field-airline-logo {
+              width: 200px;
+              margin: auto;
+
+              img {
+                max-height: 50px;
+              }
+
+              @media (max-width: 520px) {
+                display: flex;
+                width: auto;
+              }
+              @media (max-width: 520px) {
+                .field-content {
+                  margin: 0 auto 10px;
+                }
+              }
+            }
+
+            .views-field-notify-flights {
+              width: 130px;
+              margin: auto;
+              display: flex;
+
+              .field-content {
+                margin: auto;
+
+                a {
+                  text-decoration: none;
+
+                  img:hover {
+                    filter: invert(0) sepia(0) saturate(0) hue-rotate(175deg);
+                  }
+                }
+
+                .ajax-progress {
+                  padding: 0;
+                  display: block;
+                }
+              }
+            }
+
+            // status styles
+            .views-field-state {
+              .flight-state{
+                width: 150px;
+                margin: auto 10px;
+                color: #f46b00;
+                background-color: #fff8ee;
+                border: 1px solid #f46b00;
+                display: inline-block;
+                padding: 7px 9px 4px 9px;
+                font-size: 11px;
+                font-weight: bold;
+                line-height: 1;
+                letter-spacing: 1.1px;
+                text-align: center;
+                border-radius: 3px;
+                white-space: nowrap;
+                vertical-align: middle;
+                text-transform: uppercase;
+                min-width: 88px;
+                max-width: 88px;
+                min-height: 23px;
+                &.cancelled {
+                  color: #e6163b;
+                  background-color: #feeff2;
+                  border: 1px solid #e6163b;
+                }
+                &.early {
+                  color: #707283;
+                  background-color: #eff0fa;
+                  border: 1px solid #707283;
+                }
+              }
+            }
+          }
+        }
+
+        //btn
+        .js-pager__items {
+          padding: 0;
+
+          .pager__item {
+            display: flex;
+
+            a {
+              display: inline-block;
+              padding: 9px 20px 9px 20px;
+              line-height: 16px;
+              border-radius: 20px;
+              letter-spacing: 1px;
+              color: #1d242b;
+              background-color: transparent;
+              border: 1px solid #1d242b;
+              font-size: 14px;
+              font-weight: 600;
+              text-align: center;
+              transition: all 0.3s;
+              text-transform: uppercase;
+              margin: auto;
+              &:hover{
+                background-color: #1d242b;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.view-arrivalsflight,.view-departuresflight{
+  .view-empty{
+    background-color: transparent;
+  }
+}

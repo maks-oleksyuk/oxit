@@ -1,0 +1,33 @@
+uuid: 216f4140-2ead-427b-8e42-64328c8209f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.to-from-the-airport
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: tofromtheairport_4
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:to-from-the-airport'
+settings:
+  id: 'system_menu_block:to-from-the-airport'
+  label: 'To / From The Airport Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/car-park\r\n/ar/car-park\r\n\r\n/car-rental-limousine-services\r\n/ar/car-rental-limousine-services\r\n\r\n/taxi\r\n/ar/taxi\r\n\r\n/bus\r\n/ar/bus"

@@ -1,0 +1,105 @@
+.contact-block {
+  box-shadow: 0 2px 24px 0 rgba(59, 59, 59, 16%);
+  background-color: #fff;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0;
+  @media (min-width: 992px) {
+    &:nth-child(2n) {
+      float: left;
+    }
+    &:nth-child(2n+1) {
+      float: right;
+    }
+  }
+  .field__label {
+    font-size: 0;
+  }
+  .field--name-field-employee-name {
+    order: 0;
+    background-color: #da291c;
+    color: #fff;
+    &.field__item {
+      font-size: 19px;
+      font-weight: bold;
+      color: #fff;
+    }
+    padding: 15px 20px 0;
+  }
+  .field--name-field-employee-position {
+    order: 1;
+    background-color: #da291c;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-transform: uppercase;
+    &.field__item {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 2.17;
+      letter-spacing: 1.5px;
+      color: #fff;
+    }
+  }
+  .field--name-field-employee-email {
+    order: 2;
+    padding: 15px 50px;
+    position: relative;
+    text-decoration: underline;
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../images/letter-email.svg) center center no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 10px;
+      width: 30px;
+      height: 22px;
+    }
+    a {
+      font-size: 16px;
+      line-height: 1.56;
+      color: #3b3b3b;
+    }
+  }
+  .field--name-field-employee-number {
+    order: 3;
+    padding: 15px 50px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      background: url(../images/phone-img.svg) center center no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 10px;
+      width: 30px;
+      height: 22px;
+    }
+    a {
+      font-size: 16px;
+      line-height: 1.56;
+      color: #3b3b3b;
+      text-decoration: unset;
+    }
+  }
+}
+[lang="ar"] {
+  .contact-block {
+    @media (min-width: 992px) {
+      &:nth-child(2n) {
+        float: right;
+      }
+      &:nth-child(2n+1) {
+        float: left;
+      }
+    }
+    .field--name-field-employee-email:before, .field--name-field-employee-number:before {
+      left: unset;
+      right: 10px;
+    }
+  }
+}
+

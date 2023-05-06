@@ -1,0 +1,6 @@
+name: Tooltips Update
+description: Creates a custom module for changing image_tooltips module.
+type: module
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

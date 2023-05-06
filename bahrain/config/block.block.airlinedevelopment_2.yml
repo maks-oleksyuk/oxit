@@ -1,0 +1,33 @@
+uuid: 874dd9a7-46c7-4b5f-a0ab-4848538b17a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.airline-development
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: airlinedevelopment_2
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:airline-development'
+settings:
+  id: 'system_menu_block:airline-development'
+  label: 'Airline Development'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/market-facts\r\n/ar/corporate/market-facts\r\n\r\n/corporate/conditions-of-use\r\n/ar/corporate/conditions-of-use\r\n\r\n/corporate/why-bahrain-international-airport\r\n/ar/corporate/why-bahrain-international-airport\r\n\r\n/corporate/ground-handling\r\n/ar/corporate/ground-handling\r\n\r\n/corporate/aircraft-fueling\r\n/ar/corporate/aircraft-fueling\r\n\r\n/corporate/in-flight-catering\r\n/ar/corporate/in-flight-catering\r\n\r\n/corporate/contacts-airline-development\r\n/ar/corporate/contacts-airline-development"

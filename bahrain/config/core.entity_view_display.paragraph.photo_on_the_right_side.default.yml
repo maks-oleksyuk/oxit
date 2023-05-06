@@ -1,0 +1,114 @@
+uuid: 97ee434d-2b98-4f9a-b235-440ef2ad62a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photo_on_the_right_side.field_body
+    - field.field.paragraph.photo_on_the_right_side.field_image
+    - field.field.paragraph.photo_on_the_right_side.field_table
+    - paragraphs.paragraphs_type.photo_on_the_right_side
+  module:
+    - layout_builder
+    - tablefield
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Right side photo'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          10e665dc-14a9-443a-8a29-89908b519271:
+            uuid: 10e665dc-14a9-443a-8a29-89908b519271
+            region: first
+            configuration:
+              id: 'field_block:paragraph:photo_on_the_right_side:field_body'
+              label: body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          5ccd222a-ccc4-429a-b62a-3476926f3f6c:
+            uuid: 5ccd222a-ccc4-429a-b62a-3476926f3f6c
+            region: second
+            configuration:
+              id: 'field_block:paragraph:photo_on_the_right_side:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7ebe061e-14f1-4f9f-9add-8c7d282f07ab:
+            uuid: 7ebe061e-14f1-4f9f-9add-8c7d282f07ab
+            region: first
+            configuration:
+              id: 'field_block:paragraph:photo_on_the_right_side:field_table'
+              label: Table
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: tablefield
+                label: hidden
+                settings:
+                  row_header: true
+                  column_header: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.photo_on_the_right_side.default
+targetEntityType: paragraph
+bundle: photo_on_the_right_side
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_table:
+    type: tablefield
+    label: above
+    settings:
+      row_header: true
+      column_header: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

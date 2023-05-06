@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function live_clock_theme() {
+  return [
+    'live_clock_block' => [
+      'variables' => [
+        'id' => NULL,
+        'country' => NULL,
+      ],
+      'template' => 'live-clock',
+    ],
+  ];
+}

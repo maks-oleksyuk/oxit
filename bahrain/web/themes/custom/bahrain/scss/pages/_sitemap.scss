@@ -1,0 +1,83 @@
+.sitemap {
+  &-item {
+    ul {
+      padding-left: 15px;
+      list-style: none;
+
+      li {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 8px 20px;
+        color: $light-black;
+        position: relative;
+        letter-spacing: .2px;
+        text-decoration: none;
+
+        &:before {
+          content: "";
+          left: 0;
+          top: 13px;
+          width: 10px;
+          height: 12px;
+          position: absolute;
+          background: url(../images/bullet-arrow.svg) no-repeat;
+        }
+
+        html[lang='ar'] &:before {
+          right: 0;
+          left: unset;
+          transform: rotate(180deg);
+        }
+
+        &:hover {
+          color: $light-red;
+        }
+      }
+    }
+
+    & > div > ul {
+      padding: 0;
+
+      & > li {
+        padding: 10px 10px;
+        border-bottom: 1px solid $light-gray;
+
+
+        & > span, & > a {
+          font-size: 19px;
+          color: #da291c;
+          font-weight: normal;
+          line-height: 21px;
+          letter-spacing: 1.8px;
+        }
+
+        & > a {
+          padding-inline: unset;
+          text-decoration: none;
+
+          &:before {
+            background: unset;
+          }
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+
+    // Yes, I know this is wrong
+    // I'm too lazy to make the copy of the main menu I need
+    &--menu-main-menu {
+      ul:first-child > li:nth-child(4) > ul > li:last-child {
+        display: none;
+      }
+    }
+  }
+}

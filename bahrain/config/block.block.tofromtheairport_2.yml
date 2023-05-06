@@ -1,0 +1,36 @@
+uuid: d49744aa-e30b-441d-8b68-36954ef15f1c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b6630851-be65-4c34-a615-e358435abb60'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '288'
+id: tofromtheairport_2
+theme: bahrain
+region: banner
+weight: -8
+provider: null
+plugin: 'block_content:b6630851-be65-4c34-a615-e358435abb60'
+settings:
+  id: 'block_content:b6630851-be65-4c34-a615-e358435abb60'
+  label: 'To / From The Airport (Taxi)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/taxi\r\n/ar/taxi"

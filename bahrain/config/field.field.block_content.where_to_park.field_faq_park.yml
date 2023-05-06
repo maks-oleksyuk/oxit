@@ -1,0 +1,22 @@
+uuid: e1045551-09ab-4b43-b3e4-9f362c9c60fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.where_to_park
+    - field.storage.block_content.field_faq_park
+  module:
+    - faqfield
+id: block_content.where_to_park.field_faq_park
+field_name: field_faq_park
+entity_type: block_content
+bundle: where_to_park
+label: 'Faq Park'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: full_html
+field_type: faqfield

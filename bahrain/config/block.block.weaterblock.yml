@@ -1,0 +1,28 @@
+uuid: 10edc067-72ab-418c-ae01-4fe8fb62f57f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - block_class
+    - openweather
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'weaterblock weather'
+id: weaterblock
+theme: bahrain
+region: header
+weight: 0
+provider: null
+plugin: open_weather_block
+settings:
+  id: open_weather_block
+  label: 'OpenWeater Block'
+  label_display: '0'
+  provider: openweather
+  country: Bahrain
+visibility: {  }

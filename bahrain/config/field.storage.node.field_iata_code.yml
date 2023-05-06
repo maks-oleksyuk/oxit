@@ -1,0 +1,20 @@
+uuid: 8091f9bf-ef4f-40c8-8566-4cfcf5f9ea7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_iata_code
+field_name: field_iata_code
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

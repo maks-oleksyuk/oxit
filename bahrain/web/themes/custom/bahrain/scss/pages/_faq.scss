@@ -1,0 +1,136 @@
+.field--name-field-faq-title{
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon,.ui-state-active .ui-icon,  {
+  background-image: url(../images/faq-plus-img.svg);
+}
+[lang = "ar"] .field__item{
+  .faqfield-question{
+    padding: 30px 0 20px 30px;
+    span{
+      right: unset;
+      left: 0;
+    }
+  }
+}
+.field__item {
+  .faqfield-question:first-child{
+    border-top: none!important;
+  }
+  .faqfield-question{
+    background: $white;
+    color: $black;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+    padding: 30px 30px 20px 0;
+    border-top: 1px solid rgba(151,151,151,.38)!important;
+    .ui-icon-triangle-1-s{
+      background: url(../images/faq-minus-img.svg) no-repeat;
+      top: 58%;
+    }
+    span{
+      background: url(../images/faq-plus-img.svg) no-repeat;
+      position: absolute;
+      top: 43%;
+      right: 0;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      background-size: contain;
+    }
+  }
+  .faqfield-answer{
+    max-width: 811px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0px 0px;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .ui-corner-all, .ui-corner-top, .ui-corner-left,.ui-corner-bottom,.ui-corner-right, .ui-corner-tl {
+    border: unset;
+  }
+}
+.faq-content{
+  .region-content{
+    .block-system-main-block{
+      @media (max-width: 1400px) and (min-width: 1200px) {
+        padding-left: 70px;
+      }
+      margin-top: 0;
+    }
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+    }
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .faq-links-block{
+    @media (max-width: 1200px) {
+      padding-top: unset;
+    }
+    padding-top: 50px;
+  }
+  .navbar-nav{
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      white-space: nowrap;
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      overflow-x: auto;
+      padding: 0;
+    }
+    .nav-item{
+      @media (max-width: 1200px) {
+       margin-right: 10px;
+      }
+      a{
+        @media (max-width: 1200px) {
+          margin-bottom: 0;
+          min-width: auto;
+          text-align: center;
+          padding: 10px 15px;
+          font-size: 15px;
+        }
+        border-radius: 11px;
+        border: solid 1px rgba(151,151,151,.38);
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        color: $black;
+        margin-bottom: 10px;
+        padding: 19px 18px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+        a:hover{
+          background: url(../images/wheretopark-bg.svg) no-repeat center center #d62726;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+          color: #fff;
+        }
+    }
+  }
+}

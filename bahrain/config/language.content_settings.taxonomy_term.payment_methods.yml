@@ -1,0 +1,18 @@
+uuid: e97d4930-f41d-4f86-8cbd-8db2e3bcccc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payment_methods
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.payment_methods
+target_entity_type_id: taxonomy_term
+target_bundle: payment_methods
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,23 @@
+uuid: f2903ef6-f996-47f2-8b6e-924c5e8965bc
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bahrain
+_core:
+  default_config_hash: Vno0Qd3oUtqJLe6rNZ2_ZCHq7JhxjPRww3_4uz5OH9o
+id: bahrain_search_form
+theme: bahrain
+region: nav_additional
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

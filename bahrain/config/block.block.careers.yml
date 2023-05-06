@@ -1,0 +1,36 @@
+uuid: 690e4b10-9701-412d-a97e-715f09c81eb6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:8c89f248-62bb-4d30-8851-f1d6510d4345'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '278'
+id: careers
+theme: bahrain
+region: banner
+weight: -31
+provider: null
+plugin: 'block_content:8c89f248-62bb-4d30-8851-f1d6510d4345'
+settings:
+  id: 'block_content:8c89f248-62bb-4d30-8851-f1d6510d4345'
+  label: Careers
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/careers\r\n/ar/corporate/careers"

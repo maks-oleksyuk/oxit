@@ -1,0 +1,6 @@
+tooltips-filters:
+  js:
+    js/tooltips-filters.js: {}
+  dependencies:
+    - field_tooltips_data/tooltips-data-view
+    - core/drupalSettings

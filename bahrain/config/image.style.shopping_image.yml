@@ -1,0 +1,15 @@
+uuid: 75b1ebc3-bf62-4677-9b3b-c50a8be5a3e6
+langcode: en
+status: true
+dependencies: {  }
+name: shopping_image
+label: 'Shopping Image'
+effects:
+  3cf9dccc-761d-4b9a-ba67-3a91fa1482f1:
+    uuid: 3cf9dccc-761d-4b9a-ba67-3a91fa1482f1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 212
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 3d08c043-2d40-4e72-9e64-4b012dad2ace
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bahrain
+_core:
+  default_config_hash: rcn1fB9DM48WZotUUlSkI6eNdVmhEW81CjqkeiTdsno
+id: bahrain_local_tasks
+theme: bahrain
+region: content
+weight: -41
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

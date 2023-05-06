@@ -1,0 +1,37 @@
+uuid: 89241363-8d90-4526-86c8-85dc70e0e5b1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:4fffe0cc-2bbf-43cf-b3e1-1a9299be81a8'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: nawalalmajedcontactdude1
+theme: bahrain
+region: content
+weight: -37
+provider: null
+plugin: 'block_content:4fffe0cc-2bbf-43cf-b3e1-1a9299be81a8'
+settings:
+  id: 'block_content:4fffe0cc-2bbf-43cf-b3e1-1a9299be81a8'
+  label: 'Nawal AlMajed - Contact Dude 1'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/contacts-airline-development\r\n/ar/corporate/contacts-airline-development"

@@ -1,0 +1,22 @@
+uuid: 4a277943-7d80-4eeb-96d3-bfea4c3a024e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payment_methods
+id: taxonomy_term.payment_methods.status
+field_name: status
+entity_type: taxonomy_term
+bundle: payment_methods
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

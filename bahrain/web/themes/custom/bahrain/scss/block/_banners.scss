@@ -1,0 +1,111 @@
+.region.region-banner {
+  .block-block-content {
+    height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    transition: all 2s cubic-bezier(.7, 0, .3, 1);
+    @include media-breakpoint-down(lg) {
+      height: 200px;
+
+      .field.text-formatted {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(29, 36, 43, .6);
+    }
+
+    .field.text-formatted {
+      p {
+        margin: 0;
+        color: white;
+        font-size: 35px;
+        line-height: 1.2;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+[lang = "ar"] .main-banner-block{
+  .field__item {
+    a{
+      &:hover:after{
+        -webkit-animation: bounceleft 2s infinite;
+        animation: bounceLeft 2s infinite;
+      }
+      &:after {
+        right: unset;
+        transform: rotateY(180deg);
+        left: -26px;
+        top: 3px;
+      }
+    }
+  }
+}
+.main-banner-block {
+  height: 513px!important;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .field__item {
+    line-height: 1;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    z-index: 2;
+
+    a{
+      transition: all .3s;
+      position: relative;
+      color: #fff;
+      text-decoration: unset;
+      &:hover:after{
+        -webkit-animation: bounceRight 2s infinite;
+        animation: bounceRight 2s infinite;
+      }
+      &:after {
+        @include right-arrow-white(14px,14px);
+        right: -20px;
+        top: 0;
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    background-color: rgba(29, 36, 43, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+}
+

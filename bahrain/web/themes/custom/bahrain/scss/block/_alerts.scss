@@ -1,0 +1,78 @@
+#sitewide-alert {
+  height: auto;
+  transition: height 1.5s;
+
+  .alert-primary {
+    animation: scale-up-ver-center 2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    margin: 0;
+    display: flex;
+    color: $light-red;
+    border-color: unset;
+    border-radius: unset;
+    justify-content: center;
+    background-color: $light-red;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column-reverse;
+      align-items: end;
+    }
+
+    p {
+      color: white;
+    }
+
+    button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      color: white;
+      font-size: 20px;
+      background-color: unset;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    .field--name-message {
+      display: flex;
+      max-width: 1320px;
+      align-items: center;
+      gap: 20px;
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+
+      .alert {
+        &-icon {
+          width: 40px;
+          height: 40px;
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        &-txt {
+          gap: 10px;
+          display: flex;
+          flex-direction: column;
+
+          @include media-breakpoint-down(md) {
+            font-size: 14px;
+          }
+
+          a {
+            color: white;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

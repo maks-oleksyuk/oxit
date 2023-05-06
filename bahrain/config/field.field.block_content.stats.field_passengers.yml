@@ -1,0 +1,21 @@
+uuid: 81909242-a692-4262-a8ce-947d71fe8109
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats
+    - field.storage.block_content.field_passengers
+  module:
+    - text
+id: block_content.stats.field_passengers
+field_name: field_passengers
+entity_type: block_content
+bundle: stats
+label: Passengers
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

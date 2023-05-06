@@ -1,0 +1,199 @@
+[about="/car-park"], [about="/ar/car-park"] {
+  .field--name-body {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    max-width: 790px;
+    margin: 40px auto 70px;
+    line-height: 28px;
+  }
+  .field--name-field-paragraph {
+    & > .field__item:not(:first-child) {
+      margin-top: 100px;
+    }
+    &:last-child {
+      margin-bottom: 60px;
+    }
+    .paragraph {
+      display: inherit;
+      margin-bottom: inherit;
+    }
+    .paragraph--type--photo-on-the-left-side, .paragraph--type--photo-on-the-right-side {
+      .layout__region {
+        display: block;
+      }
+      .layout--twocol-section {
+        @media (max-width: 991px) {
+          flex-direction: column;
+        }
+        .field--type-text-long {
+          font-size: 16px;
+          line-height: 1.56;
+          text-align: justify;
+          color: #3b3b3b;
+          border: none;
+        }
+        .tablefield.table {
+          border-radius: 10px;
+          border-collapse: collapse;
+          overflow: hidden;
+          border-spacing: 0;
+          margin-bottom: 0;
+          th {
+            border-top: none;
+            background: #d8d8d8;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.2;
+            border-right: solid 1px rgba(151,151,151,.38);
+            border-left: solid 1px rgba(151,151,151,.38);
+          }
+          tr {
+            height: 18px;
+          }
+          td {
+            vertical-align: top;
+            border: solid 1px rgba(151,151,151,.38);
+            padding: 5px 10px;
+            font-size: 16px;
+          }
+        }
+        .field--type-image {
+          position: relative;
+          @media (max-width: 991px) {
+            margin: 0 auto;
+            text-align: center;
+          }
+          &:after {
+            @media (max-width: 991px) {
+              margin-left: 0!important;
+              margin-right: 0!important;
+              left: -50px!important;
+              right: -50px!important;
+              bottom: 40%;
+              top: -35px;
+              background-position: 0 0;
+              width: unset!important;
+              background-size: contain;
+              border-radius: 10px;
+              max-height: 350px;
+            }
+            @media (max-width: 576px) {
+              max-height: 250px;
+            }
+          }
+          img {
+            border-radius: 10px;
+            display: block;
+            vertical-align: middle;
+            border-style: none;
+            object-fit: cover;
+            @media (min-width: 992px) {
+              width: 575px;
+            }
+            @media (max-width: 991px) {
+              max-height: 300px;
+              margin: auto;
+            }
+            @media (max-width: 575px) {
+              //max-width: 280px;
+            }
+          }
+        }
+      }
+    }
+    .paragraph--type--photo-on-the-left-side {
+      .layout--twocol-section {
+        flex-wrap: nowrap;
+        .layout__region {
+          display: block;
+        }
+        .layout__region--second {
+          font-size: 16px;
+          line-height: 1.56;
+          text-align: justify;
+          color: #3b3b3b;
+          border: none;
+          @media (min-width: 992px) {
+            padding: 0 60px;
+          }
+        }
+        .layout__region--first {
+          margin-bottom: 40px;
+          .field--type-image {
+            &:after {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              margin-right: -190px;
+              right: 100%;
+              content: "";
+              position: absolute;
+              top: -24px;
+              bottom: -24px;
+              width: 100%;
+              z-index: -1;
+              background: #642667 url('../images/wave3.svg') no-repeat 0 0;
+            }
+            img {
+            }
+          }
+        }
+      }
+    }
+    .paragraph--type--photo-on-the-right-side {
+      .layout--twocol-section {
+        @media (max-width: 991px) {
+          flex-direction: column-reverse;
+        }
+        .layout__region--first {
+          font-size: 16px;
+          line-height: 1.56;
+          text-align: justify;
+          color: #3b3b3b;
+          border: none;
+          @media (min-width: 992px) {
+            padding: 0 60px;
+          }
+        }
+        .layout__region--second {
+          margin-bottom: 40px;
+        }
+        .field--type-image {
+          &:after {
+            content: "";
+            position: absolute;
+            top: -24px;
+            bottom: -24px;
+            width: 100%;
+            z-index: -1;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: -190px;
+            left: 100%;
+            background: #da291c url('../images/wave4.svg') no-repeat 0 0;
+          }
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+[about="/ar/car-park"] {
+  .field--name-field-paragraph .paragraph--type--photo-on-the-right-side .layout--twocol-section .field--type-image:after {
+    left: 0;
+  }
+  .field--name-field-paragraph .paragraph--type--photo-on-the-left-side .layout--twocol-section .layout__region--first .field--type-image:after {
+    right: unset;
+  }
+}
+.car-park-node {
+  .page-title {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.2;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 25px;
+  }
+}

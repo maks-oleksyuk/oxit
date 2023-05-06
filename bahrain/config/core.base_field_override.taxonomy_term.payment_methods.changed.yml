@@ -1,0 +1,18 @@
+uuid: 82fff0d5-7820-4247-b14b-5ff46526315c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payment_methods
+id: taxonomy_term.payment_methods.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: payment_methods
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

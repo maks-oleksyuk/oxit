@@ -1,0 +1,46 @@
+.paragraph {
+  &--type {
+    &--photo-on-the-left-side,
+    &--photo-on-the-right-side {
+      display: flex;
+      margin-bottom: 70px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+
+      .layout--twocol-section--50-50 {
+        flex: 1;
+      }
+
+      .layout__region {
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-down(md) {
+          &--first, &--second {
+            flex: 1 1 100% !important;
+          }
+        }
+
+        &--first {
+          padding: 0 15px;
+          justify-content: start;
+          @include media-breakpoint-down(md) {
+            padding: 0;
+            margin-bottom: 20px;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    &--photo-on-the-right-side {
+      .layout__region {
+        &--second {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

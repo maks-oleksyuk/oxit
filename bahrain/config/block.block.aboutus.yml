@@ -1,0 +1,33 @@
+uuid: b9f41e4d-f2e6-4d2c-a2b2-670962d8bb3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about-us
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: aboutus
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:about-us'
+settings:
+  id: 'system_menu_block:about-us'
+  label: 'About Us'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/bahrain-airport-company\r\n/ar/corporate/bahrain-airport-company\r\n\r\n/corporate/board-of-directors\r\n/ar/corporate/board-of-directors\r\n\r\n/corporate/executive-management\r\n/ar/corporate/executive-management\r\n\r\n/corporate/governance\r\n/ar/corporate/governance\r\n\r\n/corporate/bahrain-international-airport\r\n/ar/corporate/bahrain-international-airport\r\n\r\n/corporate/corporate-social-responsibility\r\n/ar/corporate/corporate-social-responsibility"

@@ -1,0 +1,290 @@
+.airlinesPage {
+  .mainAirline {
+    padding: 0;
+
+    .region-content {
+      padding: 0;
+
+      .block-system-main-block {
+        background: url(https://www.bahrainairport.bh/images/world-dotted-map.png) no-repeat center 100px #ece7e9;
+        padding-bottom: 60px;
+
+        .view-filters {
+          background: #da291c;
+          padding: 40px 20px;
+          margin-top: -45px;
+
+          form {
+            display: flex;
+            width: 100%;
+
+            .form--inline {
+              display: flex;
+              border: 1px solid #d8d8d8;
+              border-radius: 25px;
+              height: 49px;
+              padding: 6px;
+              background-color: #fff;
+              margin: auto;
+
+              .js-form-type-textfield {
+                margin: auto;
+
+                label {
+                  display: none;
+                }
+
+                input {
+                  border: none;
+                  height: 41px;
+                  padding-top: 6px;
+                }
+
+                input:focus {
+                  box-shadow: none;
+                }
+              }
+
+              .form-actions {
+                margin: auto;
+                background: url('../images/icons8-search-18.svg') no-repeat center center;
+                background-size: 28px;
+
+                input {
+                  border: none;
+                  background-color: rgba(0, 0, 0, 0);
+                  opacity: 0;
+                  margin-top: -20px;
+                }
+
+              }
+            }
+          }
+        }
+      }
+
+      .view-content {
+        margin-top: 50px;
+        padding: 0 15%;
+        @media (max-width: 1414px) {
+          padding: 0 5%;
+        }
+        @media (max-width: 1100px) {
+          padding: 0;
+        }
+
+        .views-view-grid {
+          @media (max-width: 1100px) {
+            padding: 0 25%;
+          }
+          @media (max-width: 500px) {
+            padding: 0 20px;
+          }
+
+          .views-row {
+            .views-col {
+              position: relative;
+              color: #000000;
+              background: #ffffff;
+              margin-bottom: 10px;
+              border-radius: 10px;
+              font-weight: bold;
+              min-height: 1px;
+              display: flex;
+              align-items: center;
+              padding-left: 13px;
+              width: 30%;
+              margin-left: 33px;
+              @media (max-width: 1100px) {
+                width: 100%;
+                margin: 10px 0;
+              }
+
+              .views-field {
+                .field-content {
+                  display: flex;
+                  width: 97%;
+                  min-height: 86px;
+                  align-items: center;
+
+                  a {
+                    text-decoration: none;
+                    position: relative;
+                    padding-left: 10px;
+                  }
+                }
+              }
+
+              .views-field-title {
+                a {
+                  color: black;
+                  margin-left: 20px;
+                }
+
+                &:after {
+                  @include right-arrow-black(15px,15px);
+                  bottom: 0;
+                  top: 0;
+                  cursor: pointer;
+                  right: 33px;
+                }
+                &:hover:after{
+                  -webkit-animation: bounceRight 2s infinite;
+                  animation: bounceRight 2s infinite;
+                }
+              }
+
+              img {
+                min-width: 65px;
+                max-width: 70px;
+              }
+            }
+          }
+        }
+      }
+
+      //btn
+      .js-pager__items {
+        padding: 0;
+
+        .pager__item {
+          display: flex;
+
+          a {
+            display: inline-block;
+            padding: 9px 20px 9px 20px;
+            line-height: 16px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            color: #1d242b;
+            background-color: transparent;
+            border: 1px solid #1d242b;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            margin: auto;
+            &:hover{
+              background-color: #1d242b;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[lang="ar"] {
+  .airlinesPage {
+    .mainAirline {
+      .region-content {
+        .view-content {
+          .views-view-grid {
+            .views-row {
+              .views-col {
+                position: relative;
+
+                .views-field-field-media-image {
+                  .field-content {
+                    padding-right: 10px;
+
+                    a {
+                      padding-right: 10px;
+                    }
+                  }
+                }
+
+                .views-field-title {
+                  //position: relative;
+                  a {
+                    color: black;
+                    margin-left: 20px;
+                  }
+
+                  &:after {
+                    display: none;
+
+                  }
+                }
+
+                img {
+                  min-width: 65px;
+                  max-width: 70px;
+                }
+
+                &:after {
+                  @include right-arrow-black(15px,15px);
+                  bottom: 0;
+                  top: 0;
+                  cursor: pointer;
+                  left: 33px;
+                  transform: scaleX(-1);
+                }
+                &:hover:after{
+                  -webkit-animation: bounceLeft 2s infinite;
+                  animation: bounceLeft 2s infinite;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.page-node-type-airlines{
+  .block-field-blocknodeairlinestitle{
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+    font-weight: bold;
+    padding-top: 22px;
+    margin-bottom: 25px;
+  }
+  .layout{
+    .field{
+      margin: 10px 0;
+    }
+    .field__label{
+      padding-right: 15px;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: normal;
+      color: #3b3b3b;
+      font-weight: 500;
+      text-align: justify;
+    }
+    .field__item a{
+      color: $light-red;
+      text-decoration: none;
+      &:hover{
+        color: $light-black;
+      }
+    }
+    .field--label-inline .field__label, .field--label-inline .field__items {
+      &:lang(ar) {
+        float: right;
+      }
+    }
+    .field--name-field-media-image{
+      border-radius: 24px;
+      box-shadow: 0 2px 14px 0 rgba(59, 59, 59, 16%);
+      text-align: center;
+      padding: 89px 26px 106px 20px;
+      img{
+        max-width: 330px;
+      }
+      @media (max-width: 450px) {
+        padding: 80px 0 80px 0;
+        img{
+          max-width: 230px;
+        }
+      }
+    }
+  }
+}
+
+

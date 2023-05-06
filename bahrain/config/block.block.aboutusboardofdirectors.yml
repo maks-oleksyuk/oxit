@@ -1,0 +1,36 @@
+uuid: 0d79fb06-e0d1-4978-ae62-43723f3cd3a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:e216f53d-40af-4a66-983e-173dae3ed73a'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '282'
+id: aboutusboardofdirectors
+theme: bahrain
+region: banner
+weight: -42
+provider: null
+plugin: 'block_content:e216f53d-40af-4a66-983e-173dae3ed73a'
+settings:
+  id: 'block_content:e216f53d-40af-4a66-983e-173dae3ed73a'
+  label: 'About Us (Board of Directors)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /corporate/board-of-directors

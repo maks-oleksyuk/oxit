@@ -1,0 +1,25 @@
+uuid: 2d9cc2af-5e54-41f8-b30b-5bb5a422b141
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_local_call_center
+  module:
+    - telephone
+    - telephone_advanced
+third_party_settings:
+  telephone_advanced:
+    enabled: false
+id: block_content.contact_us.field_local_call_center
+field_name: field_local_call_center
+entity_type: block_content
+bundle: contact_us
+label: 'Local call center'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

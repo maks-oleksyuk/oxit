@@ -1,0 +1,23 @@
+uuid: fe49a183-a969-4975-ac3e-0558adf8ee41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.history
+  module:
+    - text
+id: node.history.body
+field_name: body
+entity_type: node
+bundle: history
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

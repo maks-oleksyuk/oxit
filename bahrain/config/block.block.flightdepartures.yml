@@ -1,0 +1,36 @@
+uuid: 63d2afec-461a-4c27-b189-d8f0101ca918
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:a750e85b-77f7-42e2-b264-61b315ebc2a5'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '296'
+id: flightdepartures
+theme: bahrain
+region: banner
+weight: -26
+provider: null
+plugin: 'block_content:a750e85b-77f7-42e2-b264-61b315ebc2a5'
+settings:
+  id: 'block_content:a750e85b-77f7-42e2-b264-61b315ebc2a5'
+  label: 'Flight Departures'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/flight-departures\r\n/ar/flight-departures"

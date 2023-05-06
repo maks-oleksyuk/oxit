@@ -1,0 +1,54 @@
+uuid: d2836c5b-8f36-41a1-9e6f-d1bf9e27e1fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.read_more_block
+    - core.entity_view_mode.block_content.contact_us_horizontal
+    - field.field.block_content.read_more_block.body
+    - field.field.block_content.read_more_block.field_corporate_pages
+    - field.field.block_content.read_more_block.field_link
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.read_more_block.contact_us_horizontal
+targetEntityType: block_content
+bundle: read_more_block
+mode: contact_us_horizontal
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_corporate_pages:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

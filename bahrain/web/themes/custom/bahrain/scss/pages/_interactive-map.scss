@@ -1,0 +1,225 @@
+.ui-widget-content{
+  border-radius: 10px;
+  border: none!important;
+  .ui-dialog-titlebar{
+    background: white;
+    border: none;
+    position: relative;
+    padding: 0;
+  }
+  .ui-dialog-titlebar-close{
+    z-index: 9999;
+    position: absolute;
+    top: 19px;
+    right: 11px;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    line-height: 0;
+    width: 21px;
+    height: 17px;
+    background-color: #fff;
+    padding-top: 6px;
+    border-radius: 100%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 50%);
+    opacity: 1;
+    &:focus{
+      box-shadow: unset;
+    }
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+  h2,.ui-dialog-title{
+    display: none;
+  }
+  .ui-dialog-content{
+    padding: 0;
+  }
+  .block-field-blocknodeplacesfield-taxonomy{
+    .field__item{
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      background-color: #9db0ac;
+      border-radius: 2px;
+      padding: 4px 8px 2px;
+      font-size: 11px;
+      line-height: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.46px;
+      color: #ffffff;
+      z-index: 1;
+      display: inline-block;
+    }
+  }
+  .block-field-blocknodeplacesfield-image{
+    position: relative;
+  }
+  .block-field-blocknodeplacestitle{
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .block-field-blocknodeplacesbody{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 25px;
+    color: $light-black;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .layout--onecol{
+    &:first-child{
+
+    }
+    &:last-child{
+      padding: 15px;
+    }
+  }
+  .field--name-field-link-to-content{
+    a{
+      display: inline-block;
+      padding: 12px 44px 12px 20px;
+      line-height: 16px;
+      border-radius: 20px;
+      color: #fff;
+      background-color: #da291c;
+      border: 0;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      position: relative;
+      text-decoration: none;
+      &:after{
+        background: url(../images/arrow-right-white.svg) no-repeat center center;
+        width: 14px;
+        height: 14px;
+        display: block;
+        position: absolute;
+        content: "";
+        right: 15px;
+        top: 0px;
+        bottom: 0;
+        margin: auto 0;
+      }
+      &:hover:after {
+        -webkit-animation: bounceRight 2s infinite;
+        animation: bounceRight 2s infinite;
+      }
+    }
+  }
+
+}
+[lang="ar"] .ui-widget-content{
+  .field--name-field-link-to-content {
+    a {
+      padding: 12px 20px 12px 44px;;
+      &:after {
+        right: unset;
+        left: 15px;
+        transform: rotateY(180deg);
+      }
+
+      &:hover:after {
+        -webkit-animation: bounceLeft 2s infinite;
+        animation: bounceLeft 2s infinite;
+      }
+    }
+  }
+}
+
+.field--name-field-tooltip-page{
+  .field__label{
+    display: none;
+  }
+}
+
+
+[class*="/maps/arrivals"],[class*="/ar/maps/arrivals"],[class*="/maps/departures-after-check"],[class*="/ar/maps/departures-after-check"],[class*="/maps/departures-pre-check"],[class*="/ar/maps/departures-pre-check"], {
+  main > .container{
+    max-width: unset;
+    padding: unset;
+  }
+  .node__content{
+    margin: 0 auto;
+  }
+  .region-short-menu .block-menu .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0;
+    justify-content: center;
+    @media (max-width: 560px) {
+      justify-content: flex-start;
+    }
+  }
+  .region-content{
+    padding: 0;
+  }
+  .tip{
+    img{
+      @media (max-width: 400px) {
+        height: 22px;
+        width: 20px;
+      }
+    }
+  }
+  #block-bahrain-page-title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 26px 0px;
+    background: url(../images/wheretopark-bg.svg) no-repeat 0 0 #d62726;
+    background-size: cover;
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
+    > .page-title{
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 42px;
+      display: block;
+      color: $white;
+      @media (max-width: 576px) {
+        flex-basis: 100%;
+      }
+    }
+    select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      max-width: 300px;
+      background: url(../images/down-arrow2.svg) no-repeat right;
+      background-size: 30px 8px;
+      border-radius: 25px;
+      height: 50px;
+      border: solid 1px rgba(59, 59, 59, 0.2);
+      background-color: #ffffff;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+      padding: 12px 30px 12px 26px;
+      line-height: 16px;
+      @media (max-width: 400px) {
+        max-width: 240px;
+      }
+      &:focus-visible{
+        outline: none;
+      }
+    }
+  }
+}
+

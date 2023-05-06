@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 25 28"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="airplane.svg"
+   width="25"
+   height="28"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="10.429825"
+     inkscape:cx="-23.767463"
+     inkscape:cy="1.5848655"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <path
+     d="M 12,5.85626 C 12,3.71874 13.812501,0 16,0 c 2.250002,0 4,3.71874 4,5.85626 v 7.28748 L 30.99375,19.425 C 31.612501,19.78124 32,20.44376 32,21.1625 v 3.51249 c 0,0.66251 -0.6375,1.14377 -1.275001,0.96251 L 20,22.56875 v 6.43126 l 3.6,2.69997 c 0.249998,0.18877 0.4,0.48502 0.4,0.8 v 2.62315 C 24,35.60725 23.60625,36 23.068749,36 c -0.025,0 -0.10625,-0.0116 -0.187499,-0.0339 L 16,34 9.1187499,35.96627 C 9.0375001,35.98862 8.95625,36 8.8749998,36 8.39375,36 8,35.60725 8,35.12313 v -2.62315 c 0,-0.31498 0.1499999,-0.61123 0.4,-0.8 L 12,29.00001 V 22.56875 L 1.2750001,25.6375 C 0.635625,25.81876 0,25.3375 0,24.67499 V 21.1625 C 0,20.44376 0.38456,19.78124 1.0075,19.425 L 12,13.14374 Z"
+     id="path2"
+     style="fill:#da291c;fill-opacity:1;stroke:#1d252d;stroke-width:2.04003763;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     transform="matrix(0.73442927,0,0,0.73613281,0.74913167,0.74834952)" />
+</svg>

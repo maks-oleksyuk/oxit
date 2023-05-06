@@ -1,0 +1,17 @@
+uuid: 80478405-63ec-4f10-9014-adfb791ef9a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: History
+type: history
+description: 'Use for content like history'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

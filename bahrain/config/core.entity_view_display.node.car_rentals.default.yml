@@ -1,0 +1,365 @@
+uuid: af5bee76-ede8-4bba-a49f-036d56683ce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car_rentals.body
+    - field.field.node.car_rentals.field_email
+    - field.field.node.car_rentals.field_media_image
+    - field.field.node.car_rentals.field_phone
+    - field.field.node.car_rentals.field_taxonomy
+    - field.field.node.car_rentals.field_website
+    - field.field.node.car_rentals.field_working_hours
+    - node.type.car_rentals
+  module:
+    - layout_builder
+    - link
+    - telephone
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          c2a2e1b9-ecdc-49bf-a6ee-97e5c9af49d5:
+            uuid: c2a2e1b9-ecdc-49bf-a6ee-97e5c9af49d5
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_media_image'
+              label: 'Media Image Logo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: large
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b4fd27fa-f6c9-4eee-ae3f-1998e11e29e2:
+            uuid: b4fd27fa-f6c9-4eee-ae3f-1998e11e29e2
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d9a463ca-f40f-40f2-a660-ecc6c5049917:
+            uuid: d9a463ca-f40f-40f2-a660-ecc6c5049917
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          9a448017-7e10-4400-941a-fcb5a03abae8:
+            uuid: 9a448017-7e10-4400-941a-fcb5a03abae8
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_phone'
+              label: Phone
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: inline
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          1fde2b06-c98b-4147-95f9-b0488a6a09d2:
+            uuid: 1fde2b06-c98b-4147-95f9-b0488a6a09d2
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_email'
+              label: E-mail
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          47bef634-dcbf-4ca9-a7cf-ca063f79552d:
+            uuid: 47bef634-dcbf-4ca9-a7cf-ca063f79552d
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_website'
+              label: Website
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: nofollow
+                  target: _blank
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          2550d1b2-3fc8-4dcd-8416-e58e89082465:
+            uuid: 2550d1b2-3fc8-4dcd-8416-e58e89082465
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_taxonomy'
+              label: 'Payment methods'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f9c93257-9d65-41af-a479-a701e46ae878:
+            uuid: f9c93257-9d65-41af-a479-a701e46ae878
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_working_hours'
+              label: 'Working hours'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          b65bd69e-52e9-438b-91aa-88f5dce34956:
+            uuid: b65bd69e-52e9-438b-91aa-88f5dce34956
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f15c146a-970a-4d1c-8215-7e1aca980751:
+            uuid: f15c146a-970a-4d1c-8215-7e1aca980751
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_phone'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: hidden
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8d4bf15a-10b5-491f-a87b-735d20c3db0d:
+            uuid: 8d4bf15a-10b5-491f-a87b-735d20c3db0d
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_email'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          b47783ae-8008-4df2-ab38-3b4086d56464:
+            uuid: b47783ae-8008-4df2-ab38-3b4086d56464
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_website'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          9955fd47-4a5b-448f-99fd-843e683ef512:
+            uuid: 9955fd47-4a5b-448f-99fd-843e683ef512
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_taxonomy'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          b6c7e580-5566-42af-ae61-1961075b1000:
+            uuid: b6c7e580-5566-42af-ae61-1961075b1000
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_media_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          9e4c1659-9eea-43ba-948b-4d12849ed38e:
+            uuid: 9e4c1659-9eea-43ba-948b-4d12849ed38e
+            region: content
+            configuration:
+              id: 'field_block:node:car_rentals:field_working_hours'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.car_rentals.default
+targetEntityType: node
+bundle: car_rentals
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_phone:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_taxonomy:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_website:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_working_hours:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

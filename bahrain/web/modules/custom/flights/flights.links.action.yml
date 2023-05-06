@@ -1,0 +1,5 @@
+flights.add_form:
+  route_name: entity.flights.add_form
+  title: 'Add flights'
+  appears_on:
+    - entity.flights.collection

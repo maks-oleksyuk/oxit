@@ -1,0 +1,31 @@
+uuid: c038bc11-a5f4-4f1e-9ef8-47ee944b8e2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: sitebranding
+theme: bahrain
+region: nav_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate\r\n/corporate/*"

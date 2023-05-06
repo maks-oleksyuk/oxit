@@ -1,0 +1,30 @@
+name: Bahrain
+type: theme
+description: 'Bahrain subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^8.9 || ^9'
+'base theme': bootstrap5
+libraries:
+  - bahrain/global-styling
+  - bahrain/global-scripts
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  search: 'Search block'
+  flight: 'Flights'
+  banner: 'Banner block'
+  short_menu: 'Short Menu'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  our_services: 'Our Services'
+  lounges: 'Lounges & Hotels'
+  at_the_airport: 'At the Airport'
+  instagram: 'Instagram'
+  contact_us: 'Contact Us'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+  copyright: Copyright

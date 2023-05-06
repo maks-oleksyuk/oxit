@@ -1,0 +1,194 @@
+uuid: 5c75e651-c4d7-4113-a3a5-5e9b1197e990
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - core.entity_view_mode.block_content.contact_us_horizontal
+    - field.field.block_content.contact_us.body
+    - field.field.block_content.contact_us.field_address
+    - field.field.block_content.contact_us.field_employee_email
+    - field.field.block_content.contact_us.field_employee_number
+    - field.field.block_content.contact_us.field_international_call_center
+    - field.field.block_content.contact_us.field_link
+    - field.field.block_content.contact_us.field_local_call_center
+    - field.field.block_content.contact_us.field_lost_found
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - telephone
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          76395be3-6c63-49a2-a734-fae2af662679:
+            uuid: 76395be3-6c63-49a2-a734-fae2af662679
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7713224c-3fae-401f-b1e6-994f868d2e72:
+            uuid: 7713224c-3fae-401f-b1e6-994f868d2e72
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:info'
+              label: 'Block description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9b14588e-fe2f-4f8e-824a-f7e567d0a89f:
+            uuid: 9b14588e-fe2f-4f8e-824a-f7e567d0a89f
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:field_employee_number'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: telephone_link
+                label: above
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          9b124db1-da68-4f5b-82e3-6b4dac53af07:
+            uuid: 9b124db1-da68-4f5b-82e3-6b4dac53af07
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:field_address'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          50fd0efb-9c9f-4c6f-a4ad-23596fecd6d4:
+            uuid: 50fd0efb-9c9f-4c6f-a4ad-23596fecd6d4
+            region: content
+            configuration:
+              id: 'field_block:block_content:contact_us:field_employee_email'
+              label: 'Feedback Email'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.contact_us.contact_us_horizontal
+targetEntityType: block_content
+bundle: contact_us
+mode: contact_us_horizontal
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_address:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_employee_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_employee_number:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_international_call_center:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_local_call_center:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lost_found:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 894c1f01-79fe-45d2-a2c3-18e49c229b98
+langcode: en
+status: true
+dependencies: {  }
+id: corporate_links
+label: 'Corporate Links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+uuid: bfa4ce62-256f-4842-9557-3a51a4175665
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bahrain
+_core:
+  default_config_hash: vtEfdsg4WRRC3aJAHRBnEbxLkAxTCmKcmaN895D9ijE
+id: bahrain_messages
+theme: bahrain
+region: content
+weight: -43
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

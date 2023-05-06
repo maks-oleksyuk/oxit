@@ -1,0 +1,25 @@
+uuid: 250b76c0-92c5-4527-baef-60166846030f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.storage.block_content.field_international_call_center
+  module:
+    - telephone
+    - telephone_advanced
+third_party_settings:
+  telephone_advanced:
+    enabled: false
+id: block_content.contact_us.field_international_call_center
+field_name: field_international_call_center
+entity_type: block_content
+bundle: contact_us
+label: 'International call center'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

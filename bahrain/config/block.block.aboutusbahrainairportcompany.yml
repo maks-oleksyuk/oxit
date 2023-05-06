@@ -1,0 +1,36 @@
+uuid: 79a33a8b-63bb-4ac4-af7f-131d13b9a568
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:c9a50248-0903-4980-9405-57cdf2e7f509'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '281'
+id: aboutusbahrainairportcompany
+theme: bahrain
+region: banner
+weight: -44
+provider: null
+plugin: 'block_content:c9a50248-0903-4980-9405-57cdf2e7f509'
+settings:
+  id: 'block_content:c9a50248-0903-4980-9405-57cdf2e7f509'
+  label: 'About Us (Bahrain Airport Company)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /corporate/bahrain-airport-company

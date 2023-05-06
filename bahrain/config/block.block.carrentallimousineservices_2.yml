@@ -1,0 +1,36 @@
+uuid: 5e21eba1-fd66-4731-96f2-75ad12015917
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:fb20cc89-6d59-4754-84d2-67f61ca7f6c1'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '256'
+id: carrentallimousineservices_2
+theme: bahrain
+region: banner
+weight: -32
+provider: null
+plugin: 'block_content:fb20cc89-6d59-4754-84d2-67f61ca7f6c1'
+settings:
+  id: 'block_content:fb20cc89-6d59-4754-84d2-67f61ca7f6c1'
+  label: 'Car Rental & Limousine Services'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /car-rental-limousine-services

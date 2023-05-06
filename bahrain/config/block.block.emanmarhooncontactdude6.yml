@@ -1,0 +1,37 @@
+uuid: 08081519-0790-49ef-9cf3-735c9c6bfaab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:fc101231-7232-47af-a02a-08f84d949906'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: contact-card
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: emanmarhooncontactdude6
+theme: bahrain
+region: content
+weight: -32
+provider: null
+plugin: 'block_content:fc101231-7232-47af-a02a-08f84d949906'
+settings:
+  id: 'block_content:fc101231-7232-47af-a02a-08f84d949906'
+  label: 'Eman Marhoon - Contact Dude 6'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/contacts-media\r\n/ar/corporate/contacts-media"

@@ -1,0 +1,200 @@
+uuid: 87bb4620-2208-4e0c-9668-65d821a17042
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.car_rentals.body
+    - field.field.node.car_rentals.field_email
+    - field.field.node.car_rentals.field_media_image
+    - field.field.node.car_rentals.field_phone
+    - field.field.node.car_rentals.field_taxonomy
+    - field.field.node.car_rentals.field_website
+    - field.field.node.car_rentals.field_working_hours
+    - node.type.car_rentals
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          f0c0064f-2bb2-47fc-8824-9b51035fd05e:
+            uuid: f0c0064f-2bb2-47fc-8824-9b51035fd05e
+            region: first
+            configuration:
+              id: 'field_block:node:car_rentals:field_media_image'
+              label: 'Media Image Logo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: media_library
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b9f772ee-6838-4c87-aa74-0f93dd7ce68a:
+            uuid: b9f772ee-6838-4c87-aa74-0f93dd7ce68a
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          baf217cb-e30a-42da-b26e-d693a0345401:
+            uuid: baf217cb-e30a-42da-b26e-d693a0345401
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          21dddd8f-b145-419a-be11-73b7cbf15a9c:
+            uuid: 21dddd8f-b145-419a-be11-73b7cbf15a9c
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_phone'
+              label: Phone
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: telephone_link
+                label: inline
+                settings:
+                  title: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          045e1895-a7ca-4193-8bff-405c98a7a417:
+            uuid: 045e1895-a7ca-4193-8bff-405c98a7a417
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_email'
+              label: E-mail
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          d6f19a71-3aec-474b-ab04-39dddeacc30f:
+            uuid: d6f19a71-3aec-474b-ab04-39dddeacc30f
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_working_hours'
+              label: 'Working hours'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          74240376-caef-4c1b-ad6b-42895fbb8db8:
+            uuid: 74240376-caef-4c1b-ad6b-42895fbb8db8
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_taxonomy'
+              label: 'Payment methods'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          09079ba1-3bd9-4337-8869-a958a5d15056:
+            uuid: 09079ba1-3bd9-4337-8869-a958a5d15056
+            region: second
+            configuration:
+              id: 'field_block:node:car_rentals:field_website'
+              label: Website
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: inline
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: nofollow
+                  target: _blank
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.car_rentals.teaser
+targetEntityType: node
+bundle: car_rentals
+mode: teaser
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_email: true
+  field_media_image: true
+  field_phone: true
+  field_taxonomy: true
+  field_website: true
+  field_working_hours: true
+  langcode: true
+  links: true

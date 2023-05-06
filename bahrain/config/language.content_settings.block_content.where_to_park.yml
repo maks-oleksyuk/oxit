@@ -1,0 +1,11 @@
+uuid: c1403151-3087-4afe-bd8a-a2eb4b7cb6ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.where_to_park
+id: block_content.where_to_park
+target_entity_type_id: block_content
+target_bundle: where_to_park
+default_langcode: site_default
+language_alterable: false

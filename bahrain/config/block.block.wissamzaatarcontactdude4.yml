@@ -1,0 +1,37 @@
+uuid: 1b295239-a7cf-47d8-8da4-ad63ed87de68
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:ce4844a4-e24a-4e0e-b458-c06a4339af58'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: wissamzaatarcontactdude4
+theme: bahrain
+region: content
+weight: -34
+provider: null
+plugin: 'block_content:ce4844a4-e24a-4e0e-b458-c06a4339af58'
+settings:
+  id: 'block_content:ce4844a4-e24a-4e0e-b458-c06a4339af58'
+  label: 'Wissam Zaatar - Contact Dude 4'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/advertising\r\n/ar//corporate/advertising"

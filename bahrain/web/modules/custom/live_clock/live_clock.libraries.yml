@@ -1,0 +1,8 @@
+react:
+  js:
+    js/dist/index.js: { preprocess: false, async: true }
+  dependencies:
+    - core/once
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

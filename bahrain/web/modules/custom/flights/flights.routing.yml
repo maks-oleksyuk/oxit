@@ -1,0 +1,15 @@
+entity.flights.settings:
+  path: 'admin/structure/flights'
+  defaults:
+    _form: '\Drupal\flights\Form\FlightsSettingsForm'
+    _title: 'flights'
+  requirements:
+    _permission: 'administer flights'
+
+entity.flights.notify_form:
+  path: '/flights/{flights}/notify'
+  defaults:
+    _entity_form: 'flights.notify'
+    _title: 'Notification flights'
+  requirements:
+    _access: 'TRUE'

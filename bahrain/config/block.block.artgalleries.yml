@@ -1,0 +1,36 @@
+uuid: 9c8f6014-905f-48f1-9fa1-0e8a5ea034d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:7301c1b7-99ed-4f12-9a85-ad1cbe7c84aa'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '272'
+id: artgalleries
+theme: bahrain
+region: banner
+weight: -36
+provider: null
+plugin: 'block_content:7301c1b7-99ed-4f12-9a85-ad1cbe7c84aa'
+settings:
+  id: 'block_content:7301c1b7-99ed-4f12-9a85-ad1cbe7c84aa'
+  label: 'Art Galleries'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/at-the-airport/art-galleries\r\n/ar/at-the-airport/art-galleries"

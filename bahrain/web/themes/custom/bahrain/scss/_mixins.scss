@@ -1,0 +1,22 @@
+@mixin right-arrow-black($height,$width) {
+  content: "";
+  width: $width;
+  height: $height;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  background: url(../images/arrow-right-black.svg) no-repeat;
+}
+
+@mixin right-arrow-white($height,$width) {
+  content: "";
+  width: $width;
+  height: $height;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  background: url(../images/right-arrow.svg) no-repeat;
+}
+

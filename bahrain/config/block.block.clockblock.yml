@@ -1,0 +1,27 @@
+uuid: 161fb8f8-ed7d-447d-8ede-738d2098a05b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - live_clock
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: clockblock
+theme: bahrain
+region: header
+weight: 0
+provider: null
+plugin: clock_block
+settings:
+  id: clockblock
+  label: 'Clock Block'
+  label_display: '0'
+  provider: live_clock
+  country: Bahrain
+  country_code: BH
+  timezone: Asia/Bahrain
+visibility: {  }

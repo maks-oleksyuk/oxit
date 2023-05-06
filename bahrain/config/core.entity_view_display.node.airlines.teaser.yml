@@ -1,0 +1,42 @@
+uuid: 4f0a8d6f-d33d-44c3-a68c-a6edb2b954fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.airlines.body
+    - field.field.node.airlines.field_email
+    - field.field.node.airlines.field_iata_code
+    - field.field.node.airlines.field_media_image
+    - field.field.node.airlines.field_phone
+    - field.field.node.airlines.field_website
+    - node.type.airlines
+  module:
+    - text
+    - user
+id: node.airlines.teaser
+targetEntityType: node
+bundle: airlines
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_email: true
+  field_iata_code: true
+  field_media_image: true
+  field_phone: true
+  field_website: true
+  langcode: true

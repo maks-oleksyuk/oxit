@@ -1,0 +1,36 @@
+uuid: 00c92060-3a9e-4a9b-bab6-b3c0d8699b48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:feefa238-a681-4ad7-847e-f920bc0125a6'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '293'
+id: proceduresspecialassistance
+theme: bahrain
+region: banner
+weight: -18
+provider: null
+plugin: 'block_content:feefa238-a681-4ad7-847e-f920bc0125a6'
+settings:
+  id: 'block_content:feefa238-a681-4ad7-847e-f920bc0125a6'
+  label: 'Procedures & Special Assistance'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/special-assistance\r\n/ar/special-assistance"

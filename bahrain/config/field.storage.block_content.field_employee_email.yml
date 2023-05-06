@@ -1,0 +1,18 @@
+uuid: 0ace9b90-e92c-4fba-a889-e411d391d457
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_employee_email
+field_name: field_employee_email
+entity_type: block_content
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,41 @@
+uuid: 2ae7402a-e740-4042-9bf8-4bd0fe7b4428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.page
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.photo_on_the_left_side
+    - paragraphs.paragraphs_type.photo_on_the_right_side
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: page
+label: paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq: faq
+      photo_on_the_left_side: photo_on_the_left_side
+      photo_on_the_right_side: photo_on_the_right_side
+    negate: 0
+    target_bundles_drag_drop:
+      faq:
+        weight: 4
+        enabled: true
+      photo_on_the_left_side:
+        weight: 11
+        enabled: true
+      photo_on_the_right_side:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

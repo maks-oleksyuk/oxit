@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Oliver theme.
+ */
+/**
+ * Implements hook_theme().
+ */
+function flight_tracker_theme() {
+  return [
+    'flight_tracker_block' => [
+      'variables' => [
+        'markup' => NULL,
+      ],
+      'template' => 'flight',
+    ],
+  ];
+}
+
+

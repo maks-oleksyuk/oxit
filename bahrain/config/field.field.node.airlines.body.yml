@@ -1,0 +1,23 @@
+uuid: 5b41cc44-081f-4932-9b12-bb3e234cae61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.airlines
+  module:
+    - text
+id: node.airlines.body
+field_name: body
+entity_type: node
+bundle: airlines
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

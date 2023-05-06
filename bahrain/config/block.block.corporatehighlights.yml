@@ -1,0 +1,37 @@
+uuid: c48a8fce-a4d4-4569-94f9-9f69bd7b2107
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:read_more_block:d1621a18-7354-4dd1-b530-cd8505f4bb7b'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'highlights, highlights-block'
+id: corporatehighlights
+theme: bahrain
+region: content
+weight: -25
+provider: null
+plugin: 'block_content:d1621a18-7354-4dd1-b530-cd8505f4bb7b'
+settings:
+  id: 'block_content:d1621a18-7354-4dd1-b530-cd8505f4bb7b'
+  label: 'Corporate Highlights'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate\r\n/ar/corporate"

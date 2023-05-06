@@ -1,0 +1,29 @@
+uuid: 44b6f9fa-a3c3-4ee6-b537-2ef0c892ad34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxonomy
+    - node.type.car_rentals
+    - taxonomy.vocabulary.payment_methods
+id: node.car_rentals.field_taxonomy
+field_name: field_taxonomy
+entity_type: node
+bundle: car_rentals
+label: 'Payment methods'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payment_methods: payment_methods
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

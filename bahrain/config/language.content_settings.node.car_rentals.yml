@@ -1,0 +1,18 @@
+uuid: 2df1318d-432d-4c4f-91d6-007d5c3d9fb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.car_rentals
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.car_rentals
+target_entity_type_id: node
+target_bundle: car_rentals
+default_langcode: authors_default
+language_alterable: false

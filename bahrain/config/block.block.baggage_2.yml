@@ -1,0 +1,33 @@
+uuid: 2b46a06b-450c-4ebc-b2e8-7a2d9745b05f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.baggage
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: baggage_2
+theme: bahrain
+region: short_menu
+weight: -16
+provider: null
+plugin: 'system_menu_block:baggage'
+settings:
+  id: 'system_menu_block:baggage'
+  label: Baggage
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/lost-found\r\n/baggage-services\r\n/regulations\r\n/reclaim"

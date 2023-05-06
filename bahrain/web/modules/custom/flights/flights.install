@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Install, create tables to store reviews.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function flights_schema(): array {
+  $schema['flights_notify'] = [
+    'description' => 'Table for saving data for notification email',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+        'description' => 'Primary key',
+      ],
+      'email' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Email',
+      ],
+      'fly_number' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Flight number',
+      ],
+      'time' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'description' => 'The timestamp of the flight action',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}

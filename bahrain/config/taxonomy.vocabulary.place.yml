@@ -1,0 +1,8 @@
+uuid: ff07120f-bbe0-4bba-9ed5-d410c1caafe7
+langcode: en
+status: true
+dependencies: {  }
+name: Place
+vid: place
+description: 'Vocabulary for choose right place in the airport.'
+weight: 0

@@ -1,0 +1,36 @@
+uuid: 96d1292f-dd50-4bc2-88c4-0335ab683c2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f1cb23b6-cdb4-441d-a97f-806dad44b44d'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '286'
+id: aboutuscorporatesocialresponsibility
+theme: bahrain
+region: banner
+weight: -41
+provider: null
+plugin: 'block_content:f1cb23b6-cdb4-441d-a97f-806dad44b44d'
+settings:
+  id: 'block_content:f1cb23b6-cdb4-441d-a97f-806dad44b44d'
+  label: 'About Us (Corporate Social Responsibility)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /corporate/corporate-social-responsibility

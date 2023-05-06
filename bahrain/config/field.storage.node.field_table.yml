@@ -1,0 +1,19 @@
+uuid: 52906c2d-009a-434b-a971-d9e7c5bb4eff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - tablefield
+id: node.field_table
+field_name: field_table
+entity_type: node
+type: tablefield
+settings: {  }
+module: tablefield
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

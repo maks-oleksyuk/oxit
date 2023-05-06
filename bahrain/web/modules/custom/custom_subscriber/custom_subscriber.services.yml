@@ -1,0 +1,5 @@
+services:
+  custom_subscriber.event_subscriber:
+    class: Drupal\custom_subscriber\EventSubscriber\ChangeControllerSubscriber
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,21 @@
+uuid: 87ad9e26-3816-4d10-8422-1de2cf82fed3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats
+    - field.storage.block_content.field_airlines
+  module:
+    - text
+id: block_content.stats.field_airlines
+field_name: field_airlines
+entity_type: block_content
+bundle: stats
+label: Airlines
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

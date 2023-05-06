@@ -1,0 +1,19 @@
+uuid: d417a56f-d96b-48c5-af67-fcf274bf42fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.places
+id: node.places.field_email
+field_name: field_email
+entity_type: node
+bundle: places
+label: email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

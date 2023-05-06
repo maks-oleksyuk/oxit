@@ -1,0 +1,36 @@
+uuid: 6bb1cabd-8a82-4cf9-8949-59311503fdb4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:b3bddcfd-66fc-4cc6-99a1-57ffe2732cdf'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '295'
+id: airlines
+theme: bahrain
+region: banner
+weight: -37
+provider: null
+plugin: 'block_content:b3bddcfd-66fc-4cc6-99a1-57ffe2732cdf'
+settings:
+  id: 'block_content:b3bddcfd-66fc-4cc6-99a1-57ffe2732cdf'
+  label: Airlines
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/airlines\r\n/ar/airlines"

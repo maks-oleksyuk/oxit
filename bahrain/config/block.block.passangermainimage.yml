@@ -1,0 +1,39 @@
+uuid: 2107ba7e-0f2b-455b-b1e5-1101a3e2d5f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:75ae6fb8-39f0-4a45-b606-5951cffa680a'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '303'
+  block_class:
+    classes: main-banner-block
+id: passangermainimage
+theme: bahrain
+region: banner
+weight: -19
+provider: null
+plugin: 'block_content:75ae6fb8-39f0-4a45-b606-5951cffa680a'
+settings:
+  id: 'block_content:75ae6fb8-39f0-4a45-b606-5951cffa680a'
+  label: 'Passanger main image'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

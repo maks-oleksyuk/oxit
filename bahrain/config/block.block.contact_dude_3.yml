@@ -1,0 +1,37 @@
+uuid: 5e116ee2-1e33-462e-9519-32f28ecda5ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_information_card:18bde050-def2-4d9e-a346-9859beb66504'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: 'contact-block contact-card col-md-4'
+id: contact_dude_3
+theme: bahrain
+region: content
+weight: -35
+provider: null
+plugin: 'block_content:18bde050-def2-4d9e-a346-9859beb66504'
+settings:
+  id: 'block_content:18bde050-def2-4d9e-a346-9859beb66504'
+  label: 'Commercial Division - Contact Dude 3'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/property-and-real-estate\r\n/ar/corporate/property-and-real-estate\r\n\r\n/corporate/concessions\r\n/ar/corporate/concessions"

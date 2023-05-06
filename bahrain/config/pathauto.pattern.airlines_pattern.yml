@@ -1,0 +1,22 @@
+uuid: dd0279eb-dac3-43ef-bd4d-4b6b5049ac31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: airlines_pattern
+label: 'Airlines Pattern'
+type: 'canonical_entities:node'
+pattern: 'airlines/[node:title]'
+selection_criteria:
+  7b8ddff6-fc00-4b6e-8684-e90ceec94032:
+    id: node_type
+    negate: false
+    uuid: 7b8ddff6-fc00-4b6e-8684-e90ceec94032
+    context_mapping:
+      node: node
+    bundles:
+      airlines: airlines
+selection_logic: and
+weight: -5
+relationships: {  }

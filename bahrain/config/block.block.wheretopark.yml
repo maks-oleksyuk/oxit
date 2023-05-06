@@ -1,0 +1,37 @@
+uuid: 88206f4f-11f2-48e8-812e-6ba30f5e5503
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:where_to_park:5150f268-160f-4af9-9af6-c4315bc9e1e7'
+  module:
+    - block_background_style
+    - block_class
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+  block_class:
+    classes: where-to-park-block
+id: wheretopark
+theme: bahrain
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:5150f268-160f-4af9-9af6-c4315bc9e1e7'
+settings:
+  id: 'block_content:5150f268-160f-4af9-9af6-c4315bc9e1e7'
+  label: 'Where To Park'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/ar"

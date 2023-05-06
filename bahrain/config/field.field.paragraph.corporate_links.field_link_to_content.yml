@@ -1,0 +1,23 @@
+uuid: ebe12553-0732-458c-9418-ee6837e86cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_to_content
+    - paragraphs.paragraphs_type.corporate_links
+  module:
+    - link
+id: paragraph.corporate_links.field_link_to_content
+field_name: field_link_to_content
+entity_type: paragraph
+bundle: corporate_links
+label: 'Link to Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

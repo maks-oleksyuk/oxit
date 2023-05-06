@@ -1,0 +1,23 @@
+.corporate-logo {
+  .field--name-body {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: unset;
+    p {
+      margin-bottom: unset;
+      a img {
+        height: 36px;
+        margin: 0 1rem 0 0;
+        width: auto;
+        @media (min-width: 992px) {
+          height: 60px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+uuid: 45ff9aad-d0d9-4336-97df-46fb45731f27
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_airlines
+field_name: field_airlines
+entity_type: block_content
+type: text
+settings:
+  max_length: 5
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

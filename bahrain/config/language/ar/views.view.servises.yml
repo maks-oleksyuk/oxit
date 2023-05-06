@@ -1,0 +1,20 @@
+label: الخدمات
+display:
+  default:
+    display_title: تقصير
+    display_options:
+      title: الخدمات
+      exposed_form:
+        options:
+          submit_button: يتقدم
+          reset_button_label: 'إعادة ضبط'
+          exposed_sorts_label: 'ترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      header:
+        area:
+          content:
+            value: "<h1>الخدمات</h1>\r\n\r\n<div id=\"gtx-trans\" style=\"position: absolute; left: -19px; top: -26.6667px;\">\r\n<div class=\"gtx-trans-icon\">&nbsp;</div>\r\n</div>\r\n"
+            format: full_html
+  page_1:
+    display_title: صفحة

@@ -1,0 +1,90 @@
+uuid: 016dde9b-8d82-4d98-9754-6c23f635d3f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_us
+    - field.field.block_content.contact_us.body
+    - field.field.block_content.contact_us.field_address
+    - field.field.block_content.contact_us.field_employee_email
+    - field.field.block_content.contact_us.field_employee_number
+    - field.field.block_content.contact_us.field_international_call_center
+    - field.field.block_content.contact_us.field_link
+    - field.field.block_content.contact_us.field_local_call_center
+    - field.field.block_content.contact_us.field_lost_found
+  module:
+    - link
+    - telephone
+    - text
+id: block_content.contact_us.default
+targetEntityType: block_content
+bundle: contact_us
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_address:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_employee_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_employee_number:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_international_call_center:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_local_call_center:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_lost_found:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

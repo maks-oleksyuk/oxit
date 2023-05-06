@@ -1,0 +1,33 @@
+uuid: b5fccea5-2e01-4164-9334-7b468ed63a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.media
+  module:
+    - block_background_style
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: media_2
+theme: bahrain
+region: short_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:media'
+settings:
+  id: 'system_menu_block:media'
+  label: Media
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/photo-gallery\r\n/ar/corporate/photo-gallery\r\n\r\n/corporate/video-gallery\r\n/ar/corporate/video-gallery\r\n\r\n/corporate/news\r\n/ar/corporate/news\r\n\r\n/corporate/publications\r\n/ar/corporate/publications\r\n\r\n/corporate/filming-and-photography\r\n/ar/corporate/filming-and-photography\r\n\r\n/corporate/contacts-media\r\n/ar/corporate/contacts-media\r\n"

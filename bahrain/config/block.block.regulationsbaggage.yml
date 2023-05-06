@@ -1,0 +1,36 @@
+uuid: affa692d-37a3-4773-ac79-a76c009b018e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:d80f026b-320b-45e0-9a63-172fc0b7fb74'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '269'
+id: regulationsbaggage
+theme: bahrain
+region: banner
+weight: -14
+provider: null
+plugin: 'block_content:d80f026b-320b-45e0-9a63-172fc0b7fb74'
+settings:
+  id: 'block_content:d80f026b-320b-45e0-9a63-172fc0b7fb74'
+  label: 'Regulations Baggage'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /regulations

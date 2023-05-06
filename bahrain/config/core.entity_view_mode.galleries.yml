@@ -1,0 +1,21 @@
+uuid: b2bce41c-f89a-48a5-bd5c-f6fa2a6d101c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_image
+    - taxonomy.vocabulary.place
+  content:
+    - 'taxonomy_term:place:7594ac20-8cb3-416c-8e47-6947e332a260'
+  module:
+    - image
+    - node
+    - taxonomy
+    - text
+    - user
+    - views_fieldsets
+id: galleries
+label: 'Art Galleries'
+targetEntityType: null
+cache: true

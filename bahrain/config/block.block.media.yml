@@ -1,0 +1,36 @@
+uuid: 86ecff3d-ab6c-40fa-8237-8228d25fe538
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:c38e43a0-8a4c-49b6-b94e-8362a5f588dc'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '279'
+id: media
+theme: bahrain
+region: banner
+weight: -22
+provider: null
+plugin: 'block_content:c38e43a0-8a4c-49b6-b94e-8362a5f588dc'
+settings:
+  id: 'block_content:c38e43a0-8a4c-49b6-b94e-8362a5f588dc'
+  label: Media
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/corporate/photo-gallery\r\n/ar/corporate/photo-gallery\r\n\r\n/corporate/video-gallery\r\n/ar/corporate/video-gallery\r\n\r\n/corporate/publications\r\n/ar/corporate/publications\r\n\r\n/corporate/filming-and-photography\r\n/ar/corporate/filming-and-photography\r\n\r\n/corporate/contacts-media\r\n/ar/corporate/contacts-media\r\n"

@@ -1,0 +1,36 @@
+uuid: ee5074df-5672-44e7-8738-1206ed3c3c80
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:9a690feb-c5ed-4340-b04c-6a9513382cc0'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '274'
+id: loungeshotel
+theme: bahrain
+region: banner
+weight: -23
+provider: null
+plugin: 'block_content:9a690feb-c5ed-4340-b04c-6a9513382cc0'
+settings:
+  id: 'block_content:9a690feb-c5ed-4340-b04c-6a9513382cc0'
+  label: 'Lounges & Hotel'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/at-the-airport/lounges-and-hotel\r\n/ar/at-the-airport/lounges-and-hotel"

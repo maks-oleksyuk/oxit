@@ -1,0 +1,36 @@
+uuid: 28ca541a-8d33-4399-98e7-4cd6798d1d4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:7f98709e-2638-48e8-a98e-bac94f9f2369'
+  module:
+    - block_background_style
+    - block_content
+    - system
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+    background_image:
+      - '270'
+id: lostfoundbaggage
+theme: bahrain
+region: banner
+weight: -24
+provider: null
+plugin: 'block_content:7f98709e-2638-48e8-a98e-bac94f9f2369'
+settings:
+  id: 'block_content:7f98709e-2638-48e8-a98e-bac94f9f2369'
+  label: 'Lost & Found Baggage'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /lost-found

@@ -1,0 +1,20 @@
+uuid: 2ac5de60-632e-4866-b398-1d1a6c6fbb03
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payment_methods
+  module:
+    - path
+id: taxonomy_term.payment_methods.path
+field_name: path
+entity_type: taxonomy_term
+bundle: payment_methods
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

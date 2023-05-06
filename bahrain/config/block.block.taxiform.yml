@@ -1,0 +1,29 @@
+uuid: 6960face-c7ba-4911-b334-dc0ecb914995
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - system
+    - taxi
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: taxiform
+theme: bahrain
+region: content
+weight: -29
+provider: null
+plugin: taxi_block
+settings:
+  id: taxi_block
+  label: Taxi
+  label_display: '0'
+  provider: taxi
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/taxi\r\n/ar/taxi"

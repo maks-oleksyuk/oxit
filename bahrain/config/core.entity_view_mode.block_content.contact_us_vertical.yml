@@ -1,0 +1,10 @@
+uuid: 95a22793-e821-44b5-9cad-076c25969547
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.contact_us_vertical
+label: 'Contact Us | Vertical'
+targetEntityType: block_content
+cache: true

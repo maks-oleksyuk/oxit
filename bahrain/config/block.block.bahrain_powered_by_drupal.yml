@@ -1,0 +1,22 @@
+uuid: 2286e33c-0e47-42c0-8173-051c75efbcbb
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bahrain
+_core:
+  default_config_hash: r2y0HbpsybvWO4oMpQncuvOOCwQcT3DDqo5AHoMuPUk
+id: bahrain_powered_by_drupal
+theme: bahrain
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

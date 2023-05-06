@@ -1,0 +1,32 @@
+uuid: 2a526029-8f63-48a2-8de6-75f94ca84b45
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_background_style
+    - language
+  theme:
+    - bahrain
+third_party_settings:
+  block_background_style:
+    inline_style: ''
+id: languages
+theme: bahrain
+region: header
+weight: -7
+provider: null
+plugin: 'language_block:language_content'
+settings:
+  id: 'language_block:language_content'
+  label: Language
+  label_display: '0'
+  provider: language
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en
+      ar: ar

@@ -1,0 +1,8 @@
+uuid: 951c5bb0-39a2-406e-9551-4bf341e7ef77
+langcode: en
+status: true
+dependencies: {  }
+id: cargo-facilities
+label: 'Cargo & Facilities'
+description: ''
+locked: false

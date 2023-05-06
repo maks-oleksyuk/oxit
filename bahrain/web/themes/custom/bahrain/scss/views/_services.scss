@@ -1,0 +1,221 @@
+.views-element-container {
+  .view-servises {
+    .view {
+      &-header {
+        text-align: center;
+
+        h1 {
+          color: #000;
+          font-size: 36px;
+          font-weight: bold;
+          line-height: 40px;
+          padding-top: 22px;
+          margin-bottom: 25px;
+        }
+      }
+
+      &-content {
+        .views-row {
+          margin: 40px 0;
+
+          .layout__region--second {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 20px;
+          }
+
+          @include media-breakpoint-down(lg) {
+            .layout--twocol-section {
+              flex-direction: column !important;
+            }
+            .layout__region--first {
+              margin-bottom: 25px;
+            }
+          }
+
+          .field--name {
+            &-field-image {
+              position: relative;
+              display: flex;
+              justify-content: center;
+
+              img {
+                border-radius: 10px;
+              }
+            }
+
+            &-field-image-logo {
+              img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 20px;
+              }
+            }
+
+            &-title {
+              font-size: 22px;
+              font-weight: bold;
+              color: #000;
+              margin-bottom: 5px;
+            }
+
+            &-body {
+              font-size: 16px;
+              line-height: 1.56;
+              text-align: justify;
+              color: #3b3b3b;
+
+              @include media-breakpoint-down(sm) {
+                font-size: 13px;
+                word-break: break-all;
+              }
+
+              a {
+                text-decoration: none;
+                color: $light-red;
+
+                &:hover {
+                  color: black;
+                }
+              }
+            }
+          }
+
+          &:nth-child(2n) {
+            .layout--twocol-section {
+              flex-direction: row-reverse;
+            }
+
+            .field--name {
+              &-field-image {
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: -24px;
+                  bottom: -24px;
+                  right: auto;
+                  left: 200px;
+                  width: 100%;
+                  z-index: -1;
+                  border-radius: 10px;
+                  background-position: top 0 left 180px;
+                  background: url('../images/wave4.svg') no-repeat $light-red;
+                }
+              }
+            }
+
+            article[about^='/ar/'] {
+              .field--name {
+                &-field-image {
+                  &:after {
+                    content: "";
+                    left: auto;
+                    right: 200px;
+                    background-position: top 0 left -300px;
+
+                  }
+                }
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+              .field--name {
+                &-field-image {
+                  &:after {
+                    left: 20px;
+                    right: -20px;
+                    bottom: 40%;
+                    top: -20px;
+                    width: auto;
+                    background-size: contain;
+                    content: "";
+                  }
+                }
+              }
+
+              article[about^='/ar/'] {
+                .field--name {
+                  &-field-image {
+                    &:after {
+                      content: "";
+                      left: -20px;
+                      right: 20px;
+                      bottom: 40%;
+                      top: -20px;
+                      width: auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-child(2n+1) {
+            .field--name {
+              &-field-image {
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: -24px;
+                  bottom: -24px;
+                  left: auto;
+                  right: 200px;
+                  width: 100%;
+                  z-index: -1;
+                  border-radius: 10px;
+                  background-position: top 0 left 180px;
+                  background: url('../images/wave3.svg') no-repeat #642667;
+                }
+              }
+            }
+
+            article[about^='/ar/'] {
+              .field--name {
+                &-field-image {
+                  &:after {
+                    content: "";
+                    left: 200px;
+                    right: auto;
+                    background-position: top -100px right -300px;
+                  }
+                }
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+              .field--name {
+                &-field-image {
+                  &:after {
+                    left: -20px;
+                    right: -20px;
+                    bottom: 40%;
+                    top: -20px;
+                    width: 100%;
+                    background-size: contain;
+                    content: "";
+                  }
+                }
+              }
+
+              article[about^='/ar/'] {
+                .field--name {
+                  &-field-image {
+                    &:after {
+                      content: "";
+                      left: 20px;
+                      right: -20px;
+                      bottom: 40%;
+                      top: -20px;
+                      width: auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

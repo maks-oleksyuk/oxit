@@ -1,0 +1,50 @@
+uuid: f0ef82bf-c4e4-401f-a82c-dfba00ff9dc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stats
+    - field.field.block_content.stats.field_airlines
+    - field.field.block_content.stats.field_destination
+    - field.field.block_content.stats.field_passengers
+    - field.field.block_content.stats.field_since
+  module:
+    - datetime
+    - text
+id: block_content.stats.default
+targetEntityType: block_content
+bundle: stats
+mode: default
+content:
+  field_airlines:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_destination:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_passengers:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_since:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: fb4a7935-8096-4c39-9200-fe601957907c
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'Vocabulary for choose location for each place.'
+weight: 0
